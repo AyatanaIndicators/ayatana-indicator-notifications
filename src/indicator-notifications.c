@@ -87,7 +87,7 @@ struct _IndicatorNotificationsPrivate {
 #define INDICATOR_NOTIFICATIONS_GET_PRIVATE(o) \
 (G_TYPE_INSTANCE_GET_PRIVATE ((o), INDICATOR_NOTIFICATIONS_TYPE, IndicatorNotificationsPrivate))
 
-#define NOTIFICATIONS_SCHEMA             "net.launchpad.indicator.notifications"
+#define NOTIFICATIONS_SCHEMA             "org.ayatana.indicator.notifications"
 #define NOTIFICATIONS_KEY_BLACKLIST      "blacklist"
 #define NOTIFICATIONS_KEY_CLEAR_MC       "clear-on-middle-click"
 #define NOTIFICATIONS_KEY_HIDE_INDICATOR "hide-indicator"

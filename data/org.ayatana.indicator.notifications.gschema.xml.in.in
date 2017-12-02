@@ -1,5 +1,5 @@
 <schemalist gettext-domain="@GETTEXT_PACKAGE@">
-  <schema id="net.launchpad.indicator.notifications" path="/net/launchpad/indicator/notifications/">
+  <schema id="org.ayatana.indicator.notifications" path="/org/ayatana/indicator/notifications/">
     <key name="blacklist" type="as">
       <default>[]</default>
       <_summary>Discard notifications by application name</_summary>
