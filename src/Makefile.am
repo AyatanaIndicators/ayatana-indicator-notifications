@@ -1,6 +1,6 @@
-notificationslibdir = $(INDICATORDIR)
-notificationslib_LTLIBRARIES = libnotifications.la
-libnotifications_la_SOURCES = \
+ayatananotificationslibdir = $(INDICATORDIR)
+ayatananotificationslib_LTLIBRARIES = libayatana-notifications.la
+libayatana_notifications_la_SOURCES = \
 	dbus-spy.c \
 	dbus-spy.h \
 	urlregex.c \
@@ -10,13 +10,13 @@ libnotifications_la_SOURCES = \
 	indicator-notifications.c \
 	notification.c \
 	notification.h
-libnotifications_la_CFLAGS = \
+libayatana_notifications_la_CFLAGS = \
 	$(INDICATOR_CFLAGS) \
 	-Wall \
-	-DG_LOG_DOMAIN=\"Ayatana-Indicator-Notifications\"
-libnotifications_la_LIBADD = \
+	-DG_LOG_DOMAIN=\"ayatana-indicator-notifications\"
+libayatana_notifications_la_LIBADD = \
 	$(INDICATOR_LIBS)
-libnotifications_la_LDFLAGS = \
+libayatana_notifications_la_LDFLAGS = \
 	-module \
 	-avoid-version
 
