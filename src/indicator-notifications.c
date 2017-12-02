@@ -32,9 +32,9 @@ with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <gdk-pixbuf/gdk-pixbuf.h>
 
 /* Indicator Stuff */
-#include <libindicator/indicator.h>
-#include <libindicator/indicator-object.h>
-#include <libindicator/indicator-service-manager.h>
+#include <libayatana-indicator/indicator.h>
+#include <libayatana-indicator/indicator-object.h>
+#include <libayatana-indicator/indicator-service-manager.h>
 
 #include "dbus-spy.h"
 #include "notification-menuitem.h"

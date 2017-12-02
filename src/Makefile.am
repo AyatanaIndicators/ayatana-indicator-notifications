@@ -13,7 +13,7 @@ libnotifications_la_SOURCES = \
 libnotifications_la_CFLAGS = \
 	$(INDICATOR_CFLAGS) \
 	-Wall \
-	-DG_LOG_DOMAIN=\"Indicator-Notifications\"
+	-DG_LOG_DOMAIN=\"Ayatana-Indicator-Notifications\"
 libnotifications_la_LIBADD = \
 	$(INDICATOR_LIBS)
 libnotifications_la_LDFLAGS = \

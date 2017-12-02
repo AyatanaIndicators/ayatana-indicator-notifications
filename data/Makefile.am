@@ -1,6 +1,6 @@
 SUBDIRS = icons
 
-gsettings_file = net.launchpad.indicator.notifications.gschema.xml
+gsettings_file = org.ayatana.indicator.notifications.gschema.xml
 gsettings_SCHEMAS = $(gsettings_file)
 
 @INTLTOOL_XML_NOMERGE_RULE@

@@ -1,4 +1,4 @@
-AC_INIT([indicator-notifications], [0.3.3], [jason.conti@gmail.com])
+AC_INIT([ayatana-indicator-notifications], [0.4.0], [jason.conti@gmail.com])
 
 AM_INIT_AUTOMAKE([-Wall -Werror])
 
@@ -30,7 +30,7 @@ GLIB_GSETTINGS
 INDICATOR_REQUIRED_VERSION=0.3.19
 GTK3_REQUIRED_VERSION=3.0
 
-INDICATOR3_PKG_NAME=indicator3-0.4
+INDICATOR3_PKG_NAME=ayatana-indicator3-0.4
 
 PKG_CHECK_MODULES(INDICATOR, $INDICATOR3_PKG_NAME >= $INDICATOR_REQUIRED_VERSION
                              gtk+-3.0 >= GTK3_REQUIRED_VERSION)
@@ -40,18 +40,7 @@ AC_SUBST(INDICATOR_LIBS)
 
 # Library directories from pkg-config
 
-with_localinstall="no"
-AC_ARG_ENABLE([localinstall],
-              [AS_HELP_STRING([--enable-localinstall],
-                  [set default library directories instead of asking pkg-config (default is no)])],
-              [with_localinstall="yes"],
-              [with_localinstall="no"])
-
-if test "x$with_localinstall" = "xyes"; then
-  INDICATORDIR="${libdir}/indicators/2/"
-else
-  INDICATORDIR=`$PKG_CONFIG --variable=indicatordir $INDICATOR3_PKG_NAME`
-fi
+INDICATORDIR=`$PKG_CONFIG --variable=indicatordir $INDICATOR3_PKG_NAME`
 INDICATORICONSDIR="${datadir}/pixmaps/"
 
 AC_SUBST(INDICATORDIR)
