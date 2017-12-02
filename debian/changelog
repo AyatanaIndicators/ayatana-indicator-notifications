@@ -1,0 +1,158 @@
+ayatana-indicator-notifications (0.4.0-0) UNRELEASED; urgency=medium
+
+  * Convert to Ayatana Indicators. Obtained from:
+    https://code.launchpad.net/~jconti/recent-notifications/indicator
+
+ -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Sat, 02 Dec 2017 18:51:33 +0100
+
+indicator-notifications (0.3.3-0~ppa~trusty) trusty; urgency=medium
+
+  * New upstream release.
+    - Add an option to clear notifications on icon middle click.
+
+ -- Jason Conti <jason.conti@gmail.com>  Wed, 15 Mar 2017 13:56:32 -0400
+
+indicator-notifications (0.3.2-0~ppa~trusty) trusty; urgency=medium
+
+  * New upstream release.
+    - Make sure to escape the urls.
+
+ -- Jason Conti <jason.conti@gmail.com>  Mon, 29 Aug 2016 14:51:29 -0400
+
+indicator-notifications (0.3.1-0~ppa~trusty) trusty; urgency=medium
+
+  * New upstream release.
+    - Added support for clicking links inside of the notification body.
+    - Previously a notification could be dismissed by clicking anywhere inside
+      of it, now there are three options:
+      + Click the close image (the X on the right of the notification)
+      + Press space to dismiss the notification but leave the window open
+      + Press enter to dismiss the notification but close the window
+    - The stock close image was replaced with custom images to show when a
+      notification is selected. These can be replaced in your icon theme:
+      + indicator-notification-close-select
+      + indicator-notification-close-deselect
+    - When the last notification is dismissed, close the menu
+
+ -- Jason Conti <jason.conti@gmail.com>  Mon, 29 Aug 2016 13:44:54 -0400
+
+indicator-notifications (0.2.7-0~ppa~trusty) trusty; urgency=medium
+
+  * New upstream release.
+    - Fix a serious memory leak in notification_new_from_dbus_message (LP:
+    #1391649)
+
+ -- Jason Conti <jason.conti@gmail.com>  Fri, 23 Oct 2015 18:00:19 -0400
+
+indicator-notifications (0.2.6-0~ppa~saucy) saucy; urgency=low
+
+  * New upstream release.
+    - Fix icon theme changes
+  * debian/patches/blacklist.patch:
+    - Dropped, included upstream
+
+ -- Jason Conti <jason.conti@gmail.com>  Wed, 15 Jan 2014 15:27:38 -0500
+
+indicator-notifications (0.2.5-0~ppa~saucy2) saucy; urgency=low
+
+  * debian/patches/blacklist.patch:
+    - New GSetting:
+      + "blacklist" - discard notifications matching appname
+
+ -- Jason Conti <jason.conti@gmail.com>  Mon, 13 Jan 2014 12:15:19 -0500
+
+indicator-notifications (0.2.5-0~ppa~quantal) quantal; urgency=low
+
+  * New upstream release.
+    - Add GSettings support:
+      + "hide-indicator" - show/hide the indicator (LP: #1128516)
+      + "max-items" - maximum number of notifications to display
+  * debian/patches/eavesdrop-on-bus.patch:
+    - Dropped, included upstream.
+
+ -- Jason Conti <jason.conti@gmail.com>  Sun, 17 Feb 2013 22:52:59 -0500
+
+indicator-notifications (0.2.4-0~ppa~quantal) quantal; urgency=low
+
+  * debian/patches/eavesdrop-on-bus.patch:
+    - Add eavesdrop=true to match string so we get notifications again.
+
+ -- Jason Conti <jason.conti@gmail.com>  Tue, 02 Oct 2012 15:04:50 -0400
+
+indicator-notifications (0.2.4-0~ppa~oneiric) oneiric; urgency=low
+
+  * New upstream release.
+    - Fix icon update on theme change.
+
+ -- Jason Conti <jason.conti@gmail.com>  Wed, 04 Apr 2012 21:20:15 -0400
+
+indicator-notifications (0.2.3-0~ppa~oneiric) oneiric; urgency=low
+
+  * New upstream release.
+    - Add secondary-activate to dismiss or reactivate unread status with
+      middle click.
+  * debian/control:
+    - Bump standards to 3.9.3
+
+ -- Jason Conti <jason.conti@gmail.com>  Wed, 04 Apr 2012 18:22:06 -0400
+
+indicator-notifications (0.2.2-0~ppa~oneiric) oneiric; urgency=low
+
+  * New upstream release.
+    - Add better filtering for volume/brightness notifications.
+    - Notifications can be removed using the keyboard.
+      + Use spacebar to keep the menu open
+      + Use enter to close the menu after remove a notification
+
+ -- Jason Conti <jason.conti@gmail.com>  Sun, 26 Feb 2012 15:29:49 -0500
+
+indicator-notifications (0.2.1-0~ppa~oneiric) oneiric; urgency=low
+
+  * New upstream release.
+    - Dropped notification service
+    - Indicate notification count on clear menuitem
+    - Keep a backlog of notifications beyond the limit of 5 visible
+    - Click a notification to remove it
+  * debian/rules:
+    - Use the dh sequencer
+    - Drop gtk2 build
+  * debian/patches/reposition-menu.patch:
+    - Dropped, reverted upstream
+  * debian/indicator-notifications-gtk2.install:
+    - Dropped, no longer building the gtk2 version (dropped upstream)
+
+ -- Jason Conti <jason.conti@gmail.com>  Sat, 25 Feb 2012 22:45:43 -0500
+
+indicator-notifications (0.1.4-2~ppa~oneiric) oneiric; urgency=low
+
+  * debian/patches/reposition-menu.patch:
+    - Backport menu positioning fix from lp:recent-notifications/indicator
+
+ -- Jason Conti <jason.conti@gmail.com>  Sat, 20 Aug 2011 15:03:16 -0400
+
+indicator-notifications (0.1.4-1~ppa~oneiric) oneiric; urgency=low
+
+  * New upstream release (LP: #828972)
+    - port to gtk3
+  * Build both gtk2 and gtk3 packages
+
+ -- Jason Conti <jason.conti@gmail.com>  Fri, 19 Aug 2011 13:51:47 -0400
+
+indicator-notifications (0.1.1-2~natty) natty; urgency=low
+
+  * Add intltool to the build-deps
+
+ -- Jason Conti <jason.conti@gmail.com>  Thu, 19 May 2011 22:25:46 -0400
+
+indicator-notifications (0.1.1-1~natty) natty; urgency=low
+
+  * New upstream release
+  * Removed several unnecessary dependencies
+
+ -- Jason Conti <jason.conti@gmail.com>  Thu, 19 May 2011 20:58:09 -0400
+
+indicator-notifications (0.1.0-1) natty; urgency=low
+
+  * Initial release
+
+ -- Jason Conti <jason.conti@gmail.com>  Thu, 19 May 2011 15:59:01 -0400

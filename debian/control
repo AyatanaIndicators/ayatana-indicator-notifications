@@ -1,0 +1,32 @@
+Source: ayatana-indicator-notifications
+Section: misc
+Priority: optional
+Maintainer: Jason Conti <jason.conti@gmail.com>
+Uploaders:
+ Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+Build-Depends: debhelper (>= 9),
+               dh-autoreconf | debhelper (>= 9.20160403~),
+               intltool,
+               libayatana-indicator-dev (>= 0.3.93),
+               libayatana-indicator3-dev (>= 0.3.93),
+               libglib2.0-dev (>= 2.29),
+               libgdk-pixbuf2.0-dev (>= 2.22),
+               libgtk-3-dev (>= 3.1),
+               mate-common,
+               pkg-config,
+Standards-Version: 4.1.1
+Homepage: https://github.com/AyatanaIndicators/ayatana-indicator-notifications
+Vcs-Git: https://github.com/AyatanaIndicators/ayatana-indicator-notifications
+Vcs-Browser: https://github.com/AyatanaIndicators/ayatana-indicator-notifications
+
+Package: ayatana-indicator-notifications
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Description: Ayatana Indicator for viewing recent notifications
+ An Ayatana Indicator applet to display recent notifications sent to a
+ notification daemon such as notify-osd.
+ .
+ This indicator comes with a configuration dialog that allows you to
+ tick notifications you want to receive in the future and those you
+ want to silence.
