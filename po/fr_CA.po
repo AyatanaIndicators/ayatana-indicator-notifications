@@ -1,0 +1,72 @@
+# French translations for PACKAGE package.
+# Copyright (C) 2017 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-02 19:20+0100\n"
+"PO-Revision-Date: 2017-12-02 19:20+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr_CA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in.h:1
+msgid "Discard notifications by application name"
+msgstr ""
+
+#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in.h:2
+msgid ""
+"If an application name is in the blacklist, all notifications matching the "
+"application name will be discarded."
+msgstr ""
+
+#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in.h:3
+msgid "Clear notifications on middle click"
+msgstr ""
+
+#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in.h:4
+msgid ""
+"Normally when middle clicking the notification icon, the unread status will "
+"be toggled if the queue is not empty. With this option enabled, the "
+"notification queue will be cleared instead."
+msgstr ""
+
+#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in.h:5
+msgid "Hide the indicator"
+msgstr ""
+
+#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in.h:6
+msgid "If true, the indicator is hidden."
+msgstr ""
+
+#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in.h:7
+msgid "Maximum number of visible items"
+msgstr ""
+
+#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in.h:8
+msgid ""
+"The indicator will only display at most the number of notifications "
+"indicated by this value."
+msgstr ""
+
+#: ../src/indicator-notifications.c:170
+msgid "Notifications"
+msgstr ""
+
+#: ../src/indicator-notifications.c:470
+#, c-format
+msgid "Clear <small>(%d Notification)</small>"
+msgid_plural "Clear <small>(%d Notifications)</small>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../src/notification-menuitem.c:129
+msgid "from"
+msgstr ""
