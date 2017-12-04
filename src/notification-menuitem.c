@@ -11,8 +11,8 @@
 #include "urlregex.h"
 
 #define NOTIFICATION_MENUITEM_MAX_CHARS 42
-#define NOTIFICATION_MENUITEM_CLOSE_SELECT "indicator-notification-close-select"
-#define NOTIFICATION_MENUITEM_CLOSE_DESELECT "indicator-notification-close-deselect"
+#define NOTIFICATION_MENUITEM_CLOSE_SELECT "ayatana-indicator-notification-close-select"
+#define NOTIFICATION_MENUITEM_CLOSE_DESELECT "ayatana-indicator-notification-close-deselect"
 
 enum {
   CLICKED,

@@ -94,8 +94,8 @@ struct _IndicatorNotificationsPrivate {
 #define NOTIFICATIONS_KEY_MAX_ITEMS      "max-items"
 
 #define INDICATOR_ICON_SIZE 22
-#define INDICATOR_ICON_READ   "indicator-notification-read"
-#define INDICATOR_ICON_UNREAD "indicator-notification-unread"
+#define INDICATOR_ICON_READ   "ayatana-indicator-notification-read"
+#define INDICATOR_ICON_UNREAD "ayatana-indicator-notification-unread"
 
 GType indicator_notifications_get_type(void);
 
