@@ -16,10 +16,24 @@ AC_PROG_LIBTOOL
 
 # Setup gettext with intltool
 
+AC_DEFUN([AC_DEFINE_PATH], [
+	test "x$prefix" = xNONE && prefix="$ac_default_prefix"
+	test "x$exec_prefix" = xNONE && exec_prefix='${prefix}'
+	ac_define_path=`eval echo [$]$2`
+	ac_define_path=`eval echo [$]ac_define_path`
+	$1="$ac_define_path"
+	AC_SUBST($1)
+	ifelse($3, ,
+		AC_DEFINE_UNQUOTED($1, "$ac_define_path"),
+		AC_DEFINE_UNQUOTED($1, "$ac_define_path", $3))
+])
+
 IT_PROG_INTLTOOL
 GETTEXT_PACKAGE=ayatana-indicator-notifications
-AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE], ["$GETTEXT_PACKAGE"], [Gettext package])
 AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE], ["$GETTEXT_PACKAGE"], [Gettext package])
+AC_DEFINE_PATH([LOCALEDIR], "${datadir}/locale", [locale directory])
+AM_GLIB_GNU_GETTEXT
 
 # Helpers for GSettings
 

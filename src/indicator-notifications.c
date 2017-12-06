@@ -141,6 +141,10 @@ indicator_notifications_class_init(IndicatorNotificationsClass *klass)
 {
   GObjectClass *object_class = G_OBJECT_CLASS (klass);
 
+  setlocale(LC_ALL, "");
+  bindtextdomain( GETTEXT_PACKAGE, LOCALEDIR );
+  textdomain( GETTEXT_PACKAGE );
+
   g_type_class_add_private(klass, sizeof(IndicatorNotificationsPrivate));
 
   object_class->dispose = indicator_notifications_dispose;
