@@ -73,8 +73,8 @@ msgstr "Benachrichtigungen"
 #, c-format
 msgid "Clear <small>(%d Notification)</small>"
 msgid_plural "Clear <small>(%d Notifications)</small>"
-msgstr[0] "Verwerfe <small>(%d Benachrichtigung)</small>"
-msgstr[1] "Verwerfe <small>(%d Benachrichtigungen)</small>"
+msgstr[0] "Liste leeren <small>(%d Benachrichtigung)</small>"
+msgstr[1] "Liste leeren <small>(%d Benachrichtigungen)</small>"
 
 #: ../src/notification-menuitem.c:129
 msgid "from"
