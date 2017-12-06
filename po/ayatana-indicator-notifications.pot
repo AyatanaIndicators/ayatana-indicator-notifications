@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-02 19:20+0100\n"
+"POT-Creation-Date: 2017-12-06 09:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,40 +18,40 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in.h:1
+#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
 msgid "Discard notifications by application name"
 msgstr ""
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in.h:2
+#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
 msgid ""
 "If an application name is in the blacklist, all notifications matching the "
 "application name will be discarded."
 msgstr ""
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in.h:3
+#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
 msgid "Clear notifications on middle click"
 msgstr ""
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in.h:4
+#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:4
 msgid ""
 "Normally when middle clicking the notification icon, the unread status will "
 "be toggled if the queue is not empty. With this option enabled, the "
 "notification queue will be cleared instead."
 msgstr ""
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in.h:5
+#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:5
 msgid "Hide the indicator"
 msgstr ""
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in.h:6
+#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:6
 msgid "If true, the indicator is hidden."
 msgstr ""
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in.h:7
+#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:7
 msgid "Maximum number of visible items"
 msgstr ""
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in.h:8
+#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:8
 msgid ""
 "The indicator will only display at most the number of notifications "
 "indicated by this value."
