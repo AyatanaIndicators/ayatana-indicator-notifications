@@ -18,8 +18,9 @@ GETTEXT_DOMAIN=$(cat configure.ac | grep -E "^GETTEXT_PACKAGE=" | sed -e 's/GETT
 
 cd po/ && intltool-update --gettext-package ${GETTEXT_DOMAIN} --pot && cd - 1>/dev/null
 
-sed -e 's/\.xml\.in\.h:/.xml.in:/g'	\
-    -e 's/\.ini\.in\.h:/.ini.in:/g'	\
-    -e 's/\.xml\.h:/.xml:/g'		\
-    -e 's/\.ini\.h:/.ini:/g'		\
+sed -e 's/\.xml\.in\.in.\h:/.xml.in.in:/g'	\
+    -e 's/\.xml\.in\.h:/.xml.in:/g'		\
+    -e 's/\.ini\.in\.h:/.ini.in:/g'		\
+    -e 's/\.xml\.h:/.xml:/g'			\
+    -e 's/\.ini\.h:/.ini:/g'			\
     -i po/${GETTEXT_DOMAIN}.pot
