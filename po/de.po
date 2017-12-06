@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
 msgid "Discard notifications by application name"
-msgstr "Verwerfe Benachrichtigungen anhand des Anwendungsnamen "
+msgstr "Verwerfe Benachrichtigungen anhand des Anwendungsnamen"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
 msgid ""
@@ -43,7 +43,7 @@ msgstr ""
 "Ist die Nachrichtenliste nicht leer, dann wird normalerweise bei Anklicken "
 "des Benachrichtigungssymbols mit mittlerer Maustaste der Gelesen-Ungelesen-"
 "Status hin- und hergeschaltet. Ist diese Option aktiviert, dann wird die "
-"Nachrichtenliste statt dessen geleert. "
+"Nachrichtenliste statt dessen geleert."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:5
 msgid "Hide the indicator"
