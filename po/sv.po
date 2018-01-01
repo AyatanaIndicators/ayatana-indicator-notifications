@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-06 09:15+0100\n"
-"PO-Revision-Date: 2017-12-31 15:17+0000\n"
-"Last-Translator: Sebastian Rasmussen <sebras@gmail.com>\n"
+"PO-Revision-Date: 2018-01-24 12:31+0000\n"
+"Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/ayatana-"
 "indicators/notifications-applet/sv/>\n"
 "Language: sv\n"
@@ -21,19 +21,19 @@ msgstr ""
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
 msgid "Discard notifications by application name"
-msgstr "Förkasta notifieringar efter programnamn"
+msgstr "Förkasta aviseringar efter programnamn"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
 msgid ""
 "If an application name is in the blacklist, all notifications matching the "
 "application name will be discarded."
 msgstr ""
-"Om ett programnamn finns i svartlistan kommer alla notifieringar som matchar "
+"Om ett programnamn finns i svartlistan kommer alla aviseringar som matchar "
 "programnamnet att förkastas."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
 msgid "Clear notifications on middle click"
-msgstr "Rensa notifieringar vid mittenklick"
+msgstr "Rensa aviseringar vid mittenklick"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:4
 msgid ""
@@ -41,9 +41,9 @@ msgid ""
 "be toggled if the queue is not empty. With this option enabled, the "
 "notification queue will be cleared instead."
 msgstr ""
-"Normalt när notifieringsikonen mittenklickas på kommer det oläsbara "
+"Normalt när aviseringsikonen mittenklickas på kommer det oläsbara "
 "tillståndet att växlas om kön inte är tom. Med detta alternativ aktiverat "
-"kommer notifieringskön att rensas istället."
+"kommer aviseringskön att rensas istället."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:5
 msgid "Hide the indicator"
@@ -61,18 +61,18 @@ msgstr "Maximalt antal synliga objekt"
 msgid ""
 "The indicator will only display at most the number of notifications "
 "indicated by this value."
-msgstr "Indikatorn kommer som mest att visa detta antal notifieringar."
+msgstr "Indikatorn kommer som mest att visa detta antal aviseringar."
 
 #: ../src/indicator-notifications.c:170
 msgid "Notifications"
-msgstr "Notifieringar"
+msgstr "Aviseringar"
 
 #: ../src/indicator-notifications.c:470
 #, c-format
 msgid "Clear <small>(%d Notification)</small>"
 msgid_plural "Clear <small>(%d Notifications)</small>"
 msgstr[0] "Rensa <small>(%d notifiering)</small>"
-msgstr[1] "Rensa <small>(%d notifieringar)</small>"
+msgstr[1] "Rensa <small>(%d aviseringar)</small>"
 
 #: ../src/notification-menuitem.c:129
 msgid "from"
