@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-06 09:15+0100\n"
-"PO-Revision-Date: 2017-12-02 19:20+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2018-02-09 11:40+0000\n"
+"Last-Translator: Mertcan Gokgoz <mertcan.gokgoz@gmail.com>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/ayatana-"
+"indicators/notifications-applet/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.19-dev\n"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
 msgid "Discard notifications by application name"
@@ -26,6 +28,8 @@ msgid ""
 "If an application name is in the blacklist, all notifications matching the "
 "application name will be discarded."
 msgstr ""
+"Bir uygulama adı kara liste içinde ise, uygulama adıyla eşleşen tüm "
+"bildirimleri yoksayılır."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
 msgid "Clear notifications on middle click"
@@ -40,15 +44,15 @@ msgstr ""
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:5
 msgid "Hide the indicator"
-msgstr ""
+msgstr "Göstergesi gizle"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:6
 msgid "If true, the indicator is hidden."
-msgstr ""
+msgstr "Eğer doğruysa, gösterge gizlidir."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:7
 msgid "Maximum number of visible items"
-msgstr ""
+msgstr "En fazla görünür öğe sayısı"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:8
 msgid ""
