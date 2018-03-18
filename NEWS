@@ -1,0 +1,8 @@
+Overview of changes in ayatana-indicator-notifications 0.4.0
+
+  - Convert into Ayatana Indicator, original code was Ubuntu Indicator,obtained
+    from: https://code.launchpad.net/~jconti/recent-notifications/indicator
+  - Move translation management to https://hosted.weblate.org
+  - Translations added: Lithuanian, Russian, Romanian, Ukrainian, Swedish,
+    Norwegian Bokmål, Estonian, and Belarusian. Thanks to the i18n folks on
+    hosted.weblate.org!!!
