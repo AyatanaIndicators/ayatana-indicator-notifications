@@ -23,6 +23,9 @@ override_dh_auto_install:
 	dh_auto_install
 	find debian/ayatana-indicator-notifications -name \*.la -delete
 
+override_dh_installchangelogs:
+	dh_installchangelogs NEWS
+
 override_dh_auto_clean:
 	dh_auto_clean
 	if [ -e po/ayatana-indicator-notifications.pot.bak ]; then \
