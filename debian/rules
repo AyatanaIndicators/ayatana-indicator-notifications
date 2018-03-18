@@ -28,3 +28,5 @@ override_dh_auto_clean:
 	if [ -e po/ayatana-indicator-notifications.pot.bak ]; then \
 	    mv -f po/ayatana-indicator-notifications.pot.bak po/ayatana-indicator-notifications.pot; \
 	fi
+	rm -f config.guess
+	rm -f config.sub
