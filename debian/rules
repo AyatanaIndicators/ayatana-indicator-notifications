@@ -10,6 +10,9 @@ include /usr/share/dpkg/buildflags.mk
 	dh $@ --with autoreconf
 
 override_dh_autoreconf:
+	if [ ! -e po/ayatana-indicator-notifications.pot.bak ]; then \
+	    cp po/ayatana-indicator-notifications.pot po/ayatana-indicator-notifications.pot.bak; \
+	fi
 	NOCONFIGURE=1 dh_autoreconf ./autogen.sh
 
 override_dh_auto_configure:
@@ -19,3 +22,9 @@ override_dh_auto_configure:
 override_dh_auto_install:
 	dh_auto_install
 	find debian/ayatana-indicator-notifications -name \*.la -delete
+
+override_dh_auto_clean:
+	dh_auto_clean
+	if [ -e po/ayatana-indicator-notifications.pot.bak ]; then \
+	    mv -f po/ayatana-indicator-notifications.pot.bak po/ayatana-indicator-notifications.pot; \
+	fi
