@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: ayatana-indicator-notifications
 Upstream-Contact: Jason Conti <jason.conti@gmail.com>
-Source: https://github.com/AyatanaIndicators/ayatana-indicator-messages
+Source: https://github.com/AyatanaIndicators/ayatana-indicator-notifications
 
 Files: *
 Copyright: 2011, Jason Conti <jason.conti@gmail.com>
