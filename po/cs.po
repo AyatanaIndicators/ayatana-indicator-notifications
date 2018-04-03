@@ -68,7 +68,7 @@ msgstr "Oznámení"
 #, c-format
 msgid "Clear <small>(%d Notification)</small>"
 msgid_plural "Clear <small>(%d Notifications)</small>"
-msgstr[0] "Vyčistit"
+msgstr[0] "Vyčistit <small>(%d oznámení)"
 msgstr[1] ""
 msgstr[2] ""
 
