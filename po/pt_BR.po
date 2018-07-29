@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-06 09:15+0100\n"
-"PO-Revision-Date: 2018-06-30 01:36+0000\n"
-"Last-Translator: Jonathan Ramos dos Santos <jonathanr.java@gmail.com>\n"
+"PO-Revision-Date: 2018-07-30 02:42+0000\n"
+"Last-Translator: chrismeurer <christianmeurer@outlook.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "ayatana-indicators/notifications-applet/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.1-dev\n"
+"X-Generator: Weblate 3.1.1\n"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
 msgid "Discard notifications by application name"
@@ -60,7 +60,7 @@ msgstr ""
 
 #: ../src/indicator-notifications.c:170
 msgid "Notifications"
-msgstr ""
+msgstr "Notificações"
 
 #: ../src/indicator-notifications.c:470
 #, c-format
