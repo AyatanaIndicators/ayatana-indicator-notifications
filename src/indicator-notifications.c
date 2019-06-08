@@ -21,11 +21,6 @@ with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "config.h"
 #endif
 
-#include <locale.h>
-#include <langinfo.h>
-#include <string.h>
-#include <time.h>
-
 /* GStuff */
 #include <glib.h>
 #include <glib/gi18n-lib.h>
@@ -74,6 +69,7 @@ struct _IndicatorNotificationsPrivate {
   GtkMenu     *menu;
   GtkWidget   *clear_item;
   GtkWidget   *clear_item_label;
+  GtkWidget   *settings_item;
 
   gchar       *accessible_desc;
 
@@ -87,11 +83,7 @@ struct _IndicatorNotificationsPrivate {
 #define INDICATOR_NOTIFICATIONS_GET_PRIVATE(o) \
 (G_TYPE_INSTANCE_GET_PRIVATE ((o), INDICATOR_NOTIFICATIONS_TYPE, IndicatorNotificationsPrivate))
 
-#define NOTIFICATIONS_SCHEMA             "org.ayatana.indicator.notifications"
-#define NOTIFICATIONS_KEY_BLACKLIST      "blacklist"
-#define NOTIFICATIONS_KEY_CLEAR_MC       "clear-on-middle-click"
-#define NOTIFICATIONS_KEY_HIDE_INDICATOR "hide-indicator"
-#define NOTIFICATIONS_KEY_MAX_ITEMS      "max-items"
+#include "settings.h"
 
 #define INDICATOR_ICON_SIZE 22
 #define INDICATOR_ICON_READ   "ayatana-indicator-notification-read"
@@ -115,13 +107,13 @@ static void         indicator_notifications_middle_click(IndicatorObject *io,
                                                          gpointer user_data);
 
 /* Utility Functions */
-static void       clear_menuitems(IndicatorNotifications *self);
-static void       insert_menuitem(IndicatorNotifications *self, GtkWidget *item);
-static void       remove_menuitem(IndicatorNotifications *self, GtkWidget *item);
-static void       set_unread(IndicatorNotifications *self, gboolean unread);
-static void       update_blacklist(IndicatorNotifications *self);
-static void       update_clear_item_markup(IndicatorNotifications *self);
-static void       update_indicator_visibility(IndicatorNotifications *self);
+static void clear_menuitems(IndicatorNotifications *self);
+static void insert_menuitem(IndicatorNotifications *self, GtkWidget *item);
+static void remove_menuitem(IndicatorNotifications *self, GtkWidget *item);
+static void set_unread(IndicatorNotifications *self, gboolean unread);
+static void update_blacklist(IndicatorNotifications *self);
+static void update_clear_item_markup(IndicatorNotifications *self);
+static void update_indicator_visibility(IndicatorNotifications *self);
 
 /* Callbacks */
 static void clear_item_activated_cb(GtkMenuItem *menuitem, gpointer user_data);
@@ -129,12 +121,13 @@ static void menu_visible_notify_cb(GtkWidget *menu, GParamSpec *pspec, gpointer 
 static void message_received_cb(DBusSpy *spy, Notification *note, gpointer user_data);
 static void notification_clicked_cb(NotificationMenuItem *menuitem, guint button, gpointer user_data);
 static void setting_changed_cb(GSettings *settings, gchar *key, gpointer user_data);
+static void settings_item_activated_cb(GtkMenuItem *menuitem, gpointer user_data);
 
 /* Indicator Module Config */
 INDICATOR_SET_VERSION
 INDICATOR_SET_TYPE(INDICATOR_NOTIFICATIONS_TYPE)
 
-G_DEFINE_TYPE (IndicatorNotifications, indicator_notifications, INDICATOR_OBJECT_TYPE);
+G_DEFINE_TYPE(IndicatorNotifications, indicator_notifications, INDICATOR_OBJECT_TYPE);
 
 static void
 indicator_notifications_class_init(IndicatorNotificationsClass *klass)
@@ -179,9 +172,17 @@ indicator_notifications_init(IndicatorNotifications *self)
   self->priv->menu = GTK_MENU(gtk_menu_new());
   g_signal_connect(self->priv->menu, "notify::visible", G_CALLBACK(menu_visible_notify_cb), self);
 
+  /* Create the settings menuitem */
+  self->priv->settings_item = gtk_menu_item_new_with_label(_("Settings..."));
+  g_signal_connect(self->priv->settings_item, "activate", G_CALLBACK(settings_item_activated_cb), NULL);
+  gtk_widget_show(self->priv->settings_item);
+
+  gtk_menu_shell_prepend(GTK_MENU_SHELL(self->priv->menu), self->priv->settings_item);
+
   /* Create the clear menuitem */
   self->priv->clear_item_label = gtk_label_new(NULL);
-  gtk_misc_set_alignment(GTK_MISC(self->priv->clear_item_label), 0, 0);
+  gtk_label_set_xalign(GTK_LABEL(self->priv->clear_item_label), 0);
+  gtk_label_set_yalign(GTK_LABEL(self->priv->clear_item_label), 0);
   gtk_label_set_use_markup(GTK_LABEL(self->priv->clear_item_label), TRUE);
   update_clear_item_markup(self);
   gtk_widget_show(self->priv->clear_item_label);
@@ -519,6 +520,35 @@ clear_item_activated_cb(GtkMenuItem *menuitem, gpointer user_data)
   IndicatorNotifications *self = INDICATOR_NOTIFICATIONS(user_data);
 
   clear_menuitems(self);
+}
+
+/**
+ * settings_item_activated_cb:
+ * @menuitem: the settings menuitem
+ * @user_data: the indicator object
+ *
+ * Called when the settings menuitem is activated.
+ **/
+static void
+settings_item_activated_cb(GtkMenuItem *menuitem, gpointer user_data)
+{
+  g_return_if_fail(GTK_IS_MENU_ITEM(menuitem));
+
+  GError *error = NULL;
+
+  gchar *argv[] = { SETTINGS_PATH, NULL };
+
+  GPid pid;
+
+  g_spawn_async(NULL, argv, NULL, G_SPAWN_DEFAULT, NULL, NULL, &pid, &error);
+
+  if (error != NULL) {
+    g_message("%s", error->message);
+    g_error_free(error);
+  }
+  else {
+    g_spawn_close_pid(pid);
+  }
 }
 
 /**
