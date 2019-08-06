@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-06 09:15+0100\n"
-"PO-Revision-Date: 2019-07-02 20:01+0000\n"
-"Last-Translator: Elizabeth Sherrock <lizzyd710@gmail.com>\n"
+"PO-Revision-Date: 2019-08-07 03:23+0000\n"
+"Last-Translator: Chang Xin <1796162147@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "ayatana-indicators/notifications-applet/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -60,7 +60,7 @@ msgstr ""
 
 #: ../src/indicator-notifications.c:170
 msgid "Notifications"
-msgstr ""
+msgstr "通知"
 
 #: ../src/indicator-notifications.c:470
 #, c-format
