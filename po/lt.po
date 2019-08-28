@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-06 09:15+0100\n"
+"POT-Creation-Date: 2019-08-28 20:16+0200\n"
 "PO-Revision-Date: 2018-03-01 10:31+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://hosted.weblate.org/projects/ayatana-"
@@ -21,7 +21,9 @@ msgstr ""
 "1 : 2);\n"
 "X-Generator: Weblate 2.20-dev\n"
 
+#. blacklist
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
+#: ../src/indicator-notifications-settings.c:274
 msgid "Discard notifications by application name"
 msgstr "Atmesti pranešimus pagal programos pavadinimą"
 
@@ -33,7 +35,9 @@ msgstr ""
 "Jei programa yra juodajame sąraše, tuomet visi programą atitinkantys "
 "pranešimai bus atmetami."
 
+#. clear-on-middle-click
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
+#: ../src/indicator-notifications-settings.c:244
 msgid "Clear notifications on middle click"
 msgstr "Išvalyti pranešimus, spustelėjus vidurinįjį pelės mygtuką"
 
@@ -67,17 +71,50 @@ msgstr ""
 "Indikatorius daugiausiai rodys tiek pranešimų, kiek yra nurodyta šioje "
 "reikšmėje."
 
-#: ../src/indicator-notifications.c:170
+#: ../src/indicator-notifications.c:167
 msgid "Notifications"
 msgstr "Pranešimai"
 
-#: ../src/indicator-notifications.c:470
+#. Create the settings menuitem
+#: ../src/indicator-notifications.c:176
+msgid "Settings..."
+msgstr ""
+
+#: ../src/indicator-notifications.c:475
 #, c-format
 msgid "Clear <small>(%d Notification)</small>"
 msgid_plural "Clear <small>(%d Notifications)</small>"
 msgstr[0] "Išvalyti <small>(%d pranešimą)</small>"
 msgstr[1] "Išvalyti <small>(%d pranešimus)</small>"
 msgstr[2] "Išvalyti <small>(%d pranešimų)</small>"
+
+#. Window Frame
+#: ../src/indicator-notifications-settings.c:227
+#: ../src/indicator-notifications-settings.c:233
+#: ../src/indicator-notifications-settings.c:348
+msgid "Indicator Notifications Settings"
+msgstr ""
+
+#. hide-indicator
+#: ../src/indicator-notifications-settings.c:253
+#, fuzzy
+msgid "Hide indicator"
+msgstr "Slėpti indikatorių"
+
+#. max-items
+#. FIXME: indicator does not change max items until restart...
+#: ../src/indicator-notifications-settings.c:263
+#, fuzzy
+msgid "Maximum number of visible notifications"
+msgstr "Didžiausias matomų elementų skaičius"
+
+#: ../src/indicator-notifications-settings.c:299
+msgid "Remove"
+msgstr ""
+
+#: ../src/indicator-notifications-settings.c:304
+msgid "Add"
+msgstr ""
 
 #: ../src/notification-menuitem.c:129
 msgid "from"

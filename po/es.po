@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-06 09:15+0100\n"
+"POT-Creation-Date: 2019-08-28 20:16+0200\n"
 "PO-Revision-Date: 2018-05-02 18:46+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/"
-"ayatana-indicators/notifications-applet/es/>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/ayatana-"
+"indicators/notifications-applet/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +19,9 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.0-dev\n"
 
+#. blacklist
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
+#: ../src/indicator-notifications-settings.c:274
 msgid "Discard notifications by application name"
 msgstr "Descartar notificaciones por nombre de aplicación"
 
@@ -31,7 +33,9 @@ msgstr ""
 "Si un nombre de aplicación está en la lista negra, se descartarán todas las "
 "notificaciones que porten ese nombre."
 
+#. clear-on-middle-click
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
+#: ../src/indicator-notifications-settings.c:244
 msgid "Clear notifications on middle click"
 msgstr "Vaciar las notificaciones con pulsación central"
 
@@ -65,16 +69,49 @@ msgstr ""
 "El indicador mostrará como máximo la cantidad de notificaciones "
 "correspondiente a este valor."
 
-#: ../src/indicator-notifications.c:170
+#: ../src/indicator-notifications.c:167
 msgid "Notifications"
 msgstr "Notificaciones"
 
-#: ../src/indicator-notifications.c:470
+#. Create the settings menuitem
+#: ../src/indicator-notifications.c:176
+msgid "Settings..."
+msgstr ""
+
+#: ../src/indicator-notifications.c:475
 #, c-format
 msgid "Clear <small>(%d Notification)</small>"
 msgid_plural "Clear <small>(%d Notifications)</small>"
 msgstr[0] "Vaciar <small>(%d notificación)</small>"
 msgstr[1] "Vaciar <small>(%d notificaciones)</small>"
+
+#. Window Frame
+#: ../src/indicator-notifications-settings.c:227
+#: ../src/indicator-notifications-settings.c:233
+#: ../src/indicator-notifications-settings.c:348
+msgid "Indicator Notifications Settings"
+msgstr ""
+
+#. hide-indicator
+#: ../src/indicator-notifications-settings.c:253
+#, fuzzy
+msgid "Hide indicator"
+msgstr "Ocultar el indicador"
+
+#. max-items
+#. FIXME: indicator does not change max items until restart...
+#: ../src/indicator-notifications-settings.c:263
+#, fuzzy
+msgid "Maximum number of visible notifications"
+msgstr "Número máximo de elementos visibles"
+
+#: ../src/indicator-notifications-settings.c:299
+msgid "Remove"
+msgstr ""
+
+#: ../src/indicator-notifications-settings.c:304
+msgid "Add"
+msgstr ""
 
 #: ../src/notification-menuitem.c:129
 msgid "from"
