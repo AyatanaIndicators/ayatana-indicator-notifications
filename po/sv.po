@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-28 20:16+0200\n"
-"PO-Revision-Date: 2018-03-30 21:41+0000\n"
+"PO-Revision-Date: 2019-08-30 11:24+0000\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
-"Language-Team: Swedish <https://hosted.weblate.org/projects/ayatana-"
-"indicators/notifications-applet/sv/>\n"
+"Language-Team: Swedish <https://hosted.weblate.org/projects/"
+"ayatana-indicators/notifications-applet/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.20-dev\n"
+"X-Generator: Weblate 3.9-dev\n"
 
 #. blacklist
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
@@ -74,7 +74,7 @@ msgstr "Aviseringar"
 #. Create the settings menuitem
 #: ../src/indicator-notifications.c:176
 msgid "Settings..."
-msgstr ""
+msgstr "Inställningar…"
 
 #: ../src/indicator-notifications.c:475
 #, c-format
@@ -92,24 +92,22 @@ msgstr ""
 
 #. hide-indicator
 #: ../src/indicator-notifications-settings.c:253
-#, fuzzy
 msgid "Hide indicator"
 msgstr "Göm indikatorn"
 
 #. max-items
 #. FIXME: indicator does not change max items until restart...
 #: ../src/indicator-notifications-settings.c:263
-#, fuzzy
 msgid "Maximum number of visible notifications"
-msgstr "Maximalt antal synliga objekt"
+msgstr "Maximalt antal synliga aviseringar"
 
 #: ../src/indicator-notifications-settings.c:299
 msgid "Remove"
-msgstr ""
+msgstr "Ta bort"
 
 #: ../src/indicator-notifications-settings.c:304
 msgid "Add"
-msgstr ""
+msgstr "Lägg till"
 
 #: ../src/notification-menuitem.c:129
 msgid "from"
