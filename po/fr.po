@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-28 20:16+0200\n"
-"PO-Revision-Date: 2019-08-01 05:12+0000\n"
-"Last-Translator: Simon Picot <simonpicot06@gmail.com>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/ayatana-"
-"indicators/notifications-applet/fr/>\n"
+"PO-Revision-Date: 2019-09-03 20:24+0000\n"
+"Last-Translator: Swann Martinet <swann.ranskassa@laposte.net>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/"
+"ayatana-indicators/notifications-applet/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.8-dev\n"
+"X-Generator: Weblate 3.9-dev\n"
 
 #. blacklist
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
@@ -37,7 +37,7 @@ msgstr ""
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
 #: ../src/indicator-notifications-settings.c:244
 msgid "Clear notifications on middle click"
-msgstr "Supprimer les notifications sur le clic du milieu"
+msgstr "Effacer les notifications par un clic du milieu"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:4
 msgid ""
@@ -45,24 +45,29 @@ msgid ""
 "be toggled if the queue is not empty. With this option enabled, the "
 "notification queue will be cleared instead."
 msgstr ""
+"Normalement, en cliquant au milieu de l'icône de la notification, l'état non "
+"lu sera basculé si la file d'attente n'est pas vide. Avec cette option "
+"activée, la file d'attente de notification sera effacée à la place."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:5
 msgid "Hide the indicator"
-msgstr ""
+msgstr "Masquer l'indicateur"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:6
 msgid "If true, the indicator is hidden."
-msgstr ""
+msgstr "Si vrai, l'indicateur est masqué."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:7
 msgid "Maximum number of visible items"
-msgstr ""
+msgstr "Nombre maximum d'éléments visibles"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:8
 msgid ""
 "The indicator will only display at most the number of notifications "
 "indicated by this value."
 msgstr ""
+"L'indicateur affichera seulement au maximum le nombre de notifications "
+"indiquées par cette valeur."
 
 #: ../src/indicator-notifications.c:167
 msgid "Notifications"
@@ -71,41 +76,41 @@ msgstr "Notifications"
 #. Create the settings menuitem
 #: ../src/indicator-notifications.c:176
 msgid "Settings..."
-msgstr ""
+msgstr "Paramètres…"
 
 #: ../src/indicator-notifications.c:475
 #, c-format
 msgid "Clear <small>(%d Notification)</small>"
 msgid_plural "Clear <small>(%d Notifications)</small>"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Effcer <small>(%d notification)</small>"
+msgstr[1] "Effacer <small>(%d notifications)</small>"
 
 #. Window Frame
 #: ../src/indicator-notifications-settings.c:227
 #: ../src/indicator-notifications-settings.c:233
 #: ../src/indicator-notifications-settings.c:348
 msgid "Indicator Notifications Settings"
-msgstr ""
+msgstr "Paramètres de l'indicateur de notifications"
 
 #. hide-indicator
 #: ../src/indicator-notifications-settings.c:253
 msgid "Hide indicator"
-msgstr ""
+msgstr "Masquer l'indicateur"
 
 #. max-items
 #. FIXME: indicator does not change max items until restart...
 #: ../src/indicator-notifications-settings.c:263
 msgid "Maximum number of visible notifications"
-msgstr ""
+msgstr "Nombre maximal de notifications visibles"
 
 #: ../src/indicator-notifications-settings.c:299
 msgid "Remove"
-msgstr ""
+msgstr "Enlever"
 
 #: ../src/indicator-notifications-settings.c:304
 msgid "Add"
-msgstr ""
+msgstr "Ajouter"
 
 #: ../src/notification-menuitem.c:129
 msgid "from"
-msgstr ""
+msgstr "de"
