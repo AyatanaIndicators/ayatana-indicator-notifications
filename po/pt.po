@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-28 20:16+0200\n"
-"PO-Revision-Date: 2019-04-18 16:03+0000\n"
-"Last-Translator: Rui Mendes <xz9@protonmail.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/ayatana-"
-"indicators/notifications-applet/pt/>\n"
+"PO-Revision-Date: 2019-10-24 16:53+0000\n"
+"Last-Translator: Fontanela <gabriel-fontanela11@hotmail.com>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/"
+"ayatana-indicators/notifications-applet/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.6-dev\n"
+"X-Generator: Weblate 3.9.1-dev\n"
 
 #. blacklist
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
@@ -37,7 +37,7 @@ msgstr ""
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
 #: ../src/indicator-notifications-settings.c:244
 msgid "Clear notifications on middle click"
-msgstr "Limpar as notificações com clique do botão do meio do rato"
+msgstr "Apagar notificações ao apertar o botão do meio"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:4
 msgid ""
@@ -94,16 +94,14 @@ msgstr ""
 
 #. hide-indicator
 #: ../src/indicator-notifications-settings.c:253
-#, fuzzy
 msgid "Hide indicator"
-msgstr "Ocultar o indicador"
+msgstr "Ocultar código"
 
 #. max-items
 #. FIXME: indicator does not change max items until restart...
 #: ../src/indicator-notifications-settings.c:263
-#, fuzzy
 msgid "Maximum number of visible notifications"
-msgstr "Número máximo de itens visíveis"
+msgstr "Número máximo de notificações visíveis"
 
 #: ../src/indicator-notifications-settings.c:299
 msgid "Remove"
