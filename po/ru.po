@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-28 20:16+0200\n"
-"PO-Revision-Date: 2018-02-28 01:50+0000\n"
-"Last-Translator: Мира Странная <miraityan2004@gmail.com>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/ayatana-"
-"indicators/notifications-applet/ru/>\n"
+"PO-Revision-Date: 2019-11-05 13:03+0000\n"
+"Last-Translator: maryl <bmaryla2@mail.ru>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/"
+"ayatana-indicators/notifications-applet/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.20-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.10-dev\n"
 
 #. blacklist
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
@@ -75,7 +75,7 @@ msgstr "Уведомления"
 #. Create the settings menuitem
 #: ../src/indicator-notifications.c:176
 msgid "Settings..."
-msgstr ""
+msgstr "Настройки..."
 
 #: ../src/indicator-notifications.c:475
 #, c-format
@@ -90,7 +90,7 @@ msgstr[2] "Очистить <small>(%d уведомлений)</small>"
 #: ../src/indicator-notifications-settings.c:233
 #: ../src/indicator-notifications-settings.c:348
 msgid "Indicator Notifications Settings"
-msgstr ""
+msgstr "Индикатор Настройки уведомлений"
 
 #. hide-indicator
 #: ../src/indicator-notifications-settings.c:253
