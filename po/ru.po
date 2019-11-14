@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-28 20:16+0200\n"
-"PO-Revision-Date: 2019-11-05 13:03+0000\n"
-"Last-Translator: maryl <bmaryla2@mail.ru>\n"
+"PO-Revision-Date: 2019-11-16 15:04+0000\n"
+"Last-Translator: winqooq <winqooq@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/"
 "ayatana-indicators/notifications-applet/ru/>\n"
 "Language: ru\n"
@@ -94,24 +94,22 @@ msgstr "Индикатор Настройки уведомлений"
 
 #. hide-indicator
 #: ../src/indicator-notifications-settings.c:253
-#, fuzzy
 msgid "Hide indicator"
 msgstr "Спрятать индикатор"
 
 #. max-items
 #. FIXME: indicator does not change max items until restart...
 #: ../src/indicator-notifications-settings.c:263
-#, fuzzy
 msgid "Maximum number of visible notifications"
-msgstr "Наибольшее количество видимых элементов"
+msgstr "Максимальное количество уведомлений"
 
 #: ../src/indicator-notifications-settings.c:299
 msgid "Remove"
-msgstr ""
+msgstr "Удалить"
 
 #: ../src/indicator-notifications-settings.c:304
 msgid "Add"
-msgstr ""
+msgstr "Добавить"
 
 #: ../src/notification-menuitem.c:129
 msgid "from"
