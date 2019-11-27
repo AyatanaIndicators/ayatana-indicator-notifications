@@ -1,3 +1,9 @@
+Overview of changes in ayatana-indicator-notifications 0.4.1
+
+  - Translation updates. (Awesome thanks to all translators on
+    hosted Weblate).
+  - Add settings dialog.
+
 Overview of changes in ayatana-indicator-notifications 0.4.0
 
   - Convert into Ayatana Indicator, original code was Ubuntu Indicator,obtained

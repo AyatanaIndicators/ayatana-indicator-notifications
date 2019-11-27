@@ -1,6 +1,190 @@
-2018-03-18 15:19:38 +0100 Mike Gabriel (0618e46)
+2019-11-27 10:03:53 +0100 Mike Gabriel
 
-	* release 0.4.0 (HEAD -> master)
+	* release 0.4.1 (HEAD -> master, tag: 0.4.1)
+
+2019-11-22 16:19:58 +0000 Burak Balta (191e5e5)
+
+	* Translated using Weblate (Turkish)
+
+2019-11-15 14:34:36 +0000 Theeiss (b10ea19)
+
+	* Translated using Weblate (Portuguese)
+
+2019-11-14 15:27:54 +0000 winqooq (48c6f82)
+
+	* Translated using Weblate (Russian)
+
+2019-11-10 09:33:03 +0000 Allan Nordhøy (482fa06)
+
+	* Translated using Weblate (Norwegian Bokmål)
+
+2019-11-06 22:52:53 +0000 Deleted User (1703507)
+
+	* Translated using Weblate (Norwegian Bokmål)
+
+2019-11-04 12:40:50 +0000 maryl (2ca658f)
+
+	* Translated using Weblate (Russian)
+
+2019-11-02 14:18:32 +0000 Allan Nordhøy (e06845c)
+
+	* Translated using Weblate (Albanian)
+
+2019-11-01 15:56:36 +0000 Deleted User (ab1d08c)
+
+	* Translated using Weblate (Portuguese)
+
+2019-10-30 13:58:59 +0000 Marcela Korreshi (981dd02)
+
+	* Translated using Weblate (Albanian)
+
+2019-10-23 14:46:54 +0000 Mattias Münster (7bfd4fd)
+
+	* Translated using Weblate (Swedish)
+
+2019-10-23 16:34:47 +0000 Fontanela (3073b64)
+
+	* Translated using Weblate (Portuguese)
+
+2019-10-12 13:44:12 +0000 Andrea Gatti (c1d9b36)
+
+	* Translated using Weblate (Italian)
+
+2019-10-07 16:43:41 +0000 Mateusz Rumiński (8e74a90)
+
+	* Translated using Weblate (Polish)
+
+2019-09-07 18:03:32 +0000 Abraham Roman (987f750)
+
+	* Translated using Weblate (Spanish)
+
+2019-09-02 19:44:40 +0000 Swann Martinet (96e8bd8)
+
+	* Translated using Weblate (French)
+
+2019-09-01 15:38:41 +0000 Moo (9f1b33d)
+
+	* Translated using Weblate (Lithuanian)
+
+2019-09-01 14:03:03 -0400 trism (26fd86c)
+
+	* Merge pull request #2 from leela52452/master
+
+2019-09-01 17:01:36 +0000 leela (554340f)
+
+	* typo ellipsis, added
+
+2019-08-29 10:17:03 +0000 Anders Jonsson (084399b)
+
+	* Translated using Weblate (Swedish)
+
+2019-08-28 18:49:01 +0000 Heimen Stoffels (0ed01d6)
+
+	* Translated using Weblate (Dutch)
+
+2019-08-29 05:49:01 +0000 Mike Gabriel (15d1e00)
+
+	* Translated using Weblate (German)
+
+2019-08-28 20:17:19 +0200 Mike Gabriel (cd1e9aa)
+
+	* upload locale files
+
+2019-06-08 17:38:00 -0400 Jason Conti (55483b8)
+
+	* * Add a settings UI
+
+2019-08-25 05:29:46 +0000 leela (fe7ea61)
+
+	* Translated using Weblate (Telugu)
+
+2019-08-10 10:03:58 +0000 KotagiriSahithi (192d47c)
+
+	* Translated using Weblate (Telugu)
+
+2019-08-06 03:07:33 +0000 Chang Xin (2271553)
+
+	* Translated using Weblate (Chinese (Simplified))
+
+2019-07-23 22:01:58 +0000 Simon Picot (3dad1c2)
+
+	* Translated using Weblate (French)
+
+2019-07-01 19:51:22 +0000 Elizabeth Sherrock (00f0cfe)
+
+	* Translated using Weblate (Chinese (Simplified))
+
+2019-06-18 09:06:15 +0000 THANOS SIOURDAKIS (344e562)
+
+	* Translated using Weblate (Greek)
+
+2019-04-17 15:13:27 +0000 Rui Mendes (b4fc77f)
+
+	* Translated using Weblate (Portuguese)
+
+2019-01-11 03:43:04 +0000 Louies (55effe9)
+
+	* Translated using Weblate (Chinese (Traditional))
+
+2018-11-18 21:11:24 +0000 ssantos (3b7d042)
+
+	* Translated using Weblate (Portuguese)
+
+2018-10-23 16:17:37 +0000 Iván Seoane (2c800fe)
+
+	* Translated using Weblate (Galician)
+
+2018-09-27 14:42:41 +0000 Володимир Бриняк (a5edc07)
+
+	* Translated using Weblate (Ukrainian)
+
+2018-08-23 17:08:47 +0000 WaldiS (f98c693)
+
+	* Translated using Weblate (Polish)
+
+2018-08-05 20:55:42 +0000 Yaron Shahrabani (2bd7c2d)
+
+	* Translated using Weblate (Hebrew)
+
+2018-07-29 01:53:08 +0000 chrismeurer (01bea21)
+
+	* Translated using Weblate (Portuguese (Brazil))
+
+2018-06-29 01:42:01 +0000 Jonathan Ramos dos Santos (854cabd)
+
+	* Translated using Weblate (Portuguese (Brazil))
+
+2018-05-08 12:54:27 +0000 Heimen Stoffels (b8b3541)
+
+	* Translated using Weblate (Dutch)
+
+2018-05-02 18:43:26 +0000 Adolfo Jayme Barrientos (b54f0b9)
+
+	* Translated using Weblate (Spanish)
+
+2018-04-03 14:32:21 +0000 Pavel Borecki (1c9c71a)
+
+	* Translated using Weblate (Czech)
+
+2018-04-03 14:32:14 +0000 Pavel Borecki (6b1a575)
+
+	* Translated using Weblate (Czech)
+
+2018-04-03 14:32:06 +0000 Pavel Borecki (150397c)
+
+	* Translated using Weblate (Czech)
+
+2018-04-03 14:29:54 +0000 Pavel Borecki (590e477)
+
+	* Translated using Weblate (Czech)
+
+2018-03-29 21:23:12 +0000 Anders Jonsson (e20b408)
+
+	* Translated using Weblate (Swedish)
+
+2018-03-18 15:19:38 +0100 Mike Gabriel (4408ecb)
+
+	* release 0.4.0 (tag: 0.4.0)
 
 2018-03-18 15:19:22 +0100 Mike Gabriel (16d9585)
 
@@ -31,7 +215,7 @@
 
 2018-03-01 10:31:01 +0000 Moo (bd404e0)
 
-	* Translated using Weblate (Lithuanian) (origin/master)
+	* Translated using Weblate (Lithuanian)
 
 2018-02-28 01:50:02 +0000 Мира Странная (ed1a794)
 
@@ -175,14 +359,13 @@
 2017-03-15 14:58:36 -0400 Jason Conti (27a4b02)
 
 	* * Add option to clear the notifications using middle click on the
-          notification icon. * Bump version. (tag: 0.3.3,
-          refs/bzr/origin/tags/0.3.3, refs/bzr/origin/heads/master)
+          notification icon. * Bump version. (tag: 0.3.3)
 
 2016-08-29 14:46:50 -0400 Jason Conti (6dd7a72)
 
 	* * Need to escape the url otherwise certain acceptable characters
           can break the   markup parsing in the GtkLabel. * Bump
-          version. (tag: 0.3.2, refs/bzr/origin/tags/0.3.2)
+          version. (tag: 0.3.2)
 
 2016-08-29 13:21:07 -0400 Jason Conti (700170f)
 
@@ -190,7 +373,7 @@
           deactivate the menu   shell if that count is zero. This
           avoids leaving a single clear menuitem on   screen after
           all the notifications have been dismissed. * Bump version.
-          (tag: 0.3.1, refs/bzr/origin/tags/0.3.1)
+          (tag: 0.3.1)
 
 2016-08-29 12:44:08 -0400 Jason Conti (ed985a8)
 
@@ -243,8 +426,7 @@
 
 2014-01-15 15:23:15 -0500 Jason Conti (8be9606)
 
-	* Add AM_PROG_AR to silence autotools warning (tag: 0.2.6,
-          refs/bzr/origin/tags/0.2.6)
+	* Add AM_PROG_AR to silence autotools warning (tag: 0.2.6)
 
 2014-01-15 15:18:12 -0500 Jason Conti (9a1bcbd)
 
@@ -262,7 +444,7 @@
 
 2013-02-17 22:50:15 -0500 Jason Conti (d16be93)
 
-	* * Bump version to 0.2.5 (tag: 0.2.5, refs/bzr/origin/tags/0.2.5)
+	* * Bump version to 0.2.5 (tag: 0.2.5)
 
 2013-02-17 22:46:34 -0500 Jason Conti (69d098d)
 
@@ -278,7 +460,7 @@
 
 2012-04-04 21:17:15 -0400 Jason Conti (233e68f)
 
-	* * Bump for version 0.2.4 (tag: 0.2.4, refs/bzr/origin/tags/0.2.4)
+	* * Bump for version 0.2.4 (tag: 0.2.4)
 
 2012-04-04 21:14:55 -0400 Jason Conti (8e252e0)
 
@@ -288,7 +470,7 @@
 
 2012-04-04 20:52:52 -0400 Jason Conti (8d92259)
 
-	* Bump to version 0.2.3 (tag: 0.2.3, refs/bzr/origin/tags/0.2.3)
+	* Bump to version 0.2.3 (tag: 0.2.3)
 
 2012-02-29 13:38:00 -0500 Jason Conti (ddc4a14)
 
@@ -297,8 +479,7 @@
 
 2012-02-26 15:15:15 -0500 Jason Conti (1ac07fe)
 
-	* * Update potfiles. * Bump version to 0.2.2. (tag: 0.2.2,
-          refs/bzr/origin/tags/0.2.2)
+	* * Update potfiles. * Bump version to 0.2.2. (tag: 0.2.2)
 
 2012-02-26 15:10:19 -0500 Jason Conti (9203963)
 
@@ -325,12 +506,11 @@
 
 2012-02-25 23:35:55 -0500 Jason Conti (bafd836)
 
-	* * Update potfiles * Bump version to 0.2.1 (tag: 0.2.1,
-          refs/bzr/origin/tags/0.2.1)
+	* * Update potfiles * Bump version to 0.2.1 (tag: 0.2.1)
 
 2012-02-25 20:53:39 -0500 Jason Conti (7dedb95)
 
-	* * Bump version to 0.2.0 (tag: 0.2.0, refs/bzr/origin/tags/0.2.0)
+	* * Bump version to 0.2.0 (tag: 0.2.0)
 
 2012-02-25 20:52:16 -0500 Jason Conti (49b8359)
 
@@ -413,8 +593,7 @@
 
 2011-08-19 20:18:07 -0400 Jason Conti (091af8d)
 
-	* * Bump for oneiric ppa release (tag: 0.1.4,
-          refs/bzr/origin/tags/0.1.4)
+	* * Bump for oneiric ppa release (tag: 0.1.4)
 
 2011-08-19 18:46:22 -0400 Jason Conti (a134d99)
 
@@ -427,8 +606,7 @@
           differences   between gtk2 and 3 * Replace gtk_hbox_new
           with gtk_box_new in the gtk3 version * GtkLabel has a new
           (and much nicer) wrapping mechanism   - use
-          gtk_label_set_max_width_chars in gtk3 version (tag: 0.1.3,
-          refs/bzr/origin/tags/0.1.3)
+          gtk_label_set_max_width_chars in gtk3 version (tag: 0.1.3)
 
 2011-08-19 11:15:33 -0400 Jason Conti (c5ac5ce)
 
@@ -459,7 +637,7 @@
 	* Have to add the test directory back to Makefile.am or the tarball
           from make dist fails to configure. (could also have
           removed the test makefile from configure.ac, but this
-          seemed better) (tag: 0.1.0, refs/bzr/origin/tags/0.1.0)
+          seemed better) (tag: 0.1.0)
 
 2011-05-18 15:43:45 -0400 Jason Conti (847eb7d)
 

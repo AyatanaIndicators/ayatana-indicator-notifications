@@ -1,3 +1,10 @@
+ayatana-indicator-notifications (0.4.1-0) unstable; urgency=medium
+
+  * Upstream-provided Debian package for ayatana-indicator-notifications.
+    See upstream ChangeLog for recent changes.
+
+ -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Wed, 27 Nov 2019 10:00:47 +0100
+
 ayatana-indicator-notifications (0.4.0-0) unstable; urgency=medium
 
   * Convert to Ayatana Indicators. Obtained from:
