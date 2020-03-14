@@ -8,26 +8,31 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-28 20:16+0200\n"
-"PO-Revision-Date: 2017-12-02 19:20+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-03-15 05:36+0000\n"
+"Last-Translator: yagoub fadel <yagoub76@gmail.com>\n"
+"Language-Team: Arabic <https://hosted.weblate.org/projects/"
+"ayatana-indicators/notifications-applet/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 4.0-dev\n"
 
 #. blacklist
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
 #: ../src/indicator-notifications-settings.c:274
 msgid "Discard notifications by application name"
-msgstr ""
+msgstr "تجاهل الإخطارات حسب اسم التطبيق"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
 msgid ""
 "If an application name is in the blacklist, all notifications matching the "
 "application name will be discarded."
 msgstr ""
+"إذا كان اسم التطبيق في القائمة السوداء ، فسيتم تجاهل جميع الإشعارات التي "
+"تطابق اسم التطبيق."
 
 #. clear-on-middle-click
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
@@ -41,66 +46,73 @@ msgid ""
 "be toggled if the queue is not empty. With this option enabled, the "
 "notification queue will be cleared instead."
 msgstr ""
+"عادة عند النقر الأوسط على أيقونة الإشعار ، سيتم تبديل الحالة غير المقروءة "
+"إذا لم تكن قائمة الانتظار فارغة. مع تمكين هذا الخيار ، سيتم مسح قائمة "
+"الإشعارات بدلاً من ذلك."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:5
 msgid "Hide the indicator"
-msgstr ""
+msgstr "إخفاء المؤشر"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:6
 msgid "If true, the indicator is hidden."
-msgstr ""
+msgstr "إذا كان صحيحا ، فإن المؤشر مخفي."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:7
 msgid "Maximum number of visible items"
-msgstr ""
+msgstr "العدد الأقصى للعناصر المرئية"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:8
 msgid ""
 "The indicator will only display at most the number of notifications "
 "indicated by this value."
-msgstr ""
+msgstr "سيعرض المؤشر فقط عدد الإشعارات المشار إليها بهذه القيمة فقط."
 
 #: ../src/indicator-notifications.c:167
 msgid "Notifications"
-msgstr ""
+msgstr "إشعارات"
 
 #. Create the settings menuitem
 #: ../src/indicator-notifications.c:176
 msgid "Settings..."
-msgstr ""
+msgstr "الإعدادات..."
 
 #: ../src/indicator-notifications.c:475
 #, c-format
 msgid "Clear <small>(%d Notification)</small>"
 msgid_plural "Clear <small>(%d Notifications)</small>"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "صفر"
+msgstr[1] "واحد"
+msgstr[2] "اثنان"
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
 #. Window Frame
 #: ../src/indicator-notifications-settings.c:227
 #: ../src/indicator-notifications-settings.c:233
 #: ../src/indicator-notifications-settings.c:348
 msgid "Indicator Notifications Settings"
-msgstr ""
+msgstr "إعدادات إخطارات المؤشر"
 
 #. hide-indicator
 #: ../src/indicator-notifications-settings.c:253
 msgid "Hide indicator"
-msgstr ""
+msgstr "إخفاء المؤشر"
 
 #. max-items
 #. FIXME: indicator does not change max items until restart...
 #: ../src/indicator-notifications-settings.c:263
 msgid "Maximum number of visible notifications"
-msgstr ""
+msgstr "الحد الأقصى لعدد الإشعارات المرئية"
 
 #: ../src/indicator-notifications-settings.c:299
 msgid "Remove"
-msgstr ""
+msgstr "إزالة"
 
 #: ../src/indicator-notifications-settings.c:304
 msgid "Add"
-msgstr ""
+msgstr "اضافة"
 
 #: ../src/notification-menuitem.c:129
 msgid "from"
