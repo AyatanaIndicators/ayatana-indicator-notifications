@@ -8,26 +8,30 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-28 20:16+0200\n"
-"PO-Revision-Date: 2017-12-02 19:20+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-04-03 18:21+0000\n"
+"Last-Translator: raimon ribal <raimon.ribal@gmail.com>\n"
+"Language-Team: Occitan <https://hosted.weblate.org/projects/"
+"ayatana-indicators/notifications-applet/oc/>\n"
 "Language: oc\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.0-dev\n"
 
 #. blacklist
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
 #: ../src/indicator-notifications-settings.c:274
 msgid "Discard notifications by application name"
-msgstr ""
+msgstr "Escarta las notificacions per nom d'aplicacion"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
 msgid ""
 "If an application name is in the blacklist, all notifications matching the "
 "application name will be discarded."
 msgstr ""
+"Se lo nom d'una aplicacion es a la lista negra, s'escartaràn totas las "
+"notificacions amb lo nom d'aquela aplicacion."
 
 #. clear-on-middle-click
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
