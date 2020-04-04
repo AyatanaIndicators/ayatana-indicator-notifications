@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-28 20:16+0200\n"
-"PO-Revision-Date: 2017-12-23 10:37+0000\n"
+"PO-Revision-Date: 2020-04-04 06:04+0000\n"
 "Last-Translator: Kristjan Räts <kristjanrats@gmail.com>\n"
-"Language-Team: Estonian <https://hosted.weblate.org/projects/ayatana-"
-"indicators/notifications-applet/et/>\n"
+"Language-Team: Estonian <https://hosted.weblate.org/projects/"
+"ayatana-indicators/notifications-applet/et/>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.19-dev\n"
+"X-Generator: Weblate 4.0-dev\n"
 
 #. blacklist
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
@@ -73,7 +73,7 @@ msgstr "Teated"
 #. Create the settings menuitem
 #: ../src/indicator-notifications.c:176
 msgid "Settings..."
-msgstr ""
+msgstr "Seaded..."
 
 #: ../src/indicator-notifications.c:475
 #, c-format
@@ -87,28 +87,26 @@ msgstr[1] "Puhasta <small>(%d teadet)</small>"
 #: ../src/indicator-notifications-settings.c:233
 #: ../src/indicator-notifications-settings.c:348
 msgid "Indicator Notifications Settings"
-msgstr ""
+msgstr "Indikaatori teavituste seaded"
 
 #. hide-indicator
 #: ../src/indicator-notifications-settings.c:253
-#, fuzzy
 msgid "Hide indicator"
 msgstr "Peida indikaator"
 
 #. max-items
 #. FIXME: indicator does not change max items until restart...
 #: ../src/indicator-notifications-settings.c:263
-#, fuzzy
 msgid "Maximum number of visible notifications"
 msgstr "Kuvatavate teadete maksimaalne arv"
 
 #: ../src/indicator-notifications-settings.c:299
 msgid "Remove"
-msgstr ""
+msgstr "Eemalda"
 
 #: ../src/indicator-notifications-settings.c:304
 msgid "Add"
-msgstr ""
+msgstr "Lisa"
 
 #: ../src/notification-menuitem.c:129
 msgid "from"
