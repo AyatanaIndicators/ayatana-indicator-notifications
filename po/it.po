@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-28 20:16+0200\n"
-"PO-Revision-Date: 2020-01-26 13:21+0000\n"
-"Last-Translator: Emiliano Gabriele <emilianog1989@gmail.com>\n"
+"PO-Revision-Date: 2020-04-28 11:11+0000\n"
+"Last-Translator: Jeannette L <j.lavoie@net-c.ca>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/"
 "ayatana-indicators/notifications-applet/it/>\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11-dev\n"
+"X-Generator: Weblate 4.0.2\n"
 
 #. blacklist
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
@@ -37,7 +37,7 @@ msgstr ""
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
 #: ../src/indicator-notifications-settings.c:244
 msgid "Clear notifications on middle click"
-msgstr ""
+msgstr "Cancella le notifiche con un clic centrale"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:4
 msgid ""
@@ -45,6 +45,9 @@ msgid ""
 "be toggled if the queue is not empty. With this option enabled, the "
 "notification queue will be cleared instead."
 msgstr ""
+"Normalmente quando si fa clic con il pulsante centrale sull'icona di "
+"notifica, lo stato non letto verrà attivato se la coda non è vuota. Con "
+"questa opzione abilitata, verrà invece cancellata la coda di notifica."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:5
 msgid "Hide the indicator"
