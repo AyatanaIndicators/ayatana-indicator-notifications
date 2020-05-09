@@ -8,32 +8,36 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-28 20:15+0200\n"
-"PO-Revision-Date: 2017-12-02 19:20+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-05-10 08:12+0000\n"
+"Last-Translator: iNetRoos <inetroos@gmail.com>\n"
+"Language-Team: Afrikaans <https://hosted.weblate.org/projects/"
+"ayatana-indicators/notifications-applet/af/>\n"
 "Language: af\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.1-dev\n"
 
 #. blacklist
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
 #: ../src/indicator-notifications-settings.c:274
 msgid "Discard notifications by application name"
-msgstr ""
+msgstr "Vermeldings uitvee op grond van toepassingsnaam"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
 msgid ""
 "If an application name is in the blacklist, all notifications matching the "
 "application name will be discarded."
 msgstr ""
+"Alle kennisgewings vanaf toepassingname wat op die swartlys verskyn, word "
+"uitgevee."
 
 #. clear-on-middle-click
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
 #: ../src/indicator-notifications-settings.c:244
 msgid "Clear notifications on middle click"
-msgstr ""
+msgstr "Middel-muiskliek vee kennisgewings uit"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:4
 msgid ""
@@ -41,67 +45,72 @@ msgid ""
 "be toggled if the queue is not empty. With this option enabled, the "
 "notification queue will be cleared instead."
 msgstr ""
+"Normaalweg wanneer die middel-muis geklik word op die kennisgewingsikoon, "
+"sal die ongeleesde status verwissel word mits die tou nie leeg is nie. Met "
+"hierdie opsie geaktiveer, sal die kennisgewing-tou andersins uitgewis word."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:5
 msgid "Hide the indicator"
-msgstr ""
+msgstr "Versteek die indikator"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:6
 msgid "If true, the indicator is hidden."
-msgstr ""
+msgstr "Indikator versteek, mits dit waar is."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:7
 msgid "Maximum number of visible items"
-msgstr ""
+msgstr "Maksimum aantal sigbare items"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:8
 msgid ""
 "The indicator will only display at most the number of notifications "
 "indicated by this value."
 msgstr ""
+"Die indikator sal kennisgewings vertoon, beperk tot die maksimum aantal hier "
+"aangedui."
 
 #: ../src/indicator-notifications.c:167
 msgid "Notifications"
-msgstr ""
+msgstr "Kennisgewings"
 
 #. Create the settings menuitem
 #: ../src/indicator-notifications.c:176
 msgid "Settings..."
-msgstr ""
+msgstr "Skep die kieslys item: instellings."
 
 #: ../src/indicator-notifications.c:475
 #, c-format
 msgid "Clear <small>(%d Notification)</small>"
 msgid_plural "Clear <small>(%d Notifications)</small>"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Vee <small>(%d Kennisgewing)</small> uit"
+msgstr[1] "Vee <small>(%d Kennisgewings)</small> uit"
 
 #. Window Frame
 #: ../src/indicator-notifications-settings.c:227
 #: ../src/indicator-notifications-settings.c:233
 #: ../src/indicator-notifications-settings.c:348
 msgid "Indicator Notifications Settings"
-msgstr ""
+msgstr "Instellings vir Indikator Kennisgewings"
 
 #. hide-indicator
 #: ../src/indicator-notifications-settings.c:253
 msgid "Hide indicator"
-msgstr ""
+msgstr "Versteek-indikator"
 
 #. max-items
 #. FIXME: indicator does not change max items until restart...
 #: ../src/indicator-notifications-settings.c:263
 msgid "Maximum number of visible notifications"
-msgstr ""
+msgstr "Maksimum aantal sigbare kennisgewings"
 
 #: ../src/indicator-notifications-settings.c:299
 msgid "Remove"
-msgstr ""
+msgstr "Verwyder"
 
 #: ../src/indicator-notifications-settings.c:304
 msgid "Add"
-msgstr ""
+msgstr "Bywerk"
 
 #: ../src/notification-menuitem.c:129
 msgid "from"
-msgstr ""
+msgstr "van"
