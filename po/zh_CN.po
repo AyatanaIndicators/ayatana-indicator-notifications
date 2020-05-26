@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-28 20:16+0200\n"
-"PO-Revision-Date: 2019-08-07 03:23+0000\n"
-"Last-Translator: Chang Xin <1796162147@qq.com>\n"
+"PO-Revision-Date: 2020-05-27 06:41+0000\n"
+"Last-Translator: wdggg <wdggg7@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "ayatana-indicators/notifications-applet/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -17,50 +17,50 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.8-dev\n"
+"X-Generator: Weblate 4.1-dev\n"
 
 #. blacklist
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
 #: ../src/indicator-notifications-settings.c:274
 msgid "Discard notifications by application name"
-msgstr ""
+msgstr "按应用程序名称屏蔽通知"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
 msgid ""
 "If an application name is in the blacklist, all notifications matching the "
 "application name will be discarded."
-msgstr ""
+msgstr "如果有一个应用程序在黑名单中， 所有与该程序相关的通知将会被丢弃。"
 
 #. clear-on-middle-click
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
 #: ../src/indicator-notifications-settings.c:244
 msgid "Clear notifications on middle click"
-msgstr ""
+msgstr "点击鼠标中键以清空通知"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:4
 msgid ""
 "Normally when middle clicking the notification icon, the unread status will "
 "be toggled if the queue is not empty. With this option enabled, the "
 "notification queue will be cleared instead."
-msgstr ""
+msgstr "通常，中键点击通知中心图标时，如果通知队列不为空，则会切换到未读的通知。启用此选项后，将清除通知队列。"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:5
 msgid "Hide the indicator"
-msgstr ""
+msgstr "隐藏指示器"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:6
 msgid "If true, the indicator is hidden."
-msgstr ""
+msgstr "如果为真，则指示器被隐藏。"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:7
 msgid "Maximum number of visible items"
-msgstr ""
+msgstr "最大可见项目数"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:8
 msgid ""
 "The indicator will only display at most the number of notifications "
 "indicated by this value."
-msgstr ""
+msgstr "指示器最多只显示相当于此数值的通知数量。"
 
 #: ../src/indicator-notifications.c:167
 msgid "Notifications"
@@ -69,40 +69,39 @@ msgstr "通知"
 #. Create the settings menuitem
 #: ../src/indicator-notifications.c:176
 msgid "Settings..."
-msgstr ""
+msgstr "设置..."
 
 #: ../src/indicator-notifications.c:475
 #, c-format
 msgid "Clear <small>(%d Notification)</small>"
 msgid_plural "Clear <small>(%d Notifications)</small>"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "清空 <small>(%d 通知)</small>"
 
 #. Window Frame
 #: ../src/indicator-notifications-settings.c:227
 #: ../src/indicator-notifications-settings.c:233
 #: ../src/indicator-notifications-settings.c:348
 msgid "Indicator Notifications Settings"
-msgstr ""
+msgstr "指示器通知设置"
 
 #. hide-indicator
 #: ../src/indicator-notifications-settings.c:253
 msgid "Hide indicator"
-msgstr ""
+msgstr "隐藏指示器"
 
 #. max-items
 #. FIXME: indicator does not change max items until restart...
 #: ../src/indicator-notifications-settings.c:263
 msgid "Maximum number of visible notifications"
-msgstr ""
+msgstr "最大可见通知数量"
 
 #: ../src/indicator-notifications-settings.c:299
 msgid "Remove"
-msgstr ""
+msgstr "删除"
 
 #: ../src/indicator-notifications-settings.c:304
 msgid "Add"
-msgstr ""
+msgstr "添加"
 
 #: ../src/notification-menuitem.c:129
 msgid "from"
