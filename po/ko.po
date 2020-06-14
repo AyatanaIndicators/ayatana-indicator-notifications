@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-28 20:16+0200\n"
-"PO-Revision-Date: 2020-01-28 01:50+0000\n"
-"Last-Translator: Ryan <twobox0@gmail.com>\n"
+"PO-Revision-Date: 2020-06-15 04:41+0000\n"
+"Last-Translator: MarongHappy <daemul72@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/"
 "ayatana-indicators/notifications-applet/ko/>\n"
 "Language: ko\n"
@@ -17,25 +17,25 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.11-dev\n"
+"X-Generator: Weblate 4.1-dev\n"
 
 #. blacklist
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
 #: ../src/indicator-notifications-settings.c:274
 msgid "Discard notifications by application name"
-msgstr ""
+msgstr "응용프로그램 이름별 알림 삭제"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
 msgid ""
 "If an application name is in the blacklist, all notifications matching the "
 "application name will be discarded."
-msgstr ""
+msgstr "응용프로그램 이름이 블랙리스트에 있으면 응용프로그램 이름과 일치하는 모든 알림이 삭제됩니다."
 
 #. clear-on-middle-click
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
 #: ../src/indicator-notifications-settings.c:244
 msgid "Clear notifications on middle click"
-msgstr ""
+msgstr "가운데 클릭시 알림 지우기"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:4
 msgid ""
@@ -43,65 +43,67 @@ msgid ""
 "be toggled if the queue is not empty. With this option enabled, the "
 "notification queue will be cleared instead."
 msgstr ""
+"일반적으로 알림 아이콘을 중간 클릭할 때 대기열이 비어 있지 않으면 읽지 않은 상태로 전환됩니다. 이 옵션을 활성화하면 알림 대기열이 "
+"대신 지워집니다."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:5
 msgid "Hide the indicator"
-msgstr ""
+msgstr "표시기 숨김"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:6
 msgid "If true, the indicator is hidden."
-msgstr ""
+msgstr "참일 경우, 표시기가 숨겨집니다."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:7
 msgid "Maximum number of visible items"
-msgstr ""
+msgstr "표시되는 항목의 최대 개수"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:8
 msgid ""
 "The indicator will only display at most the number of notifications "
 "indicated by this value."
-msgstr ""
+msgstr "표시기는 이 값으로 표시된 최대 알림 수만 표시합니다."
 
 #: ../src/indicator-notifications.c:167
 msgid "Notifications"
-msgstr "응답"
+msgstr "알림"
 
 #. Create the settings menuitem
 #: ../src/indicator-notifications.c:176
 msgid "Settings..."
-msgstr ""
+msgstr "설정..."
 
 #: ../src/indicator-notifications.c:475
 #, c-format
 msgid "Clear <small>(%d Notification)</small>"
 msgid_plural "Clear <small>(%d Notifications)</small>"
-msgstr[0] ""
+msgstr[0] "지우기 <small>(%d 알림)</small>"
 
 #. Window Frame
 #: ../src/indicator-notifications-settings.c:227
 #: ../src/indicator-notifications-settings.c:233
 #: ../src/indicator-notifications-settings.c:348
 msgid "Indicator Notifications Settings"
-msgstr ""
+msgstr "표시기 알림 설정"
 
 #. hide-indicator
 #: ../src/indicator-notifications-settings.c:253
 msgid "Hide indicator"
-msgstr ""
+msgstr "표시기 숨김"
 
 #. max-items
 #. FIXME: indicator does not change max items until restart...
 #: ../src/indicator-notifications-settings.c:263
 msgid "Maximum number of visible notifications"
-msgstr ""
+msgstr "표시되는 알림의 최대 개수"
 
 #: ../src/indicator-notifications-settings.c:299
 msgid "Remove"
-msgstr ""
+msgstr "제거"
 
 #: ../src/indicator-notifications-settings.c:304
 msgid "Add"
-msgstr ""
+msgstr "추가"
 
 #: ../src/notification-menuitem.c:129
 msgid "from"
