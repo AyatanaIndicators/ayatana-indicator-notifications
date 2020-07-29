@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-28 20:16+0200\n"
-"PO-Revision-Date: 2020-06-20 15:41+0000\n"
+"PO-Revision-Date: 2020-07-30 10:41+0000\n"
 "Last-Translator: Ács Zoltán <acszoltan111@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/"
 "ayatana-indicators/notifications-applet/hu/>\n"
@@ -23,19 +23,22 @@ msgstr ""
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
 #: ../src/indicator-notifications-settings.c:274
 msgid "Discard notifications by application name"
-msgstr ""
+msgstr "Értesítések elutasítása az alkalmazásnév alapján"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
+#, fuzzy
 msgid ""
 "If an application name is in the blacklist, all notifications matching the "
 "application name will be discarded."
 msgstr ""
+"Ha egy alkalmazás neve rajta van a feketelistán, az összes értesítés amely "
+"egyezik az alkalmazásnévvel el lesz utasítva."
 
 #. clear-on-middle-click
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
 #: ../src/indicator-notifications-settings.c:244
 msgid "Clear notifications on middle click"
-msgstr ""
+msgstr "Értesítések törlése középső kattintásra"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:4
 msgid ""
@@ -46,7 +49,7 @@ msgstr ""
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:5
 msgid "Hide the indicator"
-msgstr ""
+msgstr "Indikátor elrejtése"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:6
 msgid "If true, the indicator is hidden."
@@ -54,13 +57,15 @@ msgstr ""
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:7
 msgid "Maximum number of visible items"
-msgstr ""
+msgstr "Látható elemek maximális száma"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:8
 msgid ""
 "The indicator will only display at most the number of notifications "
 "indicated by this value."
 msgstr ""
+"Az indikátor legfeljebb az ezen értékkel jelölt értesítések számát jeleníti "
+"meg."
 
 #: ../src/indicator-notifications.c:167
 msgid "Notifications"
@@ -69,41 +74,43 @@ msgstr "Értesítések"
 #. Create the settings menuitem
 #: ../src/indicator-notifications.c:176
 msgid "Settings..."
-msgstr ""
+msgstr "Beállítások..."
 
 #: ../src/indicator-notifications.c:475
-#, c-format
+#, c-format, fuzzy
 msgid "Clear <small>(%d Notification)</small>"
 msgid_plural "Clear <small>(%d Notifications)</small>"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Törlés: <small>(%d Értesítés)</small>"
+msgstr[1] "Törlés: <small>(%d Értesítés)</small>"
 
 #. Window Frame
 #: ../src/indicator-notifications-settings.c:227
 #: ../src/indicator-notifications-settings.c:233
 #: ../src/indicator-notifications-settings.c:348
+#, fuzzy
 msgid "Indicator Notifications Settings"
-msgstr ""
+msgstr "Indikátor értesítések beállítása"
 
 #. hide-indicator
 #: ../src/indicator-notifications-settings.c:253
 msgid "Hide indicator"
-msgstr ""
+msgstr "Indikátor elrejtése"
 
 #. max-items
 #. FIXME: indicator does not change max items until restart...
 #: ../src/indicator-notifications-settings.c:263
 msgid "Maximum number of visible notifications"
-msgstr ""
+msgstr "Látható értesítések maximális száma"
 
 #: ../src/indicator-notifications-settings.c:299
 msgid "Remove"
-msgstr ""
+msgstr "Eltávolítás"
 
 #: ../src/indicator-notifications-settings.c:304
 msgid "Add"
-msgstr ""
+msgstr "Hozzáadás"
 
 #: ../src/notification-menuitem.c:129
+#, fuzzy
 msgid "from"
-msgstr ""
+msgstr "ettől:"
