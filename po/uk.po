@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-28 20:16+0200\n"
-"PO-Revision-Date: 2020-06-22 11:41+0000\n"
-"Last-Translator: Kate Kaz <blackseafad@gmail.com>\n"
+"PO-Revision-Date: 2020-08-07 21:32+0000\n"
+"Last-Translator: Prosta4okua <danyavdele@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/"
 "ayatana-indicators/notifications-applet/uk/>\n"
 "Language: uk\n"
@@ -94,7 +94,6 @@ msgstr "Налаштування сповіщень індикаторів"
 
 #. hide-indicator
 #: ../src/indicator-notifications-settings.c:253
-#, fuzzy
 msgid "Hide indicator"
 msgstr "Приховати індикатор"
 
