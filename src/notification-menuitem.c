@@ -37,7 +37,7 @@ static gboolean widget_contains_event(GtkWidget *widget, GdkEventButton *event);
 
 static guint notification_menuitem_signals[LAST_SIGNAL] = { 0 };
 
-G_DEFINE_TYPE (NotificationMenuItem, notification_menuitem, GTK_TYPE_MENU_ITEM);
+G_DEFINE_TYPE_WITH_PRIVATE(NotificationMenuItem, notification_menuitem, GTK_TYPE_MENU_ITEM);
 
 static void
 notification_menuitem_class_init(NotificationMenuItemClass *klass)
@@ -49,8 +49,6 @@ notification_menuitem_class_init(NotificationMenuItemClass *klass)
   widget_class->motion_notify_event = notification_menuitem_motion;
   widget_class->button_press_event = notification_menuitem_button_press;
   widget_class->button_release_event = notification_menuitem_button_release;
-
-  g_type_class_add_private(klass, sizeof(NotificationMenuItemPrivate));
 
   menu_item_class->hide_on_activate = FALSE;
   menu_item_class->activate = notification_menuitem_activate;
@@ -73,14 +71,15 @@ notification_menuitem_class_init(NotificationMenuItemClass *klass)
 static void
 notification_menuitem_init(NotificationMenuItem *self)
 {
-  self->priv = NOTIFICATION_MENUITEM_GET_PRIVATE(self);
+  self->priv = notification_menuitem_get_instance_private(self);
 
   self->priv->pressed_close_image = FALSE;
 
   self->priv->hbox = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 0);
 
   self->priv->label = gtk_label_new(NULL);
-  gtk_misc_set_alignment(GTK_MISC(self->priv->label), 0, 0);
+  gtk_widget_set_halign(self->priv->label, GTK_ALIGN_START);
+  gtk_widget_set_valign(self->priv->label, GTK_ALIGN_START);
   gtk_label_set_use_markup(GTK_LABEL(self->priv->label), TRUE);
   gtk_label_set_line_wrap(GTK_LABEL(self->priv->label), TRUE);
   gtk_label_set_line_wrap_mode(GTK_LABEL(self->priv->label), PANGO_WRAP_WORD_CHAR);
@@ -100,7 +99,7 @@ notification_menuitem_init(NotificationMenuItem *self)
   gtk_widget_show(self->priv->hbox);
 }
 
-GtkWidget * 
+GtkWidget *
 notification_menuitem_new(void)
 {
   return g_object_new(NOTIFICATION_MENUITEM_TYPE, NULL);
@@ -320,8 +319,8 @@ notification_menuitem_activate_link_cb(GtkLabel *label, gchar *uri, gpointer use
   /* Show the link */
   GError *error = NULL;
 
-  if (!gtk_show_uri(gtk_widget_get_screen(GTK_WIDGET(label)),
-          uri, gtk_get_current_event_time(), &error)) {
+  if (!gtk_show_uri_on_window(NULL, uri, gtk_get_current_event_time(), &error))
+  {
     g_warning("Unable to show '%s': %s", uri, error->message);
     g_error_free(error);
   }
@@ -400,7 +399,7 @@ widget_contains_event(GtkWidget *widget, GdkEventButton *event)
   int xmin = allocation.x;
   int xmax = allocation.x + allocation.width;
   int ymin = allocation.y;
-  int ymax = allocation.y + allocation.height; 
+  int ymax = allocation.y + allocation.height;
   int x = event->x_root - xwin;
   int y = event->y_root - ywin;
 

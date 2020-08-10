@@ -22,22 +22,19 @@ static void notification_class_init(NotificationClass *klass);
 static void notification_init(Notification *self);
 static void notification_dispose(GObject *object);
 
-G_DEFINE_TYPE (Notification, notification, G_TYPE_OBJECT);
+G_DEFINE_TYPE_WITH_PRIVATE(Notification, notification, G_TYPE_OBJECT);
 
 static void
 notification_class_init(NotificationClass *klass)
 {
   GObjectClass *object_class = G_OBJECT_CLASS(klass);
-
-  g_type_class_add_private(klass, sizeof(NotificationPrivate));
-
   object_class->dispose = notification_dispose;
 }
 
 static void
 notification_init(Notification *self)
 {
-  self->priv = NOTIFICATION_GET_PRIVATE(self);
+  self->priv = notification_get_instance_private(self);
 
   self->priv->app_name = NULL;
   self->priv->replaces_id = 0;
@@ -82,7 +79,7 @@ notification_dispose(GObject *object)
   G_OBJECT_CLASS(notification_parent_class)->dispose(object);
 }
 
-Notification* 
+Notification*
 notification_new(void)
 {
   return NOTIFICATION(g_object_new(NOTIFICATION_TYPE, NULL));
@@ -104,7 +101,7 @@ notification_new_from_dbus_message(GDBusMessage *message)
   /* app_name */
   child = g_variant_get_child_value(body, COLUMN_APP_NAME);
   g_assert(g_variant_is_of_type(child, G_VARIANT_TYPE_STRING));
-  self->priv->app_name = g_variant_dup_string(child, 
+  self->priv->app_name = g_variant_dup_string(child,
       &(self->priv->app_name_length));
   g_variant_unref(child);
 

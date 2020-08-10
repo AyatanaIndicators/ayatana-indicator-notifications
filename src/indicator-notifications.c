@@ -4,16 +4,16 @@ An indicator to display recent notifications.
 Adapted from: indicator-datetime/src/indicator-datetime.c by
     Ted Gould <ted@canonical.com>
 
-This program is free software: you can redistribute it and/or modify it 
-under the terms of the GNU General Public License version 3, as published 
+This program is free software: you can redistribute it and/or modify it
+under the terms of the GNU General Public License version 3, as published
 by the Free Software Foundation.
 
-This program is distributed in the hope that it will be useful, but 
-WITHOUT ANY WARRANTY; without even the implied warranties of 
-MERCHANTABILITY, SATISFACTORY QUALITY, or FITNESS FOR A PARTICULAR 
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranties of
+MERCHANTABILITY, SATISFACTORY QUALITY, or FITNESS FOR A PARTICULAR
 PURPOSE.  See the GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License along 
+You should have received a copy of the GNU General Public License along
 with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
@@ -80,9 +80,6 @@ struct _IndicatorNotificationsPrivate {
   GSettings   *settings;
 };
 
-#define INDICATOR_NOTIFICATIONS_GET_PRIVATE(o) \
-(G_TYPE_INSTANCE_GET_PRIVATE ((o), INDICATOR_NOTIFICATIONS_TYPE, IndicatorNotificationsPrivate))
-
 #include "settings.h"
 
 #define INDICATOR_ICON_SIZE 22
@@ -101,7 +98,7 @@ static void indicator_notifications_finalize(GObject *object);
 static GtkImage    *get_image(IndicatorObject *io);
 static GtkMenu     *get_menu(IndicatorObject *io);
 static const gchar *get_accessible_desc(IndicatorObject *io);
-static void         indicator_notifications_middle_click(IndicatorObject *io, 
+static void         indicator_notifications_middle_click(IndicatorObject *io,
                                                          IndicatorObjectEntry *entry,
                                                          guint time,
                                                          gpointer user_data);
@@ -127,7 +124,7 @@ static void settings_item_activated_cb(GtkMenuItem *menuitem, gpointer user_data
 INDICATOR_SET_VERSION
 INDICATOR_SET_TYPE(INDICATOR_NOTIFICATIONS_TYPE)
 
-G_DEFINE_TYPE(IndicatorNotifications, indicator_notifications, INDICATOR_OBJECT_TYPE);
+G_DEFINE_TYPE_WITH_PRIVATE(IndicatorNotifications, indicator_notifications, INDICATOR_OBJECT_TYPE);
 
 static void
 indicator_notifications_class_init(IndicatorNotificationsClass *klass)
@@ -137,8 +134,6 @@ indicator_notifications_class_init(IndicatorNotificationsClass *klass)
   setlocale(LC_ALL, "");
   bindtextdomain( GETTEXT_PACKAGE, LOCALEDIR );
   textdomain( GETTEXT_PACKAGE );
-
-  g_type_class_add_private(klass, sizeof(IndicatorNotificationsPrivate));
 
   object_class->dispose = indicator_notifications_dispose;
   object_class->finalize = indicator_notifications_finalize;
@@ -156,7 +151,7 @@ indicator_notifications_class_init(IndicatorNotificationsClass *klass)
 static void
 indicator_notifications_init(IndicatorNotifications *self)
 {
-  self->priv = INDICATOR_NOTIFICATIONS_GET_PRIVATE(self);
+  self->priv = indicator_notifications_get_instance_private(self);
 
   self->priv->menu = NULL;
 
@@ -358,7 +353,7 @@ insert_menuitem(IndicatorNotifications *self, GtkWidget *item)
 
   /* Move items that overflow to the hidden list */
   while(g_list_length(self->priv->visible_items) > self->priv->max_items) {
-    last_item = g_list_last(self->priv->visible_items);  
+    last_item = g_list_last(self->priv->visible_items);
     last_widget = GTK_WIDGET(last_item->data);
     /* Steal the ref from the visible list */
     self->priv->visible_items = g_list_delete_link(self->priv->visible_items, last_item);
@@ -496,7 +491,7 @@ static void
 update_indicator_visibility(IndicatorNotifications *self)
 {
   g_return_if_fail(IS_INDICATOR_NOTIFICATIONS(self));
-  
+
   if(self->priv->image != NULL) {
     if(self->priv->hide_indicator)
       gtk_widget_hide(GTK_WIDGET(self->priv->image));

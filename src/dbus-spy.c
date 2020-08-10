@@ -26,22 +26,19 @@ static void add_filter(DBusSpy *self);
 
 static void bus_get_cb(GObject *source_object, GAsyncResult *res, gpointer user_data);
 
-static GDBusMessage *message_filter(GDBusConnection *connection, GDBusMessage *message, 
+static GDBusMessage *message_filter(GDBusConnection *connection, GDBusMessage *message,
                                     gboolean incoming, gpointer user_data);
 
 static gboolean idle_message_emit(gpointer user_data);
 
 #define MATCH_STRING "eavesdrop=true,type='method_call',interface='org.freedesktop.Notifications',member='Notify'"
 
-G_DEFINE_TYPE (DBusSpy, dbus_spy, G_TYPE_OBJECT);
+G_DEFINE_TYPE_WITH_PRIVATE(DBusSpy, dbus_spy, G_TYPE_OBJECT);
 
 static void
 dbus_spy_class_init(DBusSpyClass *klass)
 {
   GObjectClass *object_class = G_OBJECT_CLASS(klass);
-
-  g_type_class_add_private(klass, sizeof(DBusSpyPrivate));
-
   object_class->dispose = dbus_spy_dispose;
 
   signals[MESSAGE_RECEIVED] =
@@ -94,11 +91,11 @@ add_filter(DBusSpy *self)
   body = g_variant_new_parsed("(%s,)", MATCH_STRING);
 
   g_dbus_message_set_body(message, body);
-  
-  g_dbus_connection_send_message(self->priv->connection, 
-                                 message, 
-                                 G_DBUS_SEND_MESSAGE_FLAGS_NONE, 
-                                 NULL, 
+
+  g_dbus_connection_send_message(self->priv->connection,
+                                 message,
+                                 G_DBUS_SEND_MESSAGE_FLAGS_NONE,
+                                 NULL,
                                  &error);
   if(error != NULL) {
     g_warning("Failed to send AddMatch message: %s\n", error->message);
@@ -109,7 +106,7 @@ add_filter(DBusSpy *self)
   g_dbus_connection_add_filter(self->priv->connection, message_filter, self, NULL);
 }
 
-static GDBusMessage* 
+static GDBusMessage*
 message_filter(GDBusConnection *connection, GDBusMessage *message, gboolean incoming, gpointer user_data)
 {
   if(!incoming) return message;
@@ -150,7 +147,7 @@ idle_message_emit(gpointer user_data)
 static void
 dbus_spy_init(DBusSpy *self)
 {
-  self->priv = DBUS_SPY_GET_PRIVATE(self);
+  self->priv = dbus_spy_get_instance_private(self);
 
   self->priv->connection = NULL;
   self->priv->connection_cancel = g_cancellable_new();
@@ -181,7 +178,7 @@ dbus_spy_dispose(GObject *object)
   G_OBJECT_CLASS(dbus_spy_parent_class)->dispose(object);
 }
 
-DBusSpy* 
+DBusSpy*
 dbus_spy_new(void)
 {
   return DBUS_SPY(g_object_new(DBUS_SPY_TYPE, NULL));
