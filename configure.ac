@@ -65,6 +65,19 @@ PKG_CHECK_MODULES(SETTINGS, gtk+-3.0 >= GTK3_REQUIRED_VERSION)
 AC_SUBST(SETTINGS_CFLAGS)
 AC_SUBST(SETTINGS_LIBS)
 
+#########################
+# Check for systemd
+#########################
+PKG_CHECK_MODULES(SYSTEMD,  systemd,
+    [has_systemd=yes],
+    []
+)
+if test "x$has_systemd" = "xyes"; then
+	SYSTEMD_USERDIR=`$PKG_CONFIG --variable=systemduserunitdir systemd`
+	AC_SUBST(SYSTEMD_USERDIR)
+	AC_DEFINE(HAVE_SYSTEMD, 1, [create ayatana-indicator-application.service for systemd])
+fi
+
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_FILES([
   Makefile
