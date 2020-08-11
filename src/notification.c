@@ -16,7 +16,7 @@
 
 #define COLUMN_COUNT 8
 
-#define X_CANONICAL_PRIVATE_SYNCHRONOUS "x-canonical-private-synchronous"
+#define X_CANONICAL_PRIVATE_SYNCHRONOUS "x-ayatana-private-synchronous"
 
 static void notification_class_init(NotificationClass *klass);
 static void notification_init(Notification *self);
