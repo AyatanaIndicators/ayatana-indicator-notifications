@@ -1,3 +1,12 @@
+Overview of changes in ayatana-indicator-notifications 0.8.0
+
+  - Version bump to bring all system indicators (and the
+    renderer libraries to the same version level).
+  - Start the indicator with the ayatana-indicators.target.
+  - Fix deprecation warnings.
+  - Translation updates. (Awesome thanks to all the translators
+    at hosted.weblate.org!!!)
+
 Overview of changes in ayatana-indicator-notifications 0.4.1
 
   - Translation updates. (Awesome thanks to all translators on

@@ -1,6 +1,181 @@
-2019-11-27 10:03:53 +0100 Mike Gabriel
+2020-08-17 22:59:20 +0200 Mike Gabriel
 
-	* release 0.4.1 (HEAD -> master, tag: 0.4.1)
+	* release 0.8.0 (HEAD -> master, tag: 0.8.0)
+
+2020-08-11 09:43:27 +0200 Robert Tari (f15307a)
+
+	* Merge branch 'sunweaver-pr/sytemd-service-file' Attributes GH PR
+          #5:
+          https://github.com/AyatanaIndicators/ayatana-indicator-notifications/pull/5
+
+2020-08-11 09:42:12 +0200 Robert Tari (7d7dc11)
+
+	* Merge branch 'pr/sytemd-service-file' of
+          https://github.com/sunweaver/ayatana-indicator-notifications
+          into sunweaver-pr/sytemd-service-file Attributes GH PR #5:
+          https://github.com/AyatanaIndicators/ayatana-indicator-notifications/pull/5
+
+2020-08-10 11:52:51 +0200 Robert Tari (d9fced1)
+
+	* Fix deprecations (fixes #4)
+
+2020-08-10 10:08:27 +0200 Mike Gabriel (d75eb5f)
+
+	* debian/*: Install indicator's systemd user service file into DEB
+          package.
+
+2020-08-10 10:07:58 +0200 Mike Gabriel (8189b65)
+
+	* Start indicator in systemd when ayatana-indicators.target is
+          started.
+
+2020-08-06 20:52:40 +0000 Prosta4okua (ac5d686)
+
+	* Translated using Weblate (Ukrainian)
+
+2020-07-29 10:27:06 +0000 Ács Zoltán (af7f749)
+
+	* Translated using Weblate (Hungarian)
+
+2020-07-19 20:49:54 +0000 Tetra Homer (944db30)
+
+	* Translated using Weblate (Persian)
+
+2020-07-03 23:32:05 +0000 Tobias p (7cafce0)
+
+	* Translated using Weblate (Danish)
+
+2020-06-27 05:53:30 +0000 Zsolt Pastorek (3a99782)
+
+	* Translated using Weblate (Slovak)
+
+2020-06-21 11:31:04 +0000 Kate Kaz (fab1cf8)
+
+	* Translated using Weblate (Ukrainian)
+
+2020-06-19 15:35:36 +0000 Ács Zoltán (5fa3a25)
+
+	* Translated using Weblate (Hungarian)
+
+2020-06-14 04:02:44 +0000 MarongHappy (fdf612b)
+
+	* Translated using Weblate (Korean)
+
+2020-05-26 05:29:05 +0000 wdggg (408851b)
+
+	* Translated using Weblate (Chinese (Simplified))
+
+2020-05-09 06:57:30 +0000 iNetRoos (a19852e)
+
+	* Translated using Weblate (Afrikaans)
+
+2020-05-08 05:49:32 +0000 Abdusalam (4ac1105)
+
+	* Translated using Weblate (Uyghur)
+
+2020-04-27 09:47:05 +0000 Jeannette L (2c4e19a)
+
+	* Translated using Weblate (Italian)
+
+2020-04-27 10:11:06 +0000 Jeannette L (ba07bb9)
+
+	* Translated using Weblate (French (Canada))
+
+2020-04-27 09:27:05 +0000 Jeannette L (03281e5)
+
+	* Translated using Weblate (English (United Kingdom))
+
+2020-04-27 09:31:51 +0000 Jeannette L (9f45840)
+
+	* Translated using Weblate (English (Canada))
+
+2020-04-27 09:42:21 +0000 Jeannette L (0f110d9)
+
+	* Translated using Weblate (English (Australia))
+
+2020-04-16 15:49:07 +0000 george k (8fc593c)
+
+	* Translated using Weblate (Greek)
+
+2020-04-14 23:57:20 +0000 Jeannette L (29b8919)
+
+	* Translated using Weblate (French)
+
+2020-04-04 05:56:45 +0000 Kristjan Räts (097b646)
+
+	* Translated using Weblate (Estonian)
+
+2020-04-03 17:02:00 +0000 raimon ribal (f16bd63)
+
+	* Translated using Weblate (Occitan)
+
+2020-04-01 20:22:50 +0000 Davit Mayilyan (8f3870d)
+
+	* Translated using Weblate (Armenian)
+
+2020-03-29 08:19:29 +0000 Alexie Brindusescu (cbc68e1)
+
+	* Translated using Weblate (Romanian)
+
+2020-03-26 18:14:28 +0000 Adolfo Jayme Barrientos (918addb)
+
+	* Translated using Weblate (Catalan)
+
+2020-03-16 04:06:12 +0000 Grace Guo (ff14973)
+
+	* Translated using Weblate (Japanese)
+
+2020-03-14 04:30:52 +0000 yagoub fadel (a94a393)
+
+	* Translated using Weblate (Arabic)
+
+2020-03-05 10:57:52 +0000 Zdeněk Klauda (fe73eb4)
+
+	* Translated using Weblate (Czech)
+
+2020-02-25 16:31:12 +0000 Wellington Terumi Uemura (2e2201d)
+
+	* Translated using Weblate (Portuguese (Brazil))
+
+2020-02-06 15:13:34 +0000 Laércio Cordeiro (e139d80)
+
+	* Translated using Weblate (Portuguese (Brazil))
+
+2020-01-27 01:16:25 +0000 Ryan (b615cb2)
+
+	* Translated using Weblate (Korean)
+
+2020-01-25 12:44:26 +0000 Emiliano Gabriele (9dbc449)
+
+	* Translated using Weblate (Italian)
+
+2020-01-05 13:52:16 +0000 k Venkatesan kalimoorthy pillySA (faae206)
+
+	* Translated using Weblate (Tamil)
+
+2020-01-02 22:24:24 +0000 Milo Ivir (c20b14a)
+
+	* Translated using Weblate (Croatian)
+
+2019-12-20 23:45:17 +0000 DHU (ca23f4b)
+
+	* Translated using Weblate (Portuguese)
+
+2019-12-15 09:12:21 +0000 dmaxime (a687ba9)
+
+	* Translated using Weblate (Italian)
+
+2019-12-13 20:55:38 +0000 Prosta4okua (ed35d16)
+
+	* Translated using Weblate (Ukrainian)
+
+2019-11-26 15:37:47 +0000 Yuji Hon (0d6475c)
+
+	* Translated using Weblate (Japanese)
+
+2019-11-27 10:03:53 +0100 Mike Gabriel (cdb8b76)
+
+	* release 0.4.1 (tag: 0.4.1)
 
 2019-11-22 16:19:58 +0000 Burak Balta (191e5e5)
 
