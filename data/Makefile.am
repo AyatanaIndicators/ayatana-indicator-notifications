@@ -1,5 +1,3 @@
-NULL =
-
 SUBDIRS = icons
 
 gsettings_file = org.ayatana.indicator.notifications.gschema.xml
@@ -14,23 +12,10 @@ $(gsettings_file).in: $(gsettings_file).in.in
 
 @GSETTINGS_RULES@
 
-#if defined(HAVE_SYSTEMD)
-systemdservice_file = ayatana-indicator-notifications.service
-$(systemdservice_file): $(systemdservice_file).in
-	$(AM_V_GEN) sed -e "s|\@pkglibexecdir\@|$(pkglibexecdir)|" $< > $@
-
-systemddir = $(SYSTEMD_USERDIR)
-systemd_DATA = $(systemdservice_file)
-#endif
-
 EXTRA_DIST = \
-	$(gsettings_file).in.in \
-	$(systemdservice_file).in \
-	$(NULL)
+	$(gsettings_file).in.in
 
 CLEANFILES = \
 	$(gsettings_file) \
 	$(gsettings_file).in \
-	*.gschema.valid \
-	$(systemdservice_file) \
-	$(NULL)
+	*.gschema.valid
