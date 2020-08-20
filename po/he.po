@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-28 20:16+0200\n"
+"POT-Creation-Date: 2020-08-21 15:00+0200\n"
 "PO-Revision-Date: 2018-08-06 21:38+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/ayatana-"
@@ -20,15 +20,16 @@ msgstr ""
 "n % 10 == 0) ? 2 : 3));\n"
 "X-Generator: Weblate 3.1.1\n"
 
-#. blacklist
+#. filter-list
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
-#: ../src/indicator-notifications-settings.c:274
+#: ../src/indicator-notifications-settings.c:327
 msgid "Discard notifications by application name"
 msgstr "התעלמות מהתראות לפי שם היישומון"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
+#, fuzzy
 msgid ""
-"If an application name is in the blacklist, all notifications matching the "
+"If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
 msgstr ""
 "אם שם של יישומון מופיע ברשימת החסימה, כל ההתראות שתואמות לשם היישומון לא "
@@ -36,7 +37,7 @@ msgstr ""
 
 #. clear-on-middle-click
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
-#: ../src/indicator-notifications-settings.c:244
+#: ../src/indicator-notifications-settings.c:279
 msgid "Clear notifications on middle click"
 msgstr "סילוק התראות בלחיצה אמצעית"
 
@@ -67,16 +68,16 @@ msgid ""
 "indicated by this value."
 msgstr "המחוון יציג כמות כזו של התראות לכל היותר בהתאם לערך זה."
 
-#: ../src/indicator-notifications.c:167
+#: ../src/indicator-notifications.c:177
 msgid "Notifications"
 msgstr "התראות"
 
 #. Create the settings menuitem
-#: ../src/indicator-notifications.c:176
-msgid "Settings..."
+#: ../src/indicator-notifications.c:186
+msgid "Settings…"
 msgstr ""
 
-#: ../src/indicator-notifications.c:475
+#: ../src/indicator-notifications.c:522
 #, c-format
 msgid "Clear <small>(%d Notification)</small>"
 msgid_plural "Clear <small>(%d Notifications)</small>"
@@ -86,33 +87,43 @@ msgstr[2] "סילוק <small>(%d התראות)</small>"
 msgstr[3] "סילוק <small>(%d התראות)</small>"
 
 #. Window Frame
-#: ../src/indicator-notifications-settings.c:227
-#: ../src/indicator-notifications-settings.c:233
-#: ../src/indicator-notifications-settings.c:348
+#: ../src/indicator-notifications-settings.c:262
+#: ../src/indicator-notifications-settings.c:268
+#: ../src/indicator-notifications-settings.c:411
 msgid "Indicator Notifications Settings"
 msgstr ""
 
 #. hide-indicator
-#: ../src/indicator-notifications-settings.c:253
+#: ../src/indicator-notifications-settings.c:288
 #, fuzzy
 msgid "Hide indicator"
 msgstr "הסתרת המחוון"
 
+#. do-not-disturb
+#: ../src/indicator-notifications-settings.c:297
+msgid "Do not disturb"
+msgstr ""
+
+#. swap-clear-settings
+#: ../src/indicator-notifications-settings.c:306
+msgid "Swap \"Clear\" and \"Settings\" items"
+msgstr ""
+
 #. max-items
 #. FIXME: indicator does not change max items until restart...
-#: ../src/indicator-notifications-settings.c:263
+#: ../src/indicator-notifications-settings.c:316
 #, fuzzy
 msgid "Maximum number of visible notifications"
 msgstr "מספר הפריטים הגלויים המרבי"
 
-#: ../src/indicator-notifications-settings.c:299
+#: ../src/indicator-notifications-settings.c:352
 msgid "Remove"
 msgstr ""
 
-#: ../src/indicator-notifications-settings.c:304
+#: ../src/indicator-notifications-settings.c:357
 msgid "Add"
 msgstr ""
 
-#: ../src/notification-menuitem.c:129
+#: ../src/notification-menuitem.c:128
 msgid "from"
 msgstr "מ־"

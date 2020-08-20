@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-28 20:16+0200\n"
+"POT-Creation-Date: 2020-08-21 15:00+0200\n"
 "PO-Revision-Date: 2020-06-28 06:41+0000\n"
 "Last-Translator: Zsolt Pastorek <pastorekz@gmail.com>\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/"
-"ayatana-indicators/notifications-applet/sk/>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/ayatana-"
+"indicators/notifications-applet/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,15 +19,16 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Weblate 4.2-dev\n"
 
-#. blacklist
+#. filter-list
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
-#: ../src/indicator-notifications-settings.c:274
+#: ../src/indicator-notifications-settings.c:327
 msgid "Discard notifications by application name"
 msgstr "Odstrániť notifikáciu podľa názvu aplikácie"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
+#, fuzzy
 msgid ""
-"If an application name is in the blacklist, all notifications matching the "
+"If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
 msgstr ""
 "Ak názov aplikácie je na zozname vylúčených, všetky oznámenia s rovnakým "
@@ -35,7 +36,7 @@ msgstr ""
 
 #. clear-on-middle-click
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
-#: ../src/indicator-notifications-settings.c:244
+#: ../src/indicator-notifications-settings.c:279
 msgid "Clear notifications on middle click"
 msgstr "Zmazať oznámenie pri kliknutí stredného tlačidla myši"
 
@@ -67,16 +68,17 @@ msgid ""
 "indicated by this value."
 msgstr "Ukazovateľ zobrazí maximálne toľko položiek ako je uvedená hodnota."
 
-#: ../src/indicator-notifications.c:167
+#: ../src/indicator-notifications.c:177
 msgid "Notifications"
 msgstr "Oznámenia"
 
 #. Create the settings menuitem
-#: ../src/indicator-notifications.c:176
-msgid "Settings..."
+#: ../src/indicator-notifications.c:186
+#, fuzzy
+msgid "Settings…"
 msgstr "Nastavenia..."
 
-#: ../src/indicator-notifications.c:475
+#: ../src/indicator-notifications.c:522
 #, c-format
 msgid "Clear <small>(%d Notification)</small>"
 msgid_plural "Clear <small>(%d Notifications)</small>"
@@ -85,31 +87,41 @@ msgstr[1] "Vyčistit <small>(%d oznámenia)</small>"
 msgstr[2] "Vyčistit <small>(%d oznámení)</small>"
 
 #. Window Frame
-#: ../src/indicator-notifications-settings.c:227
-#: ../src/indicator-notifications-settings.c:233
-#: ../src/indicator-notifications-settings.c:348
+#: ../src/indicator-notifications-settings.c:262
+#: ../src/indicator-notifications-settings.c:268
+#: ../src/indicator-notifications-settings.c:411
 msgid "Indicator Notifications Settings"
 msgstr "Nastavenie notifikácie ukazovateľov"
 
 #. hide-indicator
-#: ../src/indicator-notifications-settings.c:253
+#: ../src/indicator-notifications-settings.c:288
 msgid "Hide indicator"
 msgstr "Skryť ukazovateľ"
 
+#. do-not-disturb
+#: ../src/indicator-notifications-settings.c:297
+msgid "Do not disturb"
+msgstr ""
+
+#. swap-clear-settings
+#: ../src/indicator-notifications-settings.c:306
+msgid "Swap \"Clear\" and \"Settings\" items"
+msgstr ""
+
 #. max-items
 #. FIXME: indicator does not change max items until restart...
-#: ../src/indicator-notifications-settings.c:263
+#: ../src/indicator-notifications-settings.c:316
 msgid "Maximum number of visible notifications"
 msgstr "Maximálny počet viditeľných oznámení"
 
-#: ../src/indicator-notifications-settings.c:299
+#: ../src/indicator-notifications-settings.c:352
 msgid "Remove"
 msgstr "Odstrániť"
 
-#: ../src/indicator-notifications-settings.c:304
+#: ../src/indicator-notifications-settings.c:357
 msgid "Add"
 msgstr "Pridať"
 
-#: ../src/notification-menuitem.c:129
+#: ../src/notification-menuitem.c:128
 msgid "from"
 msgstr "z"
