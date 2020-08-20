@@ -6,8 +6,8 @@
 #define __SETTINGS_H__
 
 #define NOTIFICATIONS_SCHEMA                  "org.ayatana.indicator.notifications"
-#define NOTIFICATIONS_KEY_BLACKLIST           "blacklist"
-#define NOTIFICATIONS_KEY_BLACKLIST_HINTS     "blacklist-hints"
+#define NOTIFICATIONS_KEY_BLACKLIST           "filter-list"
+#define NOTIFICATIONS_KEY_BLACKLIST_HINTS     "filter-list-hints"
 #define NOTIFICATIONS_KEY_CLEAR_MC            "clear-on-middle-click"
 #define NOTIFICATIONS_KEY_DND                 "do-not-disturb"
 #define NOTIFICATIONS_KEY_HIDE_INDICATOR      "hide-indicator"

@@ -1,13 +1,13 @@
 <schemalist gettext-domain="@GETTEXT_PACKAGE@">
   <schema id="org.ayatana.indicator.notifications" path="/org/ayatana/indicator/notifications/">
-    <key name="blacklist" type="as">
+    <key name="filter-list" type="as">
       <default>[]</default>
       <_summary>Discard notifications by application name</_summary>
-      <_description>If an application name is in the blacklist, all notifications matching the application name will be discarded.</_description>
+      <_description>If an application name is in the filter list, all notifications matching the application name will be discarded.</_description>
     </key>
-    <key name="blacklist-hints" type="as">
+    <key name="filter-list-hints" type="as">
       <default>[]</default>
-      <summary>Recent application names to suggest for the blacklist</summary>
+      <summary>Recent application names to suggest for the filter list</summary>
       <description>Keeps track of recent application names so we can suggest them in the settings.</description>
     </key>
     <key name="clear-on-middle-click" type="b">
