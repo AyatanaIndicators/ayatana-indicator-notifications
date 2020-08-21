@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-28 20:16+0200\n"
+"POT-Creation-Date: 2020-08-21 15:00+0200\n"
 "PO-Revision-Date: 2020-06-15 04:41+0000\n"
 "Last-Translator: MarongHappy <daemul72@gmail.com>\n"
-"Language-Team: Korean <https://hosted.weblate.org/projects/"
-"ayatana-indicators/notifications-applet/ko/>\n"
+"Language-Team: Korean <https://hosted.weblate.org/projects/ayatana-"
+"indicators/notifications-applet/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,21 +19,24 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.1-dev\n"
 
-#. blacklist
+#. filter-list
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
-#: ../src/indicator-notifications-settings.c:274
+#: ../src/indicator-notifications-settings.c:327
 msgid "Discard notifications by application name"
 msgstr "응용프로그램 이름별 알림 삭제"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
+#, fuzzy
 msgid ""
-"If an application name is in the blacklist, all notifications matching the "
+"If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
-msgstr "응용프로그램 이름이 블랙리스트에 있으면 응용프로그램 이름과 일치하는 모든 알림이 삭제됩니다."
+msgstr ""
+"응용프로그램 이름이 블랙리스트에 있으면 응용프로그램 이름과 일치하는 모든 알"
+"림이 삭제됩니다."
 
 #. clear-on-middle-click
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
-#: ../src/indicator-notifications-settings.c:244
+#: ../src/indicator-notifications-settings.c:279
 msgid "Clear notifications on middle click"
 msgstr "가운데 클릭시 알림 지우기"
 
@@ -43,8 +46,8 @@ msgid ""
 "be toggled if the queue is not empty. With this option enabled, the "
 "notification queue will be cleared instead."
 msgstr ""
-"일반적으로 알림 아이콘을 중간 클릭할 때 대기열이 비어 있지 않으면 읽지 않은 상태로 전환됩니다. 이 옵션을 활성화하면 알림 대기열이 "
-"대신 지워집니다."
+"일반적으로 알림 아이콘을 중간 클릭할 때 대기열이 비어 있지 않으면 읽지 않은 "
+"상태로 전환됩니다. 이 옵션을 활성화하면 알림 대기열이 대신 지워집니다."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:5
 msgid "Hide the indicator"
@@ -64,47 +67,58 @@ msgid ""
 "indicated by this value."
 msgstr "표시기는 이 값으로 표시된 최대 알림 수만 표시합니다."
 
-#: ../src/indicator-notifications.c:167
+#: ../src/indicator-notifications.c:177
 msgid "Notifications"
 msgstr "알림"
 
 #. Create the settings menuitem
-#: ../src/indicator-notifications.c:176
-msgid "Settings..."
+#: ../src/indicator-notifications.c:186
+#, fuzzy
+msgid "Settings…"
 msgstr "설정..."
 
-#: ../src/indicator-notifications.c:475
+#: ../src/indicator-notifications.c:522
 #, c-format
 msgid "Clear <small>(%d Notification)</small>"
 msgid_plural "Clear <small>(%d Notifications)</small>"
 msgstr[0] "지우기 <small>(%d 알림)</small>"
 
 #. Window Frame
-#: ../src/indicator-notifications-settings.c:227
-#: ../src/indicator-notifications-settings.c:233
-#: ../src/indicator-notifications-settings.c:348
+#: ../src/indicator-notifications-settings.c:262
+#: ../src/indicator-notifications-settings.c:268
+#: ../src/indicator-notifications-settings.c:411
 msgid "Indicator Notifications Settings"
 msgstr "표시기 알림 설정"
 
 #. hide-indicator
-#: ../src/indicator-notifications-settings.c:253
+#: ../src/indicator-notifications-settings.c:288
 msgid "Hide indicator"
 msgstr "표시기 숨김"
 
+#. do-not-disturb
+#: ../src/indicator-notifications-settings.c:297
+msgid "Do not disturb"
+msgstr ""
+
+#. swap-clear-settings
+#: ../src/indicator-notifications-settings.c:306
+msgid "Swap \"Clear\" and \"Settings\" items"
+msgstr ""
+
 #. max-items
 #. FIXME: indicator does not change max items until restart...
-#: ../src/indicator-notifications-settings.c:263
+#: ../src/indicator-notifications-settings.c:316
 msgid "Maximum number of visible notifications"
 msgstr "표시되는 알림의 최대 개수"
 
-#: ../src/indicator-notifications-settings.c:299
+#: ../src/indicator-notifications-settings.c:352
 msgid "Remove"
 msgstr "제거"
 
-#: ../src/indicator-notifications-settings.c:304
+#: ../src/indicator-notifications-settings.c:357
 msgid "Add"
 msgstr "추가"
 
-#: ../src/notification-menuitem.c:129
+#: ../src/notification-menuitem.c:128
 msgid "from"
 msgstr ""

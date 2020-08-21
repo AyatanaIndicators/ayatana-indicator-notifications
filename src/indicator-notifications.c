@@ -61,8 +61,10 @@ struct _IndicatorNotificationsPrivate {
   GList       *hidden_items;
 
   gboolean     clear_on_middle_click;
+  gboolean     do_not_disturb;
   gboolean     have_unread;
   gboolean     hide_indicator;
+  gboolean     swap_clear_settings;
 
   gint         max_items;
 
@@ -75,7 +77,9 @@ struct _IndicatorNotificationsPrivate {
 
   DBusSpy     *spy;
 
-  GHashTable  *blacklist;
+  GHashTable  *filter_list;
+
+  GList       *filter_list_hints;
 
   GSettings   *settings;
 };
@@ -83,8 +87,12 @@ struct _IndicatorNotificationsPrivate {
 #include "settings.h"
 
 #define INDICATOR_ICON_SIZE 22
-#define INDICATOR_ICON_READ   "ayatana-indicator-notification-read"
-#define INDICATOR_ICON_UNREAD "ayatana-indicator-notification-unread"
+#define INDICATOR_ICON_READ       "ayatana-indicator-notification-read"
+#define INDICATOR_ICON_UNREAD     "ayatana-indicator-notification-unread"
+#define INDICATOR_ICON_READ_DND   "ayatana-indicator-notification-read-dnd"
+#define INDICATOR_ICON_UNREAD_DND "ayatana-indicator-notification-unread-dnd"
+
+#define HINT_MAX 10
 
 GType indicator_notifications_get_type(void);
 
@@ -108,9 +116,16 @@ static void clear_menuitems(IndicatorNotifications *self);
 static void insert_menuitem(IndicatorNotifications *self, GtkWidget *item);
 static void remove_menuitem(IndicatorNotifications *self, GtkWidget *item);
 static void set_unread(IndicatorNotifications *self, gboolean unread);
-static void update_blacklist(IndicatorNotifications *self);
+static void update_unread(IndicatorNotifications *self);
+static void update_filter_list(IndicatorNotifications *self);
 static void update_clear_item_markup(IndicatorNotifications *self);
 static void update_indicator_visibility(IndicatorNotifications *self);
+static void load_filter_list_hints(IndicatorNotifications *self);
+static void save_filter_list_hints(IndicatorNotifications *self);
+static void update_filter_list_hints(IndicatorNotifications *self, Notification *notification);
+static void update_do_not_disturb(IndicatorNotifications *self);
+static void settings_try_set_boolean(const gchar *schema, const gchar *key, gboolean value);
+static void swap_clear_settings_items(IndicatorNotifications *self);
 
 /* Callbacks */
 static void clear_item_activated_cb(GtkMenuItem *menuitem, gpointer user_data);
@@ -193,16 +208,24 @@ indicator_notifications_init(IndicatorNotifications *self)
   self->priv->spy = dbus_spy_new();
   g_signal_connect(self->priv->spy, DBUS_SPY_SIGNAL_MESSAGE_RECEIVED, G_CALLBACK(message_received_cb), self);
 
-  /* Initialize an empty blacklist */
-  self->priv->blacklist = g_hash_table_new_full(g_str_hash, g_str_equal, g_free, NULL);
+  /* Initialize an empty filter list */
+  self->priv->filter_list = g_hash_table_new_full(g_str_hash, g_str_equal, g_free, NULL);
 
   /* Connect to GSettings */
   self->priv->settings = g_settings_new(NOTIFICATIONS_SCHEMA);
   self->priv->clear_on_middle_click = g_settings_get_boolean(self->priv->settings, NOTIFICATIONS_KEY_CLEAR_MC);
+  self->priv->do_not_disturb = g_settings_get_boolean(self->priv->settings, NOTIFICATIONS_KEY_DND);
   self->priv->hide_indicator = g_settings_get_boolean(self->priv->settings, NOTIFICATIONS_KEY_HIDE_INDICATOR);
   self->priv->max_items = g_settings_get_int(self->priv->settings, NOTIFICATIONS_KEY_MAX_ITEMS);
-  update_blacklist(self);
+  update_filter_list(self);
+  self->priv->swap_clear_settings = g_settings_get_boolean(self->priv->settings, NOTIFICATIONS_KEY_SWAP_CLEAR_SETTINGS);
+  if(self->priv->swap_clear_settings)
+    swap_clear_settings_items(self);
   g_signal_connect(self->priv->settings, "changed", G_CALLBACK(setting_changed_cb), self);
+
+  /* Set up filter-list hints */
+  self->priv->filter_list_hints = NULL;
+  load_filter_list_hints(self);
 }
 
 static void
@@ -240,9 +263,14 @@ indicator_notifications_dispose(GObject *object)
     self->priv->settings = NULL;
   }
 
-  if(self->priv->blacklist != NULL) {
-    g_hash_table_unref(self->priv->blacklist);
-    self->priv->blacklist = NULL;
+  if(self->priv->filter_list != NULL) {
+    g_hash_table_unref(self->priv->filter_list);
+    self->priv->filter_list = NULL;
+  }
+
+  if(self->priv->filter_list_hints != NULL) {
+    g_list_free_full(self->priv->filter_list_hints, g_free);
+    self->priv->filter_list_hints = NULL;
   }
 
   G_OBJECT_CLASS (indicator_notifications_parent_class)->dispose (object);
@@ -263,7 +291,8 @@ get_image(IndicatorObject *io)
 
   if(self->priv->image == NULL) {
     self->priv->image = GTK_IMAGE(gtk_image_new());
-    set_unread(self, FALSE);
+    /* We have to wait until the image is created to update do-not-disturb the first time */
+    update_do_not_disturb(self);
     update_indicator_visibility(self);
   }
 
@@ -417,35 +446,58 @@ set_unread(IndicatorNotifications *self, gboolean unread)
 {
   g_return_if_fail(IS_INDICATOR_NOTIFICATIONS(self));
 
-  if(unread) {
-    gtk_image_set_from_icon_name(self->priv->image, INDICATOR_ICON_UNREAD, GTK_ICON_SIZE_MENU);
-  }
-  else {
-    gtk_image_set_from_icon_name(self->priv->image, INDICATOR_ICON_READ, GTK_ICON_SIZE_MENU);
-  }
-
   self->priv->have_unread = unread;
+  update_unread(self);
 }
 
 /**
- * update_blacklist:
+ * update_unread:
  * @self: the indicator object
  *
- * Updates the blacklist from GSettings. This currently does not filter already
+ * Updates the indicator icons.
+ **/
+static void
+update_unread(IndicatorNotifications *self)
+{
+  g_return_if_fail(IS_INDICATOR_NOTIFICATIONS(self));
+
+  if(self->priv->have_unread) {
+    if (self->priv->do_not_disturb) {
+      gtk_image_set_from_icon_name(self->priv->image, INDICATOR_ICON_UNREAD_DND, GTK_ICON_SIZE_MENU);
+    }
+    else {
+      gtk_image_set_from_icon_name(self->priv->image, INDICATOR_ICON_UNREAD, GTK_ICON_SIZE_MENU);
+    }
+  }
+  else {
+    if (self->priv->do_not_disturb) {
+      gtk_image_set_from_icon_name(self->priv->image, INDICATOR_ICON_READ_DND, GTK_ICON_SIZE_MENU);
+    }
+    else {
+      gtk_image_set_from_icon_name(self->priv->image, INDICATOR_ICON_READ, GTK_ICON_SIZE_MENU);
+    }
+  }
+}
+
+/**
+ * update_filter_list:
+ * @self: the indicator object
+ *
+ * Updates the filter list from GSettings. This currently does not filter already
  * allowed messages. It only applies to messages received in the future.
  **/
 static void
-update_blacklist(IndicatorNotifications *self)
+update_filter_list(IndicatorNotifications *self)
 {
   g_return_if_fail(IS_INDICATOR_NOTIFICATIONS(self));
-  g_return_if_fail(self->priv->blacklist != NULL);
+  g_return_if_fail(self->priv->filter_list != NULL);
 
-  g_hash_table_remove_all(self->priv->blacklist);
-  gchar **items = g_settings_get_strv(self->priv->settings, NOTIFICATIONS_KEY_BLACKLIST);
+  g_hash_table_remove_all(self->priv->filter_list);
+  gchar **items = g_settings_get_strv(self->priv->settings, NOTIFICATIONS_KEY_FILTER_LIST);
   int i;
 
   for(i = 0; items[i] != NULL; i++) {
-    g_hash_table_insert(self->priv->blacklist, g_strdup(items[i]), NULL);
+    g_hash_table_insert(self->priv->filter_list, g_strdup(items[i]), NULL);
   }
 
   g_strfreev(items);
@@ -498,6 +550,169 @@ update_indicator_visibility(IndicatorNotifications *self)
     else
       gtk_widget_show(GTK_WIDGET(self->priv->image));
   }
+}
+
+/**
+ * load_filter_list_hints:
+ * @self: the indicator object
+ *
+ * Loads the filter list hints from gsettings
+ **/
+static void
+load_filter_list_hints(IndicatorNotifications *self)
+{
+  g_return_if_fail(IS_INDICATOR_NOTIFICATIONS(self));
+  g_return_if_fail(self->priv->filter_list_hints == NULL);
+
+  gchar **items = g_settings_get_strv(self->priv->settings, NOTIFICATIONS_KEY_FILTER_LIST_HINTS);
+  int i;
+
+  for (i = 0; items[i] != NULL; i++) {
+    self->priv->filter_list_hints = g_list_prepend(self->priv->filter_list_hints, items[i]);
+  }
+
+  g_free(items);
+}
+
+/**
+ * save_filter_list_hints:
+ * @self: the indicator object
+ *
+ * Saves the filter list hints to gsettings
+ **/
+static void
+save_filter_list_hints(IndicatorNotifications *self)
+{
+  g_return_if_fail(IS_INDICATOR_NOTIFICATIONS(self));
+
+  gchar *hints[HINT_MAX + 1];
+  int i = 0;
+
+  GList *l;
+  for (l = self->priv->filter_list_hints; (l != NULL) && (i < HINT_MAX); l = l->next, i++) {
+    hints[i] = (gchar *) l->data;
+  }
+
+  hints[i] = NULL;
+
+  g_settings_set_strv(self->priv->settings, NOTIFICATIONS_KEY_FILTER_LIST_HINTS, (const gchar **) hints);
+}
+
+/**
+ * update_filter_list_hints:
+ * @self: the indicator object
+ *
+ * Adds an application name to the hints
+ **/
+static void
+update_filter_list_hints(IndicatorNotifications *self, Notification *notification)
+{
+  g_return_if_fail(IS_INDICATOR_NOTIFICATIONS(self));
+  g_return_if_fail(IS_NOTIFICATION(notification));
+
+  const gchar *appname = notification_get_app_name(notification);
+
+  /* Avoid duplicates */
+  GList *l;
+  for (l = self->priv->filter_list_hints; l != NULL; l = l->next) {
+    if (g_strcmp0(appname, (const gchar *) l->data) == 0)
+      return;
+  }
+
+  /* Add the appname */
+  self->priv->filter_list_hints = g_list_prepend(self->priv->filter_list_hints, g_strdup(appname));
+
+  /* Keep only a reasonable number */
+  while (g_list_length(self->priv->filter_list_hints) > HINT_MAX) {
+    GList *last = g_list_last(self->priv->filter_list_hints);
+    g_free(last->data);
+    self->priv->filter_list_hints = g_list_delete_link(self->priv->filter_list_hints, last);
+  }
+
+  /* Save the hints */
+  /* FIXME: maybe don't do this every update */
+  save_filter_list_hints(self);
+}
+
+/**
+ * update_do_not_disturb:
+ * @self: the indicator object
+ *
+ * Updates the icon with the do-not-disturb version and sets do-not-disturb options
+ * on external notification daemons that are supported.
+ **/
+static void
+update_do_not_disturb(IndicatorNotifications *self)
+{
+  g_return_if_fail(IS_INDICATOR_NOTIFICATIONS(self));
+
+  update_unread(self);
+
+  /* Mate do-not-disturb support */
+  settings_try_set_boolean(MATE_SCHEMA, MATE_KEY_DND, self->priv->do_not_disturb);
+}
+
+/**
+ * settings_try_set_boolean:
+ * @schema: the GSettings schema
+ * @key: the GSettings key
+ * @value: the boolean value
+ *
+ * Checks to see if the schema and key exist before setting the value.
+ */
+static void
+settings_try_set_boolean(const gchar *schema, const gchar *key, gboolean value)
+{
+  /* Check if we can access the schema */
+  GSettingsSchemaSource *source = g_settings_schema_source_get_default();
+  if (source == NULL) {
+    return;
+  }
+
+  /* Lookup the schema */
+  GSettingsSchema *source_schema = g_settings_schema_source_lookup(source, schema, TRUE);
+
+  /* Couldn't find the schema */
+  if (source_schema == NULL) {
+    return;
+  }
+
+  /* Found the schema, make sure we have the key */
+  if (g_settings_schema_has_key(source_schema, key)) {
+    /* Make sure the key is of boolean type */
+    GSettingsSchemaKey *source_key = g_settings_schema_get_key(source_schema, key);
+
+    if (g_variant_type_equal(g_settings_schema_key_get_value_type(source_key), G_VARIANT_TYPE_BOOLEAN)) {
+      /* Set the value */
+      GSettings *settings = g_settings_new(schema);
+      g_settings_set_boolean(settings, key, value);
+      g_object_unref(settings);
+    }
+
+    g_settings_schema_key_unref(source_key);
+  }
+  g_settings_schema_unref(source_schema);
+}
+
+/**
+ * swap_clear_settings_items:
+ * @self: the indicator object
+ *
+ * Swaps the position of the clear and settings items.
+ **/
+static void
+swap_clear_settings_items(IndicatorNotifications *self)
+{
+  g_return_if_fail(IS_INDICATOR_NOTIFICATIONS(self));
+
+  // Pick which widget to move
+  GtkWidget *widget = self->priv->settings_item;
+  if(self->priv->swap_clear_settings)
+    widget = self->priv->clear_item;
+
+  gtk_container_remove(GTK_CONTAINER(self->priv->menu), g_object_ref(widget));
+  gtk_menu_shell_append(GTK_MENU_SHELL(self->priv->menu), widget);
+  g_object_unref(widget);
 }
 
 /**
@@ -564,11 +779,19 @@ setting_changed_cb(GSettings *settings, gchar *key, gpointer user_data)
     self->priv->hide_indicator = g_settings_get_boolean(settings, NOTIFICATIONS_KEY_HIDE_INDICATOR);
     update_indicator_visibility(self);
   }
+  else if(g_strcmp0(key, NOTIFICATIONS_KEY_DND) == 0) {
+    self->priv->do_not_disturb = g_settings_get_boolean(settings, NOTIFICATIONS_KEY_DND);
+    update_do_not_disturb(self);
+  }
   else if(g_strcmp0(key, NOTIFICATIONS_KEY_CLEAR_MC) == 0) {
     self->priv->clear_on_middle_click = g_settings_get_boolean(self->priv->settings, NOTIFICATIONS_KEY_CLEAR_MC);
   }
-  else if(g_strcmp0(key, NOTIFICATIONS_KEY_BLACKLIST) == 0) {
-    update_blacklist(self);
+  else if(g_strcmp0(key, NOTIFICATIONS_KEY_FILTER_LIST) == 0) {
+    update_filter_list(self);
+  }
+  else if(g_strcmp0(key, NOTIFICATIONS_KEY_SWAP_CLEAR_SETTINGS) == 0) {
+    self->priv->swap_clear_settings = g_settings_get_boolean(self->priv->settings, NOTIFICATIONS_KEY_SWAP_CLEAR_SETTINGS);
+    swap_clear_settings_items(self);
   }
   /* TODO: Trim or extend the notifications list based on "max-items" key
    * (Currently requires a restart) */
@@ -612,19 +835,29 @@ message_received_cb(DBusSpy *spy, Notification *note, gpointer user_data)
   g_return_if_fail(IS_INDICATOR_NOTIFICATIONS(user_data));
   IndicatorNotifications *self = INDICATOR_NOTIFICATIONS(user_data);
 
+  /* Discard notifications if we are hidden */
+  if(self->priv->hide_indicator) {
+    g_object_unref(note);
+    return;
+  }
+
   /* Discard useless notifications */
   if(notification_is_private(note) || notification_is_empty(note)) {
     g_object_unref(note);
     return;
   }
 
-  /* Discard notifications on the blacklist */
-  if(self->priv->blacklist != NULL && g_hash_table_contains(self->priv->blacklist,
+  /* Discard notifications on the filter list */
+  if(self->priv->filter_list != NULL && g_hash_table_contains(self->priv->filter_list,
         notification_get_app_name(note))) {
     g_object_unref(note);
     return;
   }
 
+  /* Save a hint for the appname */
+  update_filter_list_hints(self, note);
+
+  /* Create the menuitem */
   GtkWidget *item = notification_menuitem_new();
   notification_menuitem_set_from_notification(NOTIFICATION_MENUITEM(item), note);
   g_signal_connect(item, NOTIFICATION_MENUITEM_SIGNAL_CLICKED, G_CALLBACK(notification_clicked_cb), self);

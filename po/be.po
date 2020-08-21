@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-28 20:16+0200\n"
+"POT-Creation-Date: 2020-08-21 15:00+0200\n"
 "PO-Revision-Date: 2017-12-18 21:53+0000\n"
 "Last-Translator: Viktar Vauchkevich <victorenator@gmail.com>\n"
 "Language-Team: Belarusian <https://hosted.weblate.org/projects/ayatana-"
@@ -20,15 +20,16 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.18\n"
 
-#. blacklist
+#. filter-list
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
-#: ../src/indicator-notifications-settings.c:274
+#: ../src/indicator-notifications-settings.c:327
 msgid "Discard notifications by application name"
 msgstr "Адкінуць апавяшчэнні па імені прыкладання"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
+#, fuzzy
 msgid ""
-"If an application name is in the blacklist, all notifications matching the "
+"If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
 msgstr ""
 "Калі імя пракладання ў чорным спісе, усе апавяшчэнні, што адпавядаюць, "
@@ -36,7 +37,7 @@ msgstr ""
 
 #. clear-on-middle-click
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
-#: ../src/indicator-notifications-settings.c:244
+#: ../src/indicator-notifications-settings.c:279
 msgid "Clear notifications on middle click"
 msgstr "Ачысціць апавяшчэнні сярэдняй кнопкай"
 
@@ -70,16 +71,16 @@ msgstr ""
 "Індыкатар будзе адлюстроўваць не больш за заданую гэтым значэннем колькасць "
 "апавяшчэнняў."
 
-#: ../src/indicator-notifications.c:167
+#: ../src/indicator-notifications.c:177
 msgid "Notifications"
 msgstr "Апавяшчэнні"
 
 #. Create the settings menuitem
-#: ../src/indicator-notifications.c:176
-msgid "Settings..."
+#: ../src/indicator-notifications.c:186
+msgid "Settings…"
 msgstr ""
 
-#: ../src/indicator-notifications.c:475
+#: ../src/indicator-notifications.c:522
 #, c-format
 msgid "Clear <small>(%d Notification)</small>"
 msgid_plural "Clear <small>(%d Notifications)</small>"
@@ -88,33 +89,43 @@ msgstr[1] "Ачысць <small>(%d апавяшчэнні)</small>"
 msgstr[2] "Ачысць <small>(%d апавяшчэнняў)</small>"
 
 #. Window Frame
-#: ../src/indicator-notifications-settings.c:227
-#: ../src/indicator-notifications-settings.c:233
-#: ../src/indicator-notifications-settings.c:348
+#: ../src/indicator-notifications-settings.c:262
+#: ../src/indicator-notifications-settings.c:268
+#: ../src/indicator-notifications-settings.c:411
 msgid "Indicator Notifications Settings"
 msgstr ""
 
 #. hide-indicator
-#: ../src/indicator-notifications-settings.c:253
+#: ../src/indicator-notifications-settings.c:288
 #, fuzzy
 msgid "Hide indicator"
 msgstr "Схаваць індыкатар"
 
+#. do-not-disturb
+#: ../src/indicator-notifications-settings.c:297
+msgid "Do not disturb"
+msgstr ""
+
+#. swap-clear-settings
+#: ../src/indicator-notifications-settings.c:306
+msgid "Swap \"Clear\" and \"Settings\" items"
+msgstr ""
+
 #. max-items
 #. FIXME: indicator does not change max items until restart...
-#: ../src/indicator-notifications-settings.c:263
+#: ../src/indicator-notifications-settings.c:316
 #, fuzzy
 msgid "Maximum number of visible notifications"
 msgstr "Максімальная колькасць бачных элементаў"
 
-#: ../src/indicator-notifications-settings.c:299
+#: ../src/indicator-notifications-settings.c:352
 msgid "Remove"
 msgstr ""
 
-#: ../src/indicator-notifications-settings.c:304
+#: ../src/indicator-notifications-settings.c:357
 msgid "Add"
 msgstr ""
 
-#: ../src/notification-menuitem.c:129
+#: ../src/notification-menuitem.c:128
 msgid "from"
 msgstr "з"

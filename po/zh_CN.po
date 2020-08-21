@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-28 20:16+0200\n"
+"POT-Creation-Date: 2020-08-21 15:00+0200\n"
 "PO-Revision-Date: 2020-05-27 06:41+0000\n"
 "Last-Translator: wdggg <wdggg7@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
@@ -19,21 +19,22 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.1-dev\n"
 
-#. blacklist
+#. filter-list
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
-#: ../src/indicator-notifications-settings.c:274
+#: ../src/indicator-notifications-settings.c:327
 msgid "Discard notifications by application name"
 msgstr "按应用程序名称屏蔽通知"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
+#, fuzzy
 msgid ""
-"If an application name is in the blacklist, all notifications matching the "
+"If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
 msgstr "如果有一个应用程序在黑名单中， 所有与该程序相关的通知将会被丢弃。"
 
 #. clear-on-middle-click
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
-#: ../src/indicator-notifications-settings.c:244
+#: ../src/indicator-notifications-settings.c:279
 msgid "Clear notifications on middle click"
 msgstr "点击鼠标中键以清空通知"
 
@@ -42,7 +43,9 @@ msgid ""
 "Normally when middle clicking the notification icon, the unread status will "
 "be toggled if the queue is not empty. With this option enabled, the "
 "notification queue will be cleared instead."
-msgstr "通常，中键点击通知中心图标时，如果通知队列不为空，则会切换到未读的通知。启用此选项后，将清除通知队列。"
+msgstr ""
+"通常，中键点击通知中心图标时，如果通知队列不为空，则会切换到未读的通知。启用"
+"此选项后，将清除通知队列。"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:5
 msgid "Hide the indicator"
@@ -62,47 +65,58 @@ msgid ""
 "indicated by this value."
 msgstr "指示器最多只显示相当于此数值的通知数量。"
 
-#: ../src/indicator-notifications.c:167
+#: ../src/indicator-notifications.c:177
 msgid "Notifications"
 msgstr "通知"
 
 #. Create the settings menuitem
-#: ../src/indicator-notifications.c:176
-msgid "Settings..."
+#: ../src/indicator-notifications.c:186
+#, fuzzy
+msgid "Settings…"
 msgstr "设置..."
 
-#: ../src/indicator-notifications.c:475
+#: ../src/indicator-notifications.c:522
 #, c-format
 msgid "Clear <small>(%d Notification)</small>"
 msgid_plural "Clear <small>(%d Notifications)</small>"
 msgstr[0] "清空 <small>(%d 通知)</small>"
 
 #. Window Frame
-#: ../src/indicator-notifications-settings.c:227
-#: ../src/indicator-notifications-settings.c:233
-#: ../src/indicator-notifications-settings.c:348
+#: ../src/indicator-notifications-settings.c:262
+#: ../src/indicator-notifications-settings.c:268
+#: ../src/indicator-notifications-settings.c:411
 msgid "Indicator Notifications Settings"
 msgstr "指示器通知设置"
 
 #. hide-indicator
-#: ../src/indicator-notifications-settings.c:253
+#: ../src/indicator-notifications-settings.c:288
 msgid "Hide indicator"
 msgstr "隐藏指示器"
 
+#. do-not-disturb
+#: ../src/indicator-notifications-settings.c:297
+msgid "Do not disturb"
+msgstr ""
+
+#. swap-clear-settings
+#: ../src/indicator-notifications-settings.c:306
+msgid "Swap \"Clear\" and \"Settings\" items"
+msgstr ""
+
 #. max-items
 #. FIXME: indicator does not change max items until restart...
-#: ../src/indicator-notifications-settings.c:263
+#: ../src/indicator-notifications-settings.c:316
 msgid "Maximum number of visible notifications"
 msgstr "最大可见通知数量"
 
-#: ../src/indicator-notifications-settings.c:299
+#: ../src/indicator-notifications-settings.c:352
 msgid "Remove"
 msgstr "删除"
 
-#: ../src/indicator-notifications-settings.c:304
+#: ../src/indicator-notifications-settings.c:357
 msgid "Add"
 msgstr "添加"
 
-#: ../src/notification-menuitem.c:129
+#: ../src/notification-menuitem.c:128
 msgid "from"
 msgstr "从"
