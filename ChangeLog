@@ -1,6 +1,68 @@
-2020-08-17 22:59:20 +0200 Mike Gabriel
+2020-08-21 15:30:51 +0200 Mike Gabriel
 
-	* release 0.8.0 (HEAD -> master, tag: 0.8.0)
+	* release 0.8.1 (HEAD -> master, tag: 0.8.1)
+
+2020-08-21 15:21:52 +0200 Mike Gabriel (493e766)
+
+	* README.md: Provide some basic information on the notifications
+          indicator.
+
+2020-08-21 15:06:05 +0200 Mike Gabriel (e362432)
+
+	* Merge branch
+          'sunweaver-pr/port-patches-from-indicator-notifications-by-trism'
+
+2020-08-20 14:08:43 +0200 Mike Gabriel (d50e5a3)
+
+	* Update translation files (for blacklist/filter-list renaming and
+          do-not-disturb feature).
+
+2020-08-21 14:58:52 +0200 Jason Conti (ab78838)
+
+	* src/indicator-notifications: settings_try_set_boolean(): Enable the
+          recursive schema lookup so we have a better chance of
+          finding it.
+
+2020-08-20 09:45:37 +0200 Jason Conti (aca92b3)
+
+	* Rename blacklist to filter-list.
+
+2020-08-20 09:41:52 +0200 Tasos Sahanidis (3fbc05d)
+
+	* Add option to swap Settings and Clear.
+
+2019-09-05 09:23:54 -0400 Jason Conti (d1b76b9)
+
+	* Discard notifications when indicator is hidden.
+
+2020-08-20 09:38:41 +0200 Jason Conti (8f19524)
+
+	* Add do-not-disturb mode read/unread icons.
+
+2020-08-20 09:35:44 +0200 Jason Conti (82ca918)
+
+	* Add our own do-not-disturb setting.
+
+2019-08-30 23:23:53 -0400 Jason Conti (77fb1c1)
+
+	* Add mate do-not-disturb option if available.
+
+2020-08-20 09:32:00 +0200 Jason Conti (e4bf77f)
+
+	* Add blacklist hints for recent application names.
+
+2020-08-20 14:36:47 +0200 Mike Gabriel (ed884c0)
+
+	* Revert "Start indicator in systemd when ayatana-indicators.target
+          is started."
+
+2020-08-19 21:36:29 +0200 Mike Gabriel (b03aa69)
+
+	* configure.ac: Fix-back author in AC_INIT().
+
+2020-08-17 22:59:20 +0200 Mike Gabriel (a128095)
+
+	* release 0.8.0 (tag: 0.8.0)
 
 2020-08-11 09:43:27 +0200 Robert Tari (f15307a)
 

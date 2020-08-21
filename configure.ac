@@ -1,4 +1,4 @@
-AC_INIT([ayatana-indicator-notifications], [0.8.0], [jason.conti@gmail.com])
+AC_INIT([ayatana-indicator-notifications], [0.8.1], [jason.conti@gmail.com])
 
 AM_INIT_AUTOMAKE([-Wall -Werror])
 

@@ -1,3 +1,13 @@
+Overview of changes in ayatana-indicator-notifications 0.8.1
+
+  - Add do-not-disturb feature. (Works only on MATE for now).
+  - Allow swapping of Clear and Settings menu items.
+  - Rename blacklist feature to filter-list (#BlackLivesMatter).
+  - Add filter-list-hints for applications that have recently shown
+    up on the notification bus.
+  - All these changes have been ported over from Jason Conti's
+    indicator-notifications (Ubuntu system indicator) project.
+
 Overview of changes in ayatana-indicator-notifications 0.8.0
 
   - Version bump to bring all system indicators (and the
