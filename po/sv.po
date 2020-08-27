@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-21 15:00+0200\n"
-"PO-Revision-Date: 2020-08-23 11:36+0000\n"
-"Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
+"PO-Revision-Date: 2020-08-28 00:54+0000\n"
+"Last-Translator: Ulf Lundh <ulf@lundh.me>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/"
 "ayatana-indicators/notifications-applet/sv/>\n"
 "Language: sv\n"
@@ -103,7 +103,7 @@ msgstr "Stör ej"
 #. swap-clear-settings
 #: ../src/indicator-notifications-settings.c:306
 msgid "Swap \"Clear\" and \"Settings\" items"
-msgstr ""
+msgstr "Byt \"Rensa\" och \"Inställningar\" objekt"
 
 #. max-items
 #. FIXME: indicator does not change max items until restart...
