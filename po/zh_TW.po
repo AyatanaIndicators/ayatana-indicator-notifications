@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-21 15:00+0200\n"
-"PO-Revision-Date: 2019-01-12 05:06+0000\n"
-"Last-Translator: Louies <louies0623@gmail.com>\n"
+"PO-Revision-Date: 2020-09-05 16:36+0000\n"
+"Last-Translator: tommymaple <godoffrog@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "ayatana-indicators/notifications-applet/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.4-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 #. filter-list
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
@@ -72,7 +72,7 @@ msgstr "通知"
 #. Create the settings menuitem
 #: ../src/indicator-notifications.c:186
 msgid "Settings…"
-msgstr ""
+msgstr "設定"
 
 #: ../src/indicator-notifications.c:522
 #, c-format
@@ -97,7 +97,7 @@ msgstr "隱藏指示器"
 #. do-not-disturb
 #: ../src/indicator-notifications-settings.c:297
 msgid "Do not disturb"
-msgstr ""
+msgstr "請勿打擾"
 
 #. swap-clear-settings
 #: ../src/indicator-notifications-settings.c:306
@@ -113,11 +113,11 @@ msgstr "最大可見項目數量"
 
 #: ../src/indicator-notifications-settings.c:352
 msgid "Remove"
-msgstr ""
+msgstr "移除"
 
 #: ../src/indicator-notifications-settings.c:357
 msgid "Add"
-msgstr ""
+msgstr "增加"
 
 #: ../src/notification-menuitem.c:128
 msgid "from"
