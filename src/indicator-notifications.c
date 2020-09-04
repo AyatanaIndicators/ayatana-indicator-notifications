@@ -72,6 +72,7 @@ struct _IndicatorNotificationsPrivate {
   GtkWidget   *clear_item;
   GtkWidget   *clear_item_label;
   GtkWidget   *settings_item;
+    GtkWidget *pSeparator;
 
   gchar       *accessible_desc;
 
@@ -203,6 +204,9 @@ indicator_notifications_init(IndicatorNotifications *self)
   gtk_widget_show(self->priv->clear_item);
 
   gtk_menu_shell_prepend(GTK_MENU_SHELL(self->priv->menu), self->priv->clear_item);
+
+    self->priv->pSeparator = gtk_separator_menu_item_new();
+    gtk_menu_shell_prepend(GTK_MENU_SHELL(self->priv->menu), self->priv->pSeparator);
 
   /* Watch for notifications from dbus */
   self->priv->spy = dbus_spy_new();
@@ -527,9 +531,15 @@ update_clear_item_markup(IndicatorNotifications *self)
   gtk_label_set_markup(GTK_LABEL(self->priv->clear_item_label), markup);
   g_free(markup);
 
-  if (total_length == 0) {
-    gtk_menu_shell_deactivate(GTK_MENU_SHELL(self->priv->menu));
-  }
+    if (total_length == 0)
+    {
+        gtk_widget_hide(self->priv->pSeparator);
+        gtk_menu_shell_deactivate(GTK_MENU_SHELL(self->priv->menu));
+    }
+    else
+    {
+        gtk_widget_show(self->priv->pSeparator);
+    }
 }
 
 /**
