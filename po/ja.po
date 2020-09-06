@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-21 15:00+0200\n"
-"PO-Revision-Date: 2020-03-17 04:36+0000\n"
-"Last-Translator: Grace Guo <grace@appest.com>\n"
-"Language-Team: Japanese <https://hosted.weblate.org/projects/ayatana-"
-"indicators/notifications-applet/ja/>\n"
+"PO-Revision-Date: 2020-09-07 11:36+0000\n"
+"Last-Translator: Baka Gaijin <lewdwarrior@waifu.club>\n"
+"Language-Team: Japanese <https://hosted.weblate.org/projects/"
+"ayatana-indicators/notifications-applet/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.0-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 #. filter-list
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
@@ -113,9 +113,8 @@ msgid "Maximum number of visible notifications"
 msgstr "表示可能な通知の最大数"
 
 #: ../src/indicator-notifications-settings.c:352
-#, fuzzy
 msgid "Remove"
-msgstr "削除する"
+msgstr "削除"
 
 #: ../src/indicator-notifications-settings.c:357
 msgid "Add"
