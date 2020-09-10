@@ -1,6 +1,63 @@
-2020-08-21 15:30:51 +0200 Mike Gabriel
+2020-09-10 21:41:31 +0200 Mike Gabriel
 
-	* release 0.8.1 (HEAD -> master, tag: 0.8.1)
+	* release 0.8.2 (HEAD -> master, tag: 0.8.2)
+
+2020-09-08 01:07:00 +0000 Milo Ivir (0af2c78)
+
+	* Translated using Weblate (Croatian)
+
+2020-09-06 11:13:57 +0000 Baka Gaijin (a3b468b)
+
+	* Translated using Weblate (Japanese)
+
+2020-09-03 07:19:46 +0000 tommymaple (6938c1d)
+
+	* Translated using Weblate (Chinese (Traditional))
+
+2020-09-03 20:42:22 +0000 sai vineeth kumar tumu (229971e)
+
+	* Translated using Weblate (Telugu)
+
+2020-09-04 08:25:26 +0000 antuketot76 (9b38172)
+
+	* Translated using Weblate (Malay)
+
+2020-09-04 15:52:35 +0000 Rokas Kasnauskas (8f39ee4)
+
+	* Translated using Weblate (Lithuanian)
+
+2020-09-04 20:23:37 +0200 Mike Gabriel (2c86731)
+
+	* Merge branch 'tari01-pr/add-separator'
+
+2020-09-04 02:37:09 +0200 Robert Tari (bbfcf3d)
+
+	* src/indicator-notifications.c: Add separator after notification
+          list.
+
+2020-08-28 00:54:37 +0000 Anders Jonsson (300f66f)
+
+	* Translated using Weblate (Swedish)
+
+2020-08-25 22:15:51 +0000 Allan Nordhøy (0bf1981)
+
+	* Translated using Weblate (Norwegian Bokmål)
+
+2020-08-27 06:36:41 +0000 Ulf Lundh (f7ac9ae)
+
+	* Translated using Weblate (Swedish)
+
+2020-08-22 11:22:40 +0000 Anders Jonsson (92489f0)
+
+	* Translated using Weblate (Swedish)
+
+2020-08-21 22:19:09 +0000 Mike Gabriel (5dcede2)
+
+	* Translated using Weblate (German)
+
+2020-08-21 15:30:51 +0200 Mike Gabriel (dd22415)
+
+	* release 0.8.1 (tag: 0.8.1)
 
 2020-08-21 15:21:52 +0200 Mike Gabriel (493e766)
 

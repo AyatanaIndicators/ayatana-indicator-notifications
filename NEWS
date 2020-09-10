@@ -1,3 +1,8 @@
+Overview of changes in ayatana-indicator-notifications 0.8.2
+
+  - src/indicator-notifications.c: Add separator after notification list.
+  - Translation updates (quite many, in fact, awesome thanks!)
+
 Overview of changes in ayatana-indicator-notifications 0.8.1
 
   - Add do-not-disturb feature. (Works only on MATE for now).
