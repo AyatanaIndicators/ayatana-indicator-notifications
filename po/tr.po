@@ -8,37 +8,36 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-21 15:00+0200\n"
-"PO-Revision-Date: 2019-11-23 17:04+0000\n"
-"Last-Translator: Burak Balta <burakbalta92@gmail.com>\n"
-"Language-Team: Turkish <https://hosted.weblate.org/projects/ayatana-"
-"indicators/notifications-applet/tr/>\n"
+"PO-Revision-Date: 2020-09-19 22:40+0000\n"
+"Last-Translator: Talking Panda <memredogan3626@gmail.com>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/"
+"ayatana-indicators/notifications-applet/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.10-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 #. filter-list
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
 #: ../src/indicator-notifications-settings.c:327
 msgid "Discard notifications by application name"
-msgstr ""
+msgstr "Bildirimleri uygulama adına göre sil."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
-#, fuzzy
 msgid ""
 "If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
 msgstr ""
 "Bir uygulama adı kara liste içinde ise, uygulama adıyla eşleşen tüm "
-"bildirimleri yoksayılır."
+"bildirimleri silinir."
 
 #. clear-on-middle-click
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
 #: ../src/indicator-notifications-settings.c:279
 msgid "Clear notifications on middle click"
-msgstr ""
+msgstr "Bildirimleri Orta tuşla temizle"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:4
 msgid ""
@@ -64,6 +63,7 @@ msgid ""
 "The indicator will only display at most the number of notifications "
 "indicated by this value."
 msgstr ""
+"Gösterge yalnızca bu değerle belirtilen kadar sayıda bildirim görüntüler."
 
 #: ../src/indicator-notifications.c:177
 msgid "Notifications"
@@ -73,21 +73,21 @@ msgstr "Bildirimler"
 #: ../src/indicator-notifications.c:186
 #, fuzzy
 msgid "Settings…"
-msgstr "Ayarlar..."
+msgstr "Ayarlar…"
 
 #: ../src/indicator-notifications.c:522
 #, c-format
 msgid "Clear <small>(%d Notification)</small>"
 msgid_plural "Clear <small>(%d Notifications)</small>"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "<small>(%d Bildirimi)</small> temizle"
+msgstr[1] "<small>(%d Bildirimleri)</small> temizle"
 
 #. Window Frame
 #: ../src/indicator-notifications-settings.c:262
 #: ../src/indicator-notifications-settings.c:268
 #: ../src/indicator-notifications-settings.c:411
 msgid "Indicator Notifications Settings"
-msgstr ""
+msgstr "Gösterge bildirim ayarları"
 
 #. hide-indicator
 #: ../src/indicator-notifications-settings.c:288
@@ -97,19 +97,18 @@ msgstr "Göstergeyi gizle"
 #. do-not-disturb
 #: ../src/indicator-notifications-settings.c:297
 msgid "Do not disturb"
-msgstr ""
+msgstr "Rahatsız Etme"
 
 #. swap-clear-settings
 #: ../src/indicator-notifications-settings.c:306
 msgid "Swap \"Clear\" and \"Settings\" items"
-msgstr ""
+msgstr "\"Temizle\" ve \"Ayarlar\" öğelerini değiştirin"
 
 #. max-items
 #. FIXME: indicator does not change max items until restart...
 #: ../src/indicator-notifications-settings.c:316
-#, fuzzy
 msgid "Maximum number of visible notifications"
-msgstr "En fazla görünür öğe sayısı"
+msgstr "En fazla görünür bildirim sayısı"
 
 #: ../src/indicator-notifications-settings.c:352
 msgid "Remove"
@@ -121,4 +120,4 @@ msgstr "Ekle"
 
 #: ../src/notification-menuitem.c:128
 msgid "from"
-msgstr ""
+msgstr "itibaren"
