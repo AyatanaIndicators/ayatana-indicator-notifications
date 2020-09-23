@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-21 15:00+0200\n"
-"PO-Revision-Date: 2017-12-18 21:53+0000\n"
+"PO-Revision-Date: 2020-09-24 20:41+0000\n"
 "Last-Translator: Viktar Vauchkevich <victorenator@gmail.com>\n"
-"Language-Team: Belarusian <https://hosted.weblate.org/projects/ayatana-"
-"indicators/notifications-applet/be/>\n"
+"Language-Team: Belarusian <https://hosted.weblate.org/projects/"
+"ayatana-indicators/notifications-applet/be/>\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 #. filter-list
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
@@ -27,12 +27,11 @@ msgid "Discard notifications by application name"
 msgstr "Адкінуць апавяшчэнні па імені прыкладання"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
-#, fuzzy
 msgid ""
 "If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
 msgstr ""
-"Калі імя пракладання ў чорным спісе, усе апавяшчэнні, што адпавядаюць, "
+"Калі назва прыкладання ў чорным спісе, усе апавяшчэнні, што адпавядаюць, "
 "будуць адкінутыя."
 
 #. clear-on-middle-click
@@ -78,7 +77,7 @@ msgstr "Апавяшчэнні"
 #. Create the settings menuitem
 #: ../src/indicator-notifications.c:186
 msgid "Settings…"
-msgstr ""
+msgstr "Налады…"
 
 #: ../src/indicator-notifications.c:522
 #, c-format
@@ -93,38 +92,36 @@ msgstr[2] "Ачысць <small>(%d апавяшчэнняў)</small>"
 #: ../src/indicator-notifications-settings.c:268
 #: ../src/indicator-notifications-settings.c:411
 msgid "Indicator Notifications Settings"
-msgstr ""
+msgstr "Налады індыкатара апавяшчэнняў"
 
 #. hide-indicator
 #: ../src/indicator-notifications-settings.c:288
-#, fuzzy
 msgid "Hide indicator"
 msgstr "Схаваць індыкатар"
 
 #. do-not-disturb
 #: ../src/indicator-notifications-settings.c:297
 msgid "Do not disturb"
-msgstr ""
+msgstr "Не хваляваць"
 
 #. swap-clear-settings
 #: ../src/indicator-notifications-settings.c:306
 msgid "Swap \"Clear\" and \"Settings\" items"
-msgstr ""
+msgstr "Аб'мянаць элементы «Сцерці» і «Налады»"
 
 #. max-items
 #. FIXME: indicator does not change max items until restart...
 #: ../src/indicator-notifications-settings.c:316
-#, fuzzy
 msgid "Maximum number of visible notifications"
-msgstr "Максімальная колькасць бачных элементаў"
+msgstr "Максімальная колькасць бачных апавяшчэнняў"
 
 #: ../src/indicator-notifications-settings.c:352
 msgid "Remove"
-msgstr ""
+msgstr "Выдаліць"
 
 #: ../src/indicator-notifications-settings.c:357
 msgid "Add"
-msgstr ""
+msgstr "Дадаць"
 
 #: ../src/notification-menuitem.c:128
 msgid "from"
