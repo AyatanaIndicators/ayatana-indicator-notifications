@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-21 15:00+0200\n"
-"PO-Revision-Date: 2020-09-19 22:40+0000\n"
+"PO-Revision-Date: 2020-09-26 17:40+0000\n"
 "Last-Translator: Talking Panda <memredogan3626@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/"
 "ayatana-indicators/notifications-applet/tr/>\n"
@@ -23,7 +23,7 @@ msgstr ""
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
 #: ../src/indicator-notifications-settings.c:327
 msgid "Discard notifications by application name"
-msgstr "Bildirimleri uygulama adına göre sil."
+msgstr "Bildirimleri uygulama adına göre sil"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
 msgid ""
@@ -45,6 +45,9 @@ msgid ""
 "be toggled if the queue is not empty. With this option enabled, the "
 "notification queue will be cleared instead."
 msgstr ""
+"Normalde, bildirim simgesine orta tıklandığında, kuyruk boş değilse okunmadı "
+"durumu değiştirilir. Bu seçenek etkinleştirildiğinde, bunun yerine bildirim "
+"kuyruğu temizlenir."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:5
 msgid "Hide the indicator"
@@ -71,7 +74,6 @@ msgstr "Bildirimler"
 
 #. Create the settings menuitem
 #: ../src/indicator-notifications.c:186
-#, fuzzy
 msgid "Settings…"
 msgstr "Ayarlar…"
 
