@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-21 15:00+0200\n"
-"PO-Revision-Date: 2020-04-03 18:21+0000\n"
-"Last-Translator: raimon ribal <raimon.ribal@gmail.com>\n"
-"Language-Team: Occitan <https://hosted.weblate.org/projects/ayatana-"
-"indicators/notifications-applet/oc/>\n"
+"PO-Revision-Date: 2020-09-26 17:40+0000\n"
+"Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
+"Language-Team: Occitan <https://hosted.weblate.org/projects/"
+"ayatana-indicators/notifications-applet/oc/>\n"
 "Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.0-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 #. filter-list
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
@@ -67,7 +67,7 @@ msgstr ""
 
 #: ../src/indicator-notifications.c:177
 msgid "Notifications"
-msgstr ""
+msgstr "Notificacions"
 
 #. Create the settings menuitem
 #: ../src/indicator-notifications.c:186
