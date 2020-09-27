@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-21 15:00+0200\n"
-"PO-Revision-Date: 2020-06-28 06:41+0000\n"
-"Last-Translator: Zsolt Pastorek <pastorekz@gmail.com>\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/ayatana-"
-"indicators/notifications-applet/sk/>\n"
+"PO-Revision-Date: 2020-09-29 04:40+0000\n"
+"Last-Translator: Ján Olexa <jnolexa@gmail.com>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/"
+"ayatana-indicators/notifications-applet/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 #. filter-list
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
@@ -74,9 +74,8 @@ msgstr "Oznámenia"
 
 #. Create the settings menuitem
 #: ../src/indicator-notifications.c:186
-#, fuzzy
 msgid "Settings…"
-msgstr "Nastavenia..."
+msgstr "Nastavenia…"
 
 #: ../src/indicator-notifications.c:522
 #, c-format
@@ -101,12 +100,12 @@ msgstr "Skryť ukazovateľ"
 #. do-not-disturb
 #: ../src/indicator-notifications-settings.c:297
 msgid "Do not disturb"
-msgstr ""
+msgstr "Nevyrušovať"
 
 #. swap-clear-settings
 #: ../src/indicator-notifications-settings.c:306
 msgid "Swap \"Clear\" and \"Settings\" items"
-msgstr ""
+msgstr "Výmena položiek \"Vymazať\" a \"Nastavenia\""
 
 #. max-items
 #. FIXME: indicator does not change max items until restart...
