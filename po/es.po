@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-21 15:00+0200\n"
-"PO-Revision-Date: 2019-09-08 18:24+0000\n"
-"Last-Translator: Abraham Roman <abrahiv666@gmail.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/ayatana-"
-"indicators/notifications-applet/es/>\n"
+"PO-Revision-Date: 2020-09-29 04:40+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/"
+"ayatana-indicators/notifications-applet/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 #. filter-list
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
@@ -26,13 +26,12 @@ msgid "Discard notifications by application name"
 msgstr "Descartar notificaciones por nombre de aplicación"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
-#, fuzzy
 msgid ""
 "If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
 msgstr ""
-"Si un nombre de aplicación está en la lista negra, se descartarán todas las "
-"notificaciones que porten ese nombre."
+"Si un nombre de aplicación está en la lista de filtrados, se descartarán "
+"todas las notificaciones que porten ese nombre."
 
 #. clear-on-middle-click
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
@@ -76,9 +75,8 @@ msgstr "Notificaciones"
 
 #. Create the settings menuitem
 #: ../src/indicator-notifications.c:186
-#, fuzzy
 msgid "Settings…"
-msgstr "Configuraciones..."
+msgstr "Configuración…"
 
 #: ../src/indicator-notifications.c:522
 #, c-format
@@ -92,22 +90,22 @@ msgstr[1] "Vaciar <small>(%d notificaciones)</small>"
 #: ../src/indicator-notifications-settings.c:268
 #: ../src/indicator-notifications-settings.c:411
 msgid "Indicator Notifications Settings"
-msgstr "Indicador De Notificaciones en Configuracion"
+msgstr "Configuración del menú de notificaciones"
 
 #. hide-indicator
 #: ../src/indicator-notifications-settings.c:288
 msgid "Hide indicator"
-msgstr "Ocultar Indicador"
+msgstr "Ocultar indicador"
 
 #. do-not-disturb
 #: ../src/indicator-notifications-settings.c:297
 msgid "Do not disturb"
-msgstr ""
+msgstr "No molestar"
 
 #. swap-clear-settings
 #: ../src/indicator-notifications-settings.c:306
 msgid "Swap \"Clear\" and \"Settings\" items"
-msgstr ""
+msgstr "Intercambiar elementos «Vaciar» y «Configuración»"
 
 #. max-items
 #. FIXME: indicator does not change max items until restart...
@@ -121,7 +119,7 @@ msgstr "Quitar"
 
 #: ../src/indicator-notifications-settings.c:357
 msgid "Add"
-msgstr "Agregar"
+msgstr "Añadir"
 
 #: ../src/notification-menuitem.c:128
 msgid "from"
