@@ -8,32 +8,37 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-21 15:00+0200\n"
-"PO-Revision-Date: 2017-12-02 19:20+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-10-12 09:26+0000\n"
+"Last-Translator: Yota321 <golamsayan@gmail.com>\n"
+"Language-Team: Bengali <https://hosted.weblate.org/projects/"
+"ayatana-indicators/notifications-applet/bn/>\n"
 "Language: bn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 #. filter-list
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
 #: ../src/indicator-notifications-settings.c:327
 msgid "Discard notifications by application name"
-msgstr ""
+msgstr "অ্যাপ্লিকেশন নাম দ্বারা বিজ্ঞপ্তি বাতিল করুন"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
 msgid ""
 "If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
 msgstr ""
+"যদি কোনও অ্যাপ্লিকেশন নাম ফিল্টার তালিকায় থাকে তবে অ্যাপ্লিকেশন নামের সাথে "
+"মেলে এমন সমস্ত বিজ্ঞপ্তি বাতিল করা হবে।"
 
 #. clear-on-middle-click
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
 #: ../src/indicator-notifications-settings.c:279
+#, fuzzy
 msgid "Clear notifications on middle click"
-msgstr ""
+msgstr "মিডল ক্লিক এ বিজ্ঞপ্তি সাফ করুন"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:4
 msgid ""
@@ -44,15 +49,15 @@ msgstr ""
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:5
 msgid "Hide the indicator"
-msgstr ""
+msgstr "সূচকটি লুকান"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:6
 msgid "If true, the indicator is hidden."
-msgstr ""
+msgstr "যদি সত্য হয় তবে সূচকটি গোপন থাকে।"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:7
 msgid "Maximum number of visible items"
-msgstr ""
+msgstr "দৃশ্যমান আইটেমের সর্বাধিক সংখ্যা"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:8
 msgid ""
@@ -62,12 +67,12 @@ msgstr ""
 
 #: ../src/indicator-notifications.c:177
 msgid "Notifications"
-msgstr ""
+msgstr "বিজ্ঞপ্তি"
 
 #. Create the settings menuitem
 #: ../src/indicator-notifications.c:186
 msgid "Settings…"
-msgstr ""
+msgstr "সেটিংস…"
 
 #: ../src/indicator-notifications.c:522
 #, c-format
@@ -81,36 +86,38 @@ msgstr[1] ""
 #: ../src/indicator-notifications-settings.c:268
 #: ../src/indicator-notifications-settings.c:411
 msgid "Indicator Notifications Settings"
-msgstr ""
+msgstr "সূচক বিজ্ঞপ্তি সেটিংস"
 
 #. hide-indicator
 #: ../src/indicator-notifications-settings.c:288
 msgid "Hide indicator"
-msgstr ""
+msgstr "লুকানো সূচক"
 
 #. do-not-disturb
 #: ../src/indicator-notifications-settings.c:297
+#, fuzzy
 msgid "Do not disturb"
-msgstr ""
+msgstr "বিরক্ত করবেন না"
 
 #. swap-clear-settings
 #: ../src/indicator-notifications-settings.c:306
 msgid "Swap \"Clear\" and \"Settings\" items"
-msgstr ""
+msgstr "\"সাফ করুন\" এবং \"সেটিংস\" আইটেমগুলি অদলবদল করুন"
 
 #. max-items
 #. FIXME: indicator does not change max items until restart...
 #: ../src/indicator-notifications-settings.c:316
 msgid "Maximum number of visible notifications"
-msgstr ""
+msgstr "সর্বাধিক সংখ্যক দৃশ্যমান বিজ্ঞপ্তি"
 
 #: ../src/indicator-notifications-settings.c:352
+#, fuzzy
 msgid "Remove"
-msgstr ""
+msgstr "মুছে ফেলা"
 
 #: ../src/indicator-notifications-settings.c:357
 msgid "Add"
-msgstr ""
+msgstr "যোগ করা"
 
 #: ../src/notification-menuitem.c:128
 msgid "from"
