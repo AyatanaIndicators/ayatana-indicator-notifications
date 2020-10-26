@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-21 15:00+0200\n"
-"PO-Revision-Date: 2020-03-27 18:46+0000\n"
-"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
-"Language-Team: Catalan <https://hosted.weblate.org/projects/ayatana-"
-"indicators/notifications-applet/ca/>\n"
+"PO-Revision-Date: 2020-10-27 14:36+0000\n"
+"Last-Translator: Joan CiberSheep <cibersheep@gmail.com>\n"
+"Language-Team: Catalan <https://hosted.weblate.org/projects/"
+"ayatana-indicators/notifications-applet/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.0-dev\n"
+"X-Generator: Weblate 4.3.2-dev\n"
 
 #. filter-list
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
@@ -26,13 +26,12 @@ msgid "Discard notifications by application name"
 msgstr "Descarta les notificacions per nom d'aplicació"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
-#, fuzzy
 msgid ""
 "If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
 msgstr ""
-"Si el nom d'una aplicació és a la llista negra, es descartaran totes les "
-"notificacions amb el nom d'aquesta aplicació."
+"Si el nom d'una aplicació és a la llista de filtres, es descartaran totes "
+"les notificacions amb el nom d'aquesta aplicació."
 
 #. clear-on-middle-click
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
@@ -46,6 +45,9 @@ msgid ""
 "be toggled if the queue is not empty. With this option enabled, the "
 "notification queue will be cleared instead."
 msgstr ""
+"Normalment, quan feu clic amb el botó central a la icona de notificació, "
+"l'estat no llegit es commutarà si la cua no està buida. Amb aquesta opció "
+"activada, la cua de notificacions s'esborrarà."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:5
 msgid "Hide the indicator"
@@ -53,17 +55,19 @@ msgstr "Amaga l'indicador"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:6
 msgid "If true, the indicator is hidden."
-msgstr ""
+msgstr "Si és cert, l'indicador està ocult."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:7
 msgid "Maximum number of visible items"
-msgstr ""
+msgstr "Número màxim d'elements visibles"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:8
 msgid ""
 "The indicator will only display at most the number of notifications "
 "indicated by this value."
 msgstr ""
+"L'indicador només mostrarà com a màxim el nombre de notificacions indicades "
+"per aquest valor."
 
 #: ../src/indicator-notifications.c:177
 msgid "Notifications"
@@ -72,7 +76,7 @@ msgstr "Notificacions"
 #. Create the settings menuitem
 #: ../src/indicator-notifications.c:186
 msgid "Settings…"
-msgstr ""
+msgstr "Paràmetres…"
 
 #: ../src/indicator-notifications.c:522
 #, c-format
@@ -86,7 +90,7 @@ msgstr[1] "Neteja <small>(%d notificacions)</small>"
 #: ../src/indicator-notifications-settings.c:268
 #: ../src/indicator-notifications-settings.c:411
 msgid "Indicator Notifications Settings"
-msgstr ""
+msgstr "Paràmetres de l'indicador de notificacions"
 
 #. hide-indicator
 #: ../src/indicator-notifications-settings.c:288
@@ -96,12 +100,12 @@ msgstr "Amaga l'indicador"
 #. do-not-disturb
 #: ../src/indicator-notifications-settings.c:297
 msgid "Do not disturb"
-msgstr ""
+msgstr "No molestar"
 
 #. swap-clear-settings
 #: ../src/indicator-notifications-settings.c:306
 msgid "Swap \"Clear\" and \"Settings\" items"
-msgstr ""
+msgstr "Intercanvieu els elements «Esborra» i «Paràmetres»"
 
 #. max-items
 #. FIXME: indicator does not change max items until restart...
@@ -111,7 +115,7 @@ msgstr "Nombre màxim de notificacions visibles"
 
 #: ../src/indicator-notifications-settings.c:352
 msgid "Remove"
-msgstr "Treu"
+msgstr "Elimina"
 
 #: ../src/indicator-notifications-settings.c:357
 msgid "Add"
@@ -119,4 +123,4 @@ msgstr "Afegeix"
 
 #: ../src/notification-menuitem.c:128
 msgid "from"
-msgstr ""
+msgstr "de"
