@@ -1,0 +1,11 @@
+[Indicator Service]
+Name=ayatana-indicator-notifications
+ObjectPath=/org/ayatana/indicator/notifications
+Position=100
+
+[phone]
+ObjectPath=/org/ayatana/indicator/notifications/phone
+Position=25
+
+[desktop]
+ObjectPath=/org/ayatana/indicator/notifications/desktop

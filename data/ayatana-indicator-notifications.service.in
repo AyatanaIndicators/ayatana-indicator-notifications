@@ -1,0 +1,11 @@
+[Unit]
+Description=Ayatana Indicator Notifications
+PartOf=graphical-session.target
+PartOf=ayatana-indicators.target
+
+[Service]
+ExecStart=@pkglibexecdir@/ayatana-indicator-notifications-service
+Restart=on-failure
+
+[Install]
+WantedBy=ayatana-indicators.target
