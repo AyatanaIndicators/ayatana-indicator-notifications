@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Ayatana Indicator Notifications
+Exec=@pkglibexecdir@/ayatana-indicator-notifications-service
+OnlyShowIn=Unity;MATE;XFCE;
+NoDisplay=true
+StartupNotify=false
+Terminal=false
