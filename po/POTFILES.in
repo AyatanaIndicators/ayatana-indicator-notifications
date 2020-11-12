@@ -1,7 +1,10 @@
 data/org.ayatana.indicator.notifications.gschema.xml.in.in
 src/dbus-spy.c
-src/indicator-notifications.c
-src/indicator-notifications-settings.c
+src/dbus-spy.h
+src/main.c
 src/notification.c
-src/notification-menuitem.c
+src/notification.h
+src/service.c
+src/service.h
 src/urlregex.c
+src/urlregex.h
