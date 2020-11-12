@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-21 15:00+0200\n"
+"POT-Creation-Date: 2020-11-12 14:54+0100\n"
 "PO-Revision-Date: 2020-11-12 08:28+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
-"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/"
-"ayatana-indicators/notifications-applet/nb_NO/>\n"
+"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/ayatana-"
+"indicators/notifications-applet/nb_NO/>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,9 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.4-dev\n"
 
-#. filter-list
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
-#: ../src/indicator-notifications-settings.c:327
 #, fuzzy
 msgid "Discard notifications by application name"
 msgstr "Forkast merknader etter programnavn"
@@ -35,9 +33,7 @@ msgstr ""
 "Hvis et progamnavn er på svartelista, vil alle merknader som samsvarer med "
 "det bli forkastet."
 
-#. clear-on-middle-click
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
-#: ../src/indicator-notifications-settings.c:279
 msgid "Clear notifications on middle click"
 msgstr "Tøm merknader ved midtklikk"
 
@@ -71,61 +67,47 @@ msgstr ""
 "Indikatoren vil kun vise i meste fall antall merknader angitt av denne "
 "verdien."
 
-#: ../src/indicator-notifications.c:177
+#: ../src/service.c:221
+msgid "from"
+msgstr "fra"
+
+#: ../src/service.c:270 ../src/service.c:299
 msgid "Notifications"
 msgstr "Merknader"
 
-#. Create the settings menuitem
-#: ../src/indicator-notifications.c:186
-#, fuzzy
-msgid "Settings…"
-msgstr "Innstillinger..."
+#: ../src/service.c:327
+msgid "Clear"
+msgstr ""
 
-#: ../src/indicator-notifications.c:522
-#, c-format
-msgid "Clear <small>(%d Notification)</small>"
-msgid_plural "Clear <small>(%d Notifications)</small>"
-msgstr[0] "Tøm <small>%d merknad)</small>"
-msgstr[1] "Tøm <small>%d merknader)</small>"
-
-#. Window Frame
-#: ../src/indicator-notifications-settings.c:262
-#: ../src/indicator-notifications-settings.c:268
-#: ../src/indicator-notifications-settings.c:411
-msgid "Indicator Notifications Settings"
-msgstr "Merknadsinnstillinger for indikator"
-
-#. hide-indicator
-#: ../src/indicator-notifications-settings.c:288
-msgid "Hide indicator"
-msgstr "Skjul indikatoren"
-
-#. do-not-disturb
-#: ../src/indicator-notifications-settings.c:297
+#: ../src/service.c:338
 msgid "Do not disturb"
 msgstr "Ikke forstyrr"
 
-#. swap-clear-settings
-#: ../src/indicator-notifications-settings.c:306
 #, fuzzy
-msgid "Swap \"Clear\" and \"Settings\" items"
-msgstr "Bytt \"Tøm\"- og \"Innstillinger\"-elementene"
+#~ msgid "Settings…"
+#~ msgstr "Innstillinger..."
 
-#. max-items
-#. FIXME: indicator does not change max items until restart...
-#: ../src/indicator-notifications-settings.c:316
+#~ msgid "Clear <small>(%d Notification)</small>"
+#~ msgid_plural "Clear <small>(%d Notifications)</small>"
+#~ msgstr[0] "Tøm <small>%d merknad)</small>"
+#~ msgstr[1] "Tøm <small>%d merknader)</small>"
+
+#~ msgid "Indicator Notifications Settings"
+#~ msgstr "Merknadsinnstillinger for indikator"
+
+#~ msgid "Hide indicator"
+#~ msgstr "Skjul indikatoren"
+
 #, fuzzy
-msgid "Maximum number of visible notifications"
-msgstr "Maksimer antall synlige elementer"
+#~ msgid "Swap \"Clear\" and \"Settings\" items"
+#~ msgstr "Bytt \"Tøm\"- og \"Innstillinger\"-elementene"
 
-#: ../src/indicator-notifications-settings.c:352
-msgid "Remove"
-msgstr "Fjern"
+#, fuzzy
+#~ msgid "Maximum number of visible notifications"
+#~ msgstr "Maksimer antall synlige elementer"
 
-#: ../src/indicator-notifications-settings.c:357
-msgid "Add"
-msgstr "Legg til"
+#~ msgid "Remove"
+#~ msgstr "Fjern"
 
-#: ../src/notification-menuitem.c:128
-msgid "from"
-msgstr "fra"
+#~ msgid "Add"
+#~ msgstr "Legg til"

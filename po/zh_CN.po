@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-21 15:00+0200\n"
+"POT-Creation-Date: 2020-11-12 14:54+0100\n"
 "PO-Revision-Date: 2020-05-27 06:41+0000\n"
 "Last-Translator: wdggg <wdggg7@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
@@ -19,9 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.1-dev\n"
 
-#. filter-list
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
-#: ../src/indicator-notifications-settings.c:327
 msgid "Discard notifications by application name"
 msgstr "按应用程序名称屏蔽通知"
 
@@ -32,9 +30,7 @@ msgid ""
 "application name will be discarded."
 msgstr "如果有一个应用程序在黑名单中， 所有与该程序相关的通知将会被丢弃。"
 
-#. clear-on-middle-click
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
-#: ../src/indicator-notifications-settings.c:279
 msgid "Clear notifications on middle click"
 msgstr "点击鼠标中键以清空通知"
 
@@ -65,58 +61,41 @@ msgid ""
 "indicated by this value."
 msgstr "指示器最多只显示相当于此数值的通知数量。"
 
-#: ../src/indicator-notifications.c:177
+#: ../src/service.c:221
+msgid "from"
+msgstr "从"
+
+#: ../src/service.c:270 ../src/service.c:299
 msgid "Notifications"
 msgstr "通知"
 
-#. Create the settings menuitem
-#: ../src/indicator-notifications.c:186
-#, fuzzy
-msgid "Settings…"
-msgstr "设置..."
+#: ../src/service.c:327
+msgid "Clear"
+msgstr ""
 
-#: ../src/indicator-notifications.c:522
-#, c-format
-msgid "Clear <small>(%d Notification)</small>"
-msgid_plural "Clear <small>(%d Notifications)</small>"
-msgstr[0] "清空 <small>(%d 通知)</small>"
-
-#. Window Frame
-#: ../src/indicator-notifications-settings.c:262
-#: ../src/indicator-notifications-settings.c:268
-#: ../src/indicator-notifications-settings.c:411
-msgid "Indicator Notifications Settings"
-msgstr "指示器通知设置"
-
-#. hide-indicator
-#: ../src/indicator-notifications-settings.c:288
-msgid "Hide indicator"
-msgstr "隐藏指示器"
-
-#. do-not-disturb
-#: ../src/indicator-notifications-settings.c:297
+#: ../src/service.c:338
 msgid "Do not disturb"
 msgstr ""
 
-#. swap-clear-settings
-#: ../src/indicator-notifications-settings.c:306
-msgid "Swap \"Clear\" and \"Settings\" items"
-msgstr ""
+#, fuzzy
+#~ msgid "Settings…"
+#~ msgstr "设置..."
 
-#. max-items
-#. FIXME: indicator does not change max items until restart...
-#: ../src/indicator-notifications-settings.c:316
-msgid "Maximum number of visible notifications"
-msgstr "最大可见通知数量"
+#~ msgid "Clear <small>(%d Notification)</small>"
+#~ msgid_plural "Clear <small>(%d Notifications)</small>"
+#~ msgstr[0] "清空 <small>(%d 通知)</small>"
 
-#: ../src/indicator-notifications-settings.c:352
-msgid "Remove"
-msgstr "删除"
+#~ msgid "Indicator Notifications Settings"
+#~ msgstr "指示器通知设置"
 
-#: ../src/indicator-notifications-settings.c:357
-msgid "Add"
-msgstr "添加"
+#~ msgid "Hide indicator"
+#~ msgstr "隐藏指示器"
 
-#: ../src/notification-menuitem.c:128
-msgid "from"
-msgstr "从"
+#~ msgid "Maximum number of visible notifications"
+#~ msgstr "最大可见通知数量"
+
+#~ msgid "Remove"
+#~ msgstr "删除"
+
+#~ msgid "Add"
+#~ msgstr "添加"

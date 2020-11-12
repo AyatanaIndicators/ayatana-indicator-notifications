@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-21 15:00+0200\n"
+"POT-Creation-Date: 2020-11-12 14:54+0100\n"
 "PO-Revision-Date: 2020-10-27 14:36+0000\n"
 "Last-Translator: Joan CiberSheep <cibersheep@gmail.com>\n"
-"Language-Team: Catalan <https://hosted.weblate.org/projects/"
-"ayatana-indicators/notifications-applet/ca/>\n"
+"Language-Team: Catalan <https://hosted.weblate.org/projects/ayatana-"
+"indicators/notifications-applet/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,9 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.3.2-dev\n"
 
-#. filter-list
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
-#: ../src/indicator-notifications-settings.c:327
 msgid "Discard notifications by application name"
 msgstr "Descarta les notificacions per nom d'aplicació"
 
@@ -33,9 +31,7 @@ msgstr ""
 "Si el nom d'una aplicació és a la llista de filtres, es descartaran totes "
 "les notificacions amb el nom d'aquesta aplicació."
 
-#. clear-on-middle-click
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
-#: ../src/indicator-notifications-settings.c:279
 msgid "Clear notifications on middle click"
 msgstr "Neteja les notificacions amb un clic central"
 
@@ -69,58 +65,44 @@ msgstr ""
 "L'indicador només mostrarà com a màxim el nombre de notificacions indicades "
 "per aquest valor."
 
-#: ../src/indicator-notifications.c:177
+#: ../src/service.c:221
+msgid "from"
+msgstr "de"
+
+#: ../src/service.c:270 ../src/service.c:299
 msgid "Notifications"
 msgstr "Notificacions"
 
-#. Create the settings menuitem
-#: ../src/indicator-notifications.c:186
-msgid "Settings…"
-msgstr "Paràmetres…"
+#: ../src/service.c:327
+msgid "Clear"
+msgstr ""
 
-#: ../src/indicator-notifications.c:522
-#, c-format
-msgid "Clear <small>(%d Notification)</small>"
-msgid_plural "Clear <small>(%d Notifications)</small>"
-msgstr[0] "Neteja <small>(%d notificació)</small>"
-msgstr[1] "Neteja <small>(%d notificacions)</small>"
-
-#. Window Frame
-#: ../src/indicator-notifications-settings.c:262
-#: ../src/indicator-notifications-settings.c:268
-#: ../src/indicator-notifications-settings.c:411
-msgid "Indicator Notifications Settings"
-msgstr "Paràmetres de l'indicador de notificacions"
-
-#. hide-indicator
-#: ../src/indicator-notifications-settings.c:288
-msgid "Hide indicator"
-msgstr "Amaga l'indicador"
-
-#. do-not-disturb
-#: ../src/indicator-notifications-settings.c:297
+#: ../src/service.c:338
 msgid "Do not disturb"
 msgstr "No molestar"
 
-#. swap-clear-settings
-#: ../src/indicator-notifications-settings.c:306
-msgid "Swap \"Clear\" and \"Settings\" items"
-msgstr "Intercanvieu els elements «Esborra» i «Paràmetres»"
+#~ msgid "Settings…"
+#~ msgstr "Paràmetres…"
 
-#. max-items
-#. FIXME: indicator does not change max items until restart...
-#: ../src/indicator-notifications-settings.c:316
-msgid "Maximum number of visible notifications"
-msgstr "Nombre màxim de notificacions visibles"
+#~ msgid "Clear <small>(%d Notification)</small>"
+#~ msgid_plural "Clear <small>(%d Notifications)</small>"
+#~ msgstr[0] "Neteja <small>(%d notificació)</small>"
+#~ msgstr[1] "Neteja <small>(%d notificacions)</small>"
 
-#: ../src/indicator-notifications-settings.c:352
-msgid "Remove"
-msgstr "Elimina"
+#~ msgid "Indicator Notifications Settings"
+#~ msgstr "Paràmetres de l'indicador de notificacions"
 
-#: ../src/indicator-notifications-settings.c:357
-msgid "Add"
-msgstr "Afegeix"
+#~ msgid "Hide indicator"
+#~ msgstr "Amaga l'indicador"
 
-#: ../src/notification-menuitem.c:128
-msgid "from"
-msgstr "de"
+#~ msgid "Swap \"Clear\" and \"Settings\" items"
+#~ msgstr "Intercanvieu els elements «Esborra» i «Paràmetres»"
+
+#~ msgid "Maximum number of visible notifications"
+#~ msgstr "Nombre màxim de notificacions visibles"
+
+#~ msgid "Remove"
+#~ msgstr "Elimina"
+
+#~ msgid "Add"
+#~ msgstr "Afegeix"

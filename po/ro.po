@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-21 15:00+0200\n"
+"POT-Creation-Date: 2020-11-12 14:54+0100\n"
 "PO-Revision-Date: 2020-03-29 14:40+0000\n"
 "Last-Translator: Alexie Brindusescu <alexiedb@yahoo.com>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/ayatana-"
@@ -20,9 +20,7 @@ msgstr ""
 "20)) ? 1 : 2;\n"
 "X-Generator: Weblate 4.0-dev\n"
 
-#. filter-list
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
-#: ../src/indicator-notifications-settings.c:327
 msgid "Discard notifications by application name"
 msgstr "Renunțare la notificările prin numele aplicației"
 
@@ -35,9 +33,7 @@ msgstr ""
 "Dacă un nume de aplicație se află în lista neagră, toate notificările care "
 "se potrivesc cu numele aplicației vor fi ignorate."
 
-#. clear-on-middle-click
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
-#: ../src/indicator-notifications-settings.c:279
 msgid "Clear notifications on middle click"
 msgstr "Ștergeți notificările la clic pe mijloc"
 
@@ -72,62 +68,45 @@ msgstr ""
 "Indicatorul va afișa cel mult numărul de notificări indicate de această "
 "valoare."
 
-#: ../src/indicator-notifications.c:177
+#: ../src/service.c:221
+msgid "from"
+msgstr "de la"
+
+#: ../src/service.c:270 ../src/service.c:299
 msgid "Notifications"
 msgstr "Notificări"
 
-#. Create the settings menuitem
-#: ../src/indicator-notifications.c:186
-#, fuzzy
-msgid "Settings…"
-msgstr "Setari..."
+#: ../src/service.c:327
+msgid "Clear"
+msgstr ""
 
-#: ../src/indicator-notifications.c:522
-#, c-format
-msgid "Clear <small>(%d Notification)</small>"
-msgid_plural "Clear <small>(%d Notifications)</small>"
-msgstr[0] "Stergeţi <small>(%d notificări)</small>"
-msgstr[1] "Stergeţi <small>(%d notificări)</small>"
-msgstr[2] "Stergeţi <small>(%d notificări)</small>"
-
-#. Window Frame
-#: ../src/indicator-notifications-settings.c:262
-#: ../src/indicator-notifications-settings.c:268
-#: ../src/indicator-notifications-settings.c:411
-msgid "Indicator Notifications Settings"
-msgstr "Setari ale indicatorului de notificari"
-
-#. hide-indicator
-#: ../src/indicator-notifications-settings.c:288
-#, fuzzy
-msgid "Hide indicator"
-msgstr "Ascundeţi indicatorul"
-
-#. do-not-disturb
-#: ../src/indicator-notifications-settings.c:297
+#: ../src/service.c:338
 msgid "Do not disturb"
 msgstr ""
 
-#. swap-clear-settings
-#: ../src/indicator-notifications-settings.c:306
-msgid "Swap \"Clear\" and \"Settings\" items"
-msgstr ""
-
-#. max-items
-#. FIXME: indicator does not change max items until restart...
-#: ../src/indicator-notifications-settings.c:316
 #, fuzzy
-msgid "Maximum number of visible notifications"
-msgstr "Numărul maxim de elemente vizibile"
+#~ msgid "Settings…"
+#~ msgstr "Setari..."
 
-#: ../src/indicator-notifications-settings.c:352
-msgid "Remove"
-msgstr "Elimina"
+#~ msgid "Clear <small>(%d Notification)</small>"
+#~ msgid_plural "Clear <small>(%d Notifications)</small>"
+#~ msgstr[0] "Stergeţi <small>(%d notificări)</small>"
+#~ msgstr[1] "Stergeţi <small>(%d notificări)</small>"
+#~ msgstr[2] "Stergeţi <small>(%d notificări)</small>"
 
-#: ../src/indicator-notifications-settings.c:357
-msgid "Add"
-msgstr "Adauga"
+#~ msgid "Indicator Notifications Settings"
+#~ msgstr "Setari ale indicatorului de notificari"
 
-#: ../src/notification-menuitem.c:128
-msgid "from"
-msgstr "de la"
+#, fuzzy
+#~ msgid "Hide indicator"
+#~ msgstr "Ascundeţi indicatorul"
+
+#, fuzzy
+#~ msgid "Maximum number of visible notifications"
+#~ msgstr "Numărul maxim de elemente vizibile"
+
+#~ msgid "Remove"
+#~ msgstr "Elimina"
+
+#~ msgid "Add"
+#~ msgstr "Adauga"

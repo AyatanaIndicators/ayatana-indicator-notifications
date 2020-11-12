@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-21 15:00+0200\n"
+"POT-Creation-Date: 2020-11-12 14:54+0100\n"
 "PO-Revision-Date: 2020-04-28 11:11+0000\n"
 "Last-Translator: Jeannette L <j.lavoie@net-c.ca>\n"
 "Language-Team: French (Canada) <https://hosted.weblate.org/projects/ayatana-"
@@ -19,9 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.0.2\n"
 
-#. filter-list
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
-#: ../src/indicator-notifications-settings.c:327
 msgid "Discard notifications by application name"
 msgstr "Trier les notifications par le nom de l'application"
 
@@ -34,9 +32,7 @@ msgstr ""
 "Si le nom d'une application est sur la liste noire, toutes les notifications "
 "correspondants au nom de l'application seront ignorées."
 
-#. clear-on-middle-click
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
-#: ../src/indicator-notifications-settings.c:279
 msgid "Clear notifications on middle click"
 msgstr "Effacer les notifications par un clic du milieu"
 
@@ -70,59 +66,42 @@ msgstr ""
 "L'indicateur affichera seulement au maximum le nombre de notifications "
 "indiquées par cette valeur."
 
-#: ../src/indicator-notifications.c:177
+#: ../src/service.c:221
+msgid "from"
+msgstr "de"
+
+#: ../src/service.c:270 ../src/service.c:299
 msgid "Notifications"
 msgstr "Notifications"
 
-#. Create the settings menuitem
-#: ../src/indicator-notifications.c:186
-#, fuzzy
-msgid "Settings…"
-msgstr "Paramètres…"
+#: ../src/service.c:327
+msgid "Clear"
+msgstr ""
 
-#: ../src/indicator-notifications.c:522
-#, c-format
-msgid "Clear <small>(%d Notification)</small>"
-msgid_plural "Clear <small>(%d Notifications)</small>"
-msgstr[0] "Effacer <small>(%d notification)</small>"
-msgstr[1] "Effacer <small>(%d notifications)</small>"
-
-#. Window Frame
-#: ../src/indicator-notifications-settings.c:262
-#: ../src/indicator-notifications-settings.c:268
-#: ../src/indicator-notifications-settings.c:411
-msgid "Indicator Notifications Settings"
-msgstr "Paramètres de l'indicateur de notifications"
-
-#. hide-indicator
-#: ../src/indicator-notifications-settings.c:288
-msgid "Hide indicator"
-msgstr "Masquer l'indicateur"
-
-#. do-not-disturb
-#: ../src/indicator-notifications-settings.c:297
+#: ../src/service.c:338
 msgid "Do not disturb"
 msgstr ""
 
-#. swap-clear-settings
-#: ../src/indicator-notifications-settings.c:306
-msgid "Swap \"Clear\" and \"Settings\" items"
-msgstr ""
+#, fuzzy
+#~ msgid "Settings…"
+#~ msgstr "Paramètres…"
 
-#. max-items
-#. FIXME: indicator does not change max items until restart...
-#: ../src/indicator-notifications-settings.c:316
-msgid "Maximum number of visible notifications"
-msgstr "Nombre maximal de notifications visibles"
+#~ msgid "Clear <small>(%d Notification)</small>"
+#~ msgid_plural "Clear <small>(%d Notifications)</small>"
+#~ msgstr[0] "Effacer <small>(%d notification)</small>"
+#~ msgstr[1] "Effacer <small>(%d notifications)</small>"
 
-#: ../src/indicator-notifications-settings.c:352
-msgid "Remove"
-msgstr "Enlever"
+#~ msgid "Indicator Notifications Settings"
+#~ msgstr "Paramètres de l'indicateur de notifications"
 
-#: ../src/indicator-notifications-settings.c:357
-msgid "Add"
-msgstr "Ajouter"
+#~ msgid "Hide indicator"
+#~ msgstr "Masquer l'indicateur"
 
-#: ../src/notification-menuitem.c:128
-msgid "from"
-msgstr "de"
+#~ msgid "Maximum number of visible notifications"
+#~ msgstr "Nombre maximal de notifications visibles"
+
+#~ msgid "Remove"
+#~ msgstr "Enlever"
+
+#~ msgid "Add"
+#~ msgstr "Ajouter"

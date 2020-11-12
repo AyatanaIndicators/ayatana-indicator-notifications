@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-21 15:00+0200\n"
+"POT-Creation-Date: 2020-11-12 14:54+0100\n"
 "PO-Revision-Date: 2020-09-09 01:36+0000\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
-"Language-Team: Croatian <https://hosted.weblate.org/projects/"
-"ayatana-indicators/notifications-applet/hr/>\n"
+"Language-Team: Croatian <https://hosted.weblate.org/projects/ayatana-"
+"indicators/notifications-applet/hr/>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,9 +20,7 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.3-dev\n"
 
-#. filter-list
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
-#: ../src/indicator-notifications-settings.c:327
 msgid "Discard notifications by application name"
 msgstr "Odbaci obavijesti po imenu programa"
 
@@ -34,9 +32,7 @@ msgstr ""
 "Ako je ime programa na popisu filtra, odbacit će se sve obavijesti koje "
 "odgovaraju imenu programa."
 
-#. clear-on-middle-click
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
-#: ../src/indicator-notifications-settings.c:279
 msgid "Clear notifications on middle click"
 msgstr "Izbriši obavijesti srednjim klikom"
 
@@ -70,59 +66,45 @@ msgstr ""
 "Indikator će prikazati samo onoliko obavijesti, koliko je naznačeno ovom "
 "vrijednošću."
 
-#: ../src/indicator-notifications.c:177
+#: ../src/service.c:221
+msgid "from"
+msgstr "od"
+
+#: ../src/service.c:270 ../src/service.c:299
 msgid "Notifications"
 msgstr "Obavjesti"
 
-#. Create the settings menuitem
-#: ../src/indicator-notifications.c:186
-msgid "Settings…"
-msgstr "Postavke …"
+#: ../src/service.c:327
+msgid "Clear"
+msgstr ""
 
-#: ../src/indicator-notifications.c:522
-#, c-format
-msgid "Clear <small>(%d Notification)</small>"
-msgid_plural "Clear <small>(%d Notifications)</small>"
-msgstr[0] "Izbriši <small>(%d obavijest)</small>"
-msgstr[1] "Izbriši <small>(%d obavijesti)</small>"
-msgstr[2] "Izbriši <small>(%d obavijesti)</small>"
-
-#. Window Frame
-#: ../src/indicator-notifications-settings.c:262
-#: ../src/indicator-notifications-settings.c:268
-#: ../src/indicator-notifications-settings.c:411
-msgid "Indicator Notifications Settings"
-msgstr "Postavke obavijesti indikatora"
-
-#. hide-indicator
-#: ../src/indicator-notifications-settings.c:288
-msgid "Hide indicator"
-msgstr "Sakrij indikatora"
-
-#. do-not-disturb
-#: ../src/indicator-notifications-settings.c:297
+#: ../src/service.c:338
 msgid "Do not disturb"
 msgstr "Ne smetaj"
 
-#. swap-clear-settings
-#: ../src/indicator-notifications-settings.c:306
-msgid "Swap \"Clear\" and \"Settings\" items"
-msgstr "Zamijeni „Izbriši” i „Postavke”"
+#~ msgid "Settings…"
+#~ msgstr "Postavke …"
 
-#. max-items
-#. FIXME: indicator does not change max items until restart...
-#: ../src/indicator-notifications-settings.c:316
-msgid "Maximum number of visible notifications"
-msgstr "Maksimalni broj vidljivih obavijesti"
+#~ msgid "Clear <small>(%d Notification)</small>"
+#~ msgid_plural "Clear <small>(%d Notifications)</small>"
+#~ msgstr[0] "Izbriši <small>(%d obavijest)</small>"
+#~ msgstr[1] "Izbriši <small>(%d obavijesti)</small>"
+#~ msgstr[2] "Izbriši <small>(%d obavijesti)</small>"
 
-#: ../src/indicator-notifications-settings.c:352
-msgid "Remove"
-msgstr "Ukloni"
+#~ msgid "Indicator Notifications Settings"
+#~ msgstr "Postavke obavijesti indikatora"
 
-#: ../src/indicator-notifications-settings.c:357
-msgid "Add"
-msgstr "Dodaj"
+#~ msgid "Hide indicator"
+#~ msgstr "Sakrij indikatora"
 
-#: ../src/notification-menuitem.c:128
-msgid "from"
-msgstr "od"
+#~ msgid "Swap \"Clear\" and \"Settings\" items"
+#~ msgstr "Zamijeni „Izbriši” i „Postavke”"
+
+#~ msgid "Maximum number of visible notifications"
+#~ msgstr "Maksimalni broj vidljivih obavijesti"
+
+#~ msgid "Remove"
+#~ msgstr "Ukloni"
+
+#~ msgid "Add"
+#~ msgstr "Dodaj"

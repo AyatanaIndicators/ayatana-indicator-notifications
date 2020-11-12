@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-21 15:00+0200\n"
+"POT-Creation-Date: 2020-11-12 14:54+0100\n"
 "PO-Revision-Date: 2020-08-07 21:32+0000\n"
 "Last-Translator: Prosta4okua <danyavdele@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/ayatana-"
@@ -20,9 +20,7 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.2-dev\n"
 
-#. filter-list
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
-#: ../src/indicator-notifications-settings.c:327
 msgid "Discard notifications by application name"
 msgstr "Ігнорувати сповіщення за назвою застосунку"
 
@@ -35,9 +33,7 @@ msgstr ""
 "Якщо ім'я застосунку в чорному списку, всі сповіщення, що відповідають назві "
 "застосунку, будуть відхилені."
 
-#. clear-on-middle-click
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
-#: ../src/indicator-notifications-settings.c:279
 msgid "Clear notifications on middle click"
 msgstr "Очистити сповіщення по середній кнопці миші"
 
@@ -69,60 +65,43 @@ msgid ""
 "indicated by this value."
 msgstr "Індикатор буде відображати повідомлень не більше, ніж це значення."
 
-#: ../src/indicator-notifications.c:177
+#: ../src/service.c:221
+msgid "from"
+msgstr "з"
+
+#: ../src/service.c:270 ../src/service.c:299
 msgid "Notifications"
 msgstr "Сповіщення"
 
-#. Create the settings menuitem
-#: ../src/indicator-notifications.c:186
-#, fuzzy
-msgid "Settings…"
-msgstr "Налаштування ..."
+#: ../src/service.c:327
+msgid "Clear"
+msgstr ""
 
-#: ../src/indicator-notifications.c:522
-#, c-format
-msgid "Clear <small>(%d Notification)</small>"
-msgid_plural "Clear <small>(%d Notifications)</small>"
-msgstr[0] "Очистити<small>%d Оповіщення)</small>"
-msgstr[1] "Очистити<small>%d Сповіщення)</small>"
-msgstr[2] "Очистити<small>%d Сповіщень)</small>"
-
-#. Window Frame
-#: ../src/indicator-notifications-settings.c:262
-#: ../src/indicator-notifications-settings.c:268
-#: ../src/indicator-notifications-settings.c:411
-msgid "Indicator Notifications Settings"
-msgstr "Налаштування сповіщень індикаторів"
-
-#. hide-indicator
-#: ../src/indicator-notifications-settings.c:288
-msgid "Hide indicator"
-msgstr "Приховати індикатор"
-
-#. do-not-disturb
-#: ../src/indicator-notifications-settings.c:297
+#: ../src/service.c:338
 msgid "Do not disturb"
 msgstr ""
 
-#. swap-clear-settings
-#: ../src/indicator-notifications-settings.c:306
-msgid "Swap \"Clear\" and \"Settings\" items"
-msgstr ""
+#, fuzzy
+#~ msgid "Settings…"
+#~ msgstr "Налаштування ..."
 
-#. max-items
-#. FIXME: indicator does not change max items until restart...
-#: ../src/indicator-notifications-settings.c:316
-msgid "Maximum number of visible notifications"
-msgstr "Максимальна кількість видимих сповіщень"
+#~ msgid "Clear <small>(%d Notification)</small>"
+#~ msgid_plural "Clear <small>(%d Notifications)</small>"
+#~ msgstr[0] "Очистити<small>%d Оповіщення)</small>"
+#~ msgstr[1] "Очистити<small>%d Сповіщення)</small>"
+#~ msgstr[2] "Очистити<small>%d Сповіщень)</small>"
 
-#: ../src/indicator-notifications-settings.c:352
-msgid "Remove"
-msgstr "Видалити"
+#~ msgid "Indicator Notifications Settings"
+#~ msgstr "Налаштування сповіщень індикаторів"
 
-#: ../src/indicator-notifications-settings.c:357
-msgid "Add"
-msgstr "Додати"
+#~ msgid "Hide indicator"
+#~ msgstr "Приховати індикатор"
 
-#: ../src/notification-menuitem.c:128
-msgid "from"
-msgstr "з"
+#~ msgid "Maximum number of visible notifications"
+#~ msgstr "Максимальна кількість видимих сповіщень"
+
+#~ msgid "Remove"
+#~ msgstr "Видалити"
+
+#~ msgid "Add"
+#~ msgstr "Додати"

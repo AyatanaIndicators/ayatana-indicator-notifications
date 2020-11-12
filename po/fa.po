@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-21 15:00+0200\n"
+"POT-Creation-Date: 2020-11-12 14:54+0100\n"
 "PO-Revision-Date: 2020-07-20 21:41+0000\n"
 "Last-Translator: Tetra Homer <tetrahomer@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/ayatana-"
@@ -19,9 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.2-dev\n"
 
-#. filter-list
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
-#: ../src/indicator-notifications-settings.c:327
 msgid "Discard notifications by application name"
 msgstr "اعلان ها را بر اساس نام برنامه کنار بگذارید"
 
@@ -34,9 +32,7 @@ msgstr ""
 "اگر نام یک برنامه در لیست سیاه قرار داشته باشد، تمام اعلان های مطابق با نام "
 "برنامه حذف می شوند."
 
-#. clear-on-middle-click
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
-#: ../src/indicator-notifications-settings.c:279
 msgid "Clear notifications on middle click"
 msgstr "پاک کردن اعلان‌ها با دکمه وسطی موشواره"
 
@@ -70,59 +66,42 @@ msgstr ""
 "این نشانگر فقط حداکثر تعداد اعلان های نشان داده شده توسط این مقدار را نشان "
 "می دهد."
 
-#: ../src/indicator-notifications.c:177
+#: ../src/service.c:221
+msgid "from"
+msgstr "از"
+
+#: ../src/service.c:270 ../src/service.c:299
 msgid "Notifications"
 msgstr "اعلانات"
 
-#. Create the settings menuitem
-#: ../src/indicator-notifications.c:186
-#, fuzzy
-msgid "Settings…"
-msgstr "تنظیمات…"
+#: ../src/service.c:327
+msgid "Clear"
+msgstr ""
 
-#: ../src/indicator-notifications.c:522
-#, c-format
-msgid "Clear <small>(%d Notification)</small>"
-msgid_plural "Clear <small>(%d Notifications)</small>"
-msgstr[0] "پاک‌کردن <small>(%d اعلان )</small>"
-msgstr[1] "پاک‌کردن <small>(%d اعلان‌ها )</small>"
-
-#. Window Frame
-#: ../src/indicator-notifications-settings.c:262
-#: ../src/indicator-notifications-settings.c:268
-#: ../src/indicator-notifications-settings.c:411
-msgid "Indicator Notifications Settings"
-msgstr "تنظیمات اعلانات نشانگر"
-
-#. hide-indicator
-#: ../src/indicator-notifications-settings.c:288
-msgid "Hide indicator"
-msgstr "مخفی کردن نشانگر"
-
-#. do-not-disturb
-#: ../src/indicator-notifications-settings.c:297
+#: ../src/service.c:338
 msgid "Do not disturb"
 msgstr ""
 
-#. swap-clear-settings
-#: ../src/indicator-notifications-settings.c:306
-msgid "Swap \"Clear\" and \"Settings\" items"
-msgstr ""
+#, fuzzy
+#~ msgid "Settings…"
+#~ msgstr "تنظیمات…"
 
-#. max-items
-#. FIXME: indicator does not change max items until restart...
-#: ../src/indicator-notifications-settings.c:316
-msgid "Maximum number of visible notifications"
-msgstr "حداکثر تعداد اعلانات قابل مشاهده"
+#~ msgid "Clear <small>(%d Notification)</small>"
+#~ msgid_plural "Clear <small>(%d Notifications)</small>"
+#~ msgstr[0] "پاک‌کردن <small>(%d اعلان )</small>"
+#~ msgstr[1] "پاک‌کردن <small>(%d اعلان‌ها )</small>"
 
-#: ../src/indicator-notifications-settings.c:352
-msgid "Remove"
-msgstr "حذف"
+#~ msgid "Indicator Notifications Settings"
+#~ msgstr "تنظیمات اعلانات نشانگر"
 
-#: ../src/indicator-notifications-settings.c:357
-msgid "Add"
-msgstr "افزودن"
+#~ msgid "Hide indicator"
+#~ msgstr "مخفی کردن نشانگر"
 
-#: ../src/notification-menuitem.c:128
-msgid "from"
-msgstr "از"
+#~ msgid "Maximum number of visible notifications"
+#~ msgstr "حداکثر تعداد اعلانات قابل مشاهده"
+
+#~ msgid "Remove"
+#~ msgstr "حذف"
+
+#~ msgid "Add"
+#~ msgstr "افزودن"
