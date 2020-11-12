@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-12 14:54+0100\n"
-"PO-Revision-Date: 2020-11-12 08:28+0000\n"
+"PO-Revision-Date: 2020-11-13 18:28+0000\n"
 "Last-Translator: Milan Korecky <milan.korecky@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/ayatana-indicators/"
 "notifications-applet/cs/>\n"
@@ -75,7 +75,7 @@ msgstr "Oznámení"
 
 #: ../src/service.c:327
 msgid "Clear"
-msgstr ""
+msgstr "Vyčistit"
 
 #: ../src/service.c:338
 msgid "Do not disturb"
