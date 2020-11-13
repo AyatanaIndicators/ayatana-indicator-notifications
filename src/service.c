@@ -496,6 +496,11 @@ static void onRemoveNotification(GSimpleAction *a, GVariant *param, gpointer use
 
             updateClearItem(self);
 
+            if (self->priv->lVisibleItems == NULL)
+            {
+                setUnread(self, FALSE);
+            }
+
             break;
         }
     }
