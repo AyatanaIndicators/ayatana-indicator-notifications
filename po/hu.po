@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-12 14:54+0100\n"
-"PO-Revision-Date: 2020-10-25 22:26+0000\n"
+"PO-Revision-Date: 2020-11-27 14:29+0000\n"
 "Last-Translator: Ács Zoltán <acszoltan111@gmail.com>\n"
-"Language-Team: Hungarian <https://hosted.weblate.org/projects/ayatana-"
-"indicators/notifications-applet/hu/>\n"
+"Language-Team: Hungarian <https://hosted.weblate.org/projects/"
+"ayatana-indicators/notifications-applet/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3.2-dev\n"
+"X-Generator: Weblate 4.4-dev\n"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
 msgid "Discard notifications by application name"
@@ -49,7 +49,7 @@ msgstr "Indikátor elrejtése"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:6
 msgid "If true, the indicator is hidden."
-msgstr ""
+msgstr "Ha igaz, az értesítés rejtett."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:7
 msgid "Maximum number of visible items"
@@ -64,7 +64,6 @@ msgstr ""
 "meg."
 
 #: ../src/service.c:221
-#, fuzzy
 msgid "from"
 msgstr "ettől:"
 
@@ -74,7 +73,7 @@ msgstr "Értesítések"
 
 #: ../src/service.c:327
 msgid "Clear"
-msgstr ""
+msgstr "Törlés"
 
 #: ../src/service.c:338
 msgid "Do not disturb"
