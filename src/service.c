@@ -230,7 +230,7 @@ static void onMessageReceived(DBusSpy *pBusSpy, Notification *note, gpointer use
     g_menu_item_set_action_and_target_value(item, "indicator.remove-notification", g_variant_new_int64(nTimestamp));
     g_menu_item_set_attribute_value(item, "x-ayatana-timestamp", g_variant_new_int64(nTimestamp));
     g_menu_item_set_attribute_value(item, "x-ayatana-use-markup", g_variant_new_boolean(TRUE));
-    g_menu_item_set_attribute(item, "x-ayatana-type", "s", "org.ayatana.indicator.basic");
+    g_menu_item_set_attribute(item, "x-ayatana-type", "s", "org.ayatana.indicator.removable");
 
     GList *last_item;
     GMenuItem *last_menu_item;
