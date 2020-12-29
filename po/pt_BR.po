@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-12 14:54+0100\n"
-"PO-Revision-Date: 2020-02-26 16:33+0000\n"
+"PO-Revision-Date: 2020-12-31 03:29+0000\n"
 "Last-Translator: Wellington Terumi Uemura <wellingtonuemura@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "ayatana-indicators/notifications-applet/pt_BR/>\n"
@@ -17,20 +17,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.0-dev\n"
+"X-Generator: Weblate 4.4.1-dev\n"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
 msgid "Discard notifications by application name"
-msgstr "Descartar notificações por nome de aplicação"
+msgstr "Descartar as notificações através do nome do aplicativo"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
-#, fuzzy
 msgid ""
 "If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
 msgstr ""
-"Se um nome de aplicativo estiver na lista negra, será descartada qualquer "
-"notificação que corresponda ao nome do aplicativo."
+"Caso um nome do aplicativo esteja na lista negra, qualquer notificação que "
+"corresponda ao nome do aplicativo será descartada."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
 msgid "Clear notifications on middle click"
@@ -56,7 +55,7 @@ msgstr "Se verdadeiro, o indicador ficará oculto."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:7
 msgid "Maximum number of visible items"
-msgstr "Número máximo de itens visíveis"
+msgstr "Quantidade máxima visível dos itens"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:8
 msgid ""
@@ -76,11 +75,11 @@ msgstr "Notificações"
 
 #: ../src/service.c:327
 msgid "Clear"
-msgstr ""
+msgstr "Remover"
 
 #: ../src/service.c:338
 msgid "Do not disturb"
-msgstr ""
+msgstr "Não perturbe"
 
 #, fuzzy
 #~ msgid "Settings…"
