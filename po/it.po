@@ -8,28 +8,27 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-12 14:54+0100\n"
-"PO-Revision-Date: 2020-10-26 13:13+0000\n"
-"Last-Translator: Michele <miguel2000@livecom.it>\n"
-"Language-Team: Italian <https://hosted.weblate.org/projects/ayatana-"
-"indicators/notifications-applet/it/>\n"
+"PO-Revision-Date: 2020-12-31 03:29+0000\n"
+"Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/"
+"ayatana-indicators/notifications-applet/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3.2-dev\n"
+"X-Generator: Weblate 4.4.1-dev\n"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
 msgid "Discard notifications by application name"
 msgstr "Elimina le notifiche in base al nome dell'applicazione"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
-#, fuzzy
 msgid ""
 "If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
 msgstr ""
-"Se il nome di un'applicazione è nella blacklist, tutte le notifiche "
+"Se il nome di un'applicazione è nella lista nera, tutte le notifiche "
 "corrispondenti al nome dell'applicazione saranno scartate."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
@@ -76,7 +75,7 @@ msgstr "Notifiche"
 
 #: ../src/service.c:327
 msgid "Clear"
-msgstr ""
+msgstr "Pulisci"
 
 #: ../src/service.c:338
 msgid "Do not disturb"
