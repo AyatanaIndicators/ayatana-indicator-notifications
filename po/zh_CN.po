@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-12 14:54+0100\n"
-"PO-Revision-Date: 2020-05-27 06:41+0000\n"
-"Last-Translator: wdggg <wdggg7@gmail.com>\n"
+"PO-Revision-Date: 2021-03-12 06:02+0000\n"
+"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "ayatana-indicators/notifications-applet/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -17,18 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.1-dev\n"
+"X-Generator: Weblate 4.5.2-dev\n"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
 msgid "Discard notifications by application name"
 msgstr "按应用程序名称屏蔽通知"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
-#, fuzzy
 msgid ""
 "If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
-msgstr "如果有一个应用程序在黑名单中， 所有与该程序相关的通知将会被丢弃。"
+msgstr "如果有一个应用程序在过滤名单中， 所有与该程序相关的通知将会被丢弃。"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
 msgid "Clear notifications on middle click"
@@ -75,7 +74,7 @@ msgstr ""
 
 #: ../src/service.c:338
 msgid "Do not disturb"
-msgstr ""
+msgstr "请勿打扰"
 
 #, fuzzy
 #~ msgid "Settings…"
