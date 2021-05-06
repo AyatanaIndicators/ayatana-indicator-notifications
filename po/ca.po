@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-12 14:54+0100\n"
-"PO-Revision-Date: 2021-02-05 01:42+0000\n"
+"PO-Revision-Date: 2021-05-07 12:33+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/"
 "ayatana-indicators/notifications-applet/ca/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.5-dev\n"
+"X-Generator: Weblate 4.7-dev\n"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
 msgid "Discard notifications by application name"
@@ -55,7 +55,7 @@ msgstr "Si és cert, l'indicador està ocult."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:7
 msgid "Maximum number of visible items"
-msgstr "Número màxim d'elements visibles"
+msgstr "Nombre màxim d'elements visibles"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:8
 msgid ""
