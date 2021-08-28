@@ -33,10 +33,10 @@ requires:
     - cmake-extras
     - mate-common
     - intltool
-#    - libayatana-common
+#    - libayatana-common-dev
     - gobject-introspection
     - libgirepository1.0-dev
-    - liblomiri-url-dispatcher
+    - liblomiri-url-dispatcher-dev
     - valac
     - libglib2.0-dev
     - systemd
@@ -51,10 +51,10 @@ requires:
     - cmake-extras
     - mate-common
     - intltool
-#    - libayatana-common
+#    - libayatana-common-dev
     - gobject-introspection
     - libgirepository1.0-dev
-    - liblomiri-url-dispatcher
+    - liblomiri-url-dispatcher-dev
     - valac
     - libglib2.0-dev
     - systemd
