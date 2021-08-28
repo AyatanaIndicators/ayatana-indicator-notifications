@@ -14,6 +14,10 @@ requires:
     - cmake-extras
     - mate-common
     - intltool
+#    - libayatana-common
+    - gobject-introspection
+#    - liblomiri-url-dispatcher
+    - vala
     - glib2
     - systemd
 
@@ -29,6 +33,11 @@ requires:
     - cmake-extras
     - mate-common
     - intltool
+#    - libayatana-common
+    - gobject-introspection
+    - libgirepository1.0-dev
+    - liblomiri-url-dispatcher
+    - valac
     - libglib2.0-dev
     - systemd
 
@@ -42,6 +51,11 @@ requires:
     - cmake-extras
     - mate-common
     - intltool
+#    - libayatana-common
+    - gobject-introspection
+    - libgirepository1.0-dev
+    - liblomiri-url-dispatcher
+    - valac
     - libglib2.0-dev
     - systemd
 
