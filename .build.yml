@@ -59,6 +59,24 @@ requires:
     - libglib2.0-dev
     - systemd
 
+  ubuntu:focal:
+    - autopoint
+    - clang
+    - clang-tools
+    - g++
+    - git
+    - cmake
+    - cmake-extras
+    - mate-common
+    - intltool
+#    - libayatana-common-dev
+    - gobject-introspection
+    - libgirepository1.0-dev
+#    - liblomiri-url-dispatcher-dev
+    - valac
+    - libglib2.0-dev
+    - systemd
+
 variables:
   - 'CHECKERS="
     -enable-checker deadcode.DeadStores
