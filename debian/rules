@@ -10,8 +10,16 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 DPKG_EXPORT_BUILDFLAGS = 1
 include /usr/share/dpkg/buildflags.mk
 
+DEB_CMAKE_EXTRA_FLAGS = \
+    -DENABLE_TESTS=ON \
+    -DENABLE_COVERAGE=OFF \
+    $(NULL)
+
 %:
 	dh $@ --with systemd
+
+override_dh_auto_configure:
+	dh_auto_configure -- $(DEB_CMAKE_EXTRA_FLAGS)
 
 override_dh_install:
 	find debian/ayatana-indicator-notifications -name \*.la -delete
