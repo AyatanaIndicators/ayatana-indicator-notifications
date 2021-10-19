@@ -2,7 +2,6 @@
 ##  GSettings schema
 ##
 
-include (UseGSettings)
 set (SCHEMA_NAME "org.ayatana.indicator.notifications.gschema.xml")
 set (SCHEMA_FILE "${CMAKE_CURRENT_BINARY_DIR}/${SCHEMA_NAME}")
 set (SCHEMA_FILE_IN "${CMAKE_CURRENT_SOURCE_DIR}/${SCHEMA_NAME}.in")
@@ -11,8 +10,10 @@ set (SCHEMA_FILE_IN "${CMAKE_CURRENT_SOURCE_DIR}/${SCHEMA_NAME}.in")
 set (ENV{LC_ALL} "C")
 execute_process (COMMAND intltool-merge -quiet --xml-style --utf8 --no-translations "${SCHEMA_FILE_IN}" "${SCHEMA_FILE}")
 
-# let UseGSettings do the rest
-add_schema (${SCHEMA_FILE})
+# let GSettings do the rest
+find_package(GSettings REQUIRED)
+set(GSETTINGS_COMPILE ON)
+add_schema (${SCHEMA_NAME})
 
 ##
 ##  Systemd Unit File
