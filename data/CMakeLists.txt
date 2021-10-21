@@ -13,7 +13,6 @@ intltool_merge_translations("${SCHEMA_FILE_IN}" "${SCHEMA_FILE}" ALL UTF8 STYLE 
 
 # let GSettings do the rest
 find_package(GSettings REQUIRED)
-set(GSETTINGS_COMPILE ON)
 add_schema (${SCHEMA_NAME})
 
 ##
