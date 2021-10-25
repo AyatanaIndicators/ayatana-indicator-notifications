@@ -12,7 +12,6 @@ requires:
     - which
     - cmake
     - cmake-extras
-    - mate-common
     - intltool
 #    - libayatana-common
     - gobject-introspection
@@ -23,7 +22,6 @@ requires:
 
   debian:
     # Useful URL: https://salsa.debian.org/debian-ayatana-team/ayatana-indicator-notifications
-    - autopoint
     - clang
     - clang-tools
     - g++
@@ -31,7 +29,6 @@ requires:
     - git
     - cmake
     - cmake-extras
-    - mate-common
     - intltool
 #    - libayatana-common-dev
     - gobject-introspection
@@ -42,14 +39,12 @@ requires:
     - systemd
 
   ubuntu:
-    - autopoint
     - clang
     - clang-tools
     - g++
     - git
     - cmake
     - cmake-extras
-    - mate-common
     - intltool
 #    - libayatana-common-dev
     - gobject-introspection
@@ -60,14 +55,12 @@ requires:
     - systemd
 
   ubuntu:focal:
-    - autopoint
     - clang
     - clang-tools
     - g++
     - git
     - cmake
     - cmake-extras
-    - mate-common
     - intltool
 #    - libayatana-common-dev
     - gobject-introspection
@@ -111,10 +104,7 @@ build_scripts:
   -     cppcheck --enable=warning,style,performance,portability,information,missingInclude .
   - fi
   -
-  - if [ -e ./autogen.sh ]; then
-  -     NOCONFIGURE=1 ./autogen.sh
-  -     scan-build $CHECKERS ./configure --prefix=/usr --enable-gtk-doc --enable-compile-warnings=maximum
-  - elif [ -e ./CMakeLists.txt ]; then
+  - if [ -e ./CMakeLists.txt ]; then
   -     if [ ${DISTRO_NAME} == "debian" ];then
   -         scan-build $CHECKERS cmake . -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_VERBOSE_MAKEFILE=ON -DENABLE_TESTS=ON
   -     else
@@ -142,9 +132,7 @@ build_scripts:
 #  - if [ ${BUILD_TYPE} == "scripts" ];then
 #  -     XVFB_RUN="$(which xvfb-run || true)"
 #  -     if [ ${DISTRO_NAME} == "debian" ];then
-#  -         if [ -e ./autogen.sh ]; then
-#  -             ${XVFB_RUN} make check
-#  -         elif [ -e ./CMakeLists.txt ]; then
+#  -         if [ -e ./CMakeLists.txt ]; then
 #  -             ${XVFB_RUN} env CTEST_OUTPUT_ON_FAILURE=1 make test
 #  -         fi
 #  -     fi
