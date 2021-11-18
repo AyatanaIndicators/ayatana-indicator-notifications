@@ -1,3 +1,8 @@
+Overview of changes in ayatana-indicator-notifications 0.9.0
+
+  - Various CMake improvements.
+  - Translation updates.
+
 Overview of changes in ayatana-indicator-notifications 0.8.90
 
   - Partial rewrite, port to Indicator NG technology. Drop
