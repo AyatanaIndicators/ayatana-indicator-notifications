@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-12 14:54+0100\n"
-"PO-Revision-Date: 2021-11-20 00:52+0000\n"
+"PO-Revision-Date: 2021-11-21 02:52+0000\n"
 "Last-Translator: phlostically <phlostically@mailinator.com>\n"
 "Language-Team: Esperanto <https://hosted.weblate.org/projects/"
 "ayatana-indicators/notifications-applet/eo/>\n"
@@ -46,7 +46,7 @@ msgstr "Kaŝi la indikilon"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:6
 msgid "If true, the indicator is hidden."
-msgstr ""
+msgstr "Ĉu kaŝi la indikilon."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:7
 msgid "Maximum number of visible items"
