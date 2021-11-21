@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-12 14:54+0100\n"
-"PO-Revision-Date: 2021-11-21 02:52+0000\n"
+"PO-Revision-Date: 2021-11-22 22:35+0000\n"
 "Last-Translator: phlostically <phlostically@mailinator.com>\n"
 "Language-Team: Esperanto <https://hosted.weblate.org/projects/"
 "ayatana-indicators/notifications-applet/eo/>\n"
@@ -17,17 +17,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.9.1\n"
+"X-Generator: Weblate 4.10-dev\n"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
 msgid "Discard notifications by application name"
-msgstr ""
+msgstr "Forĵeti sciigojn laŭ nomo de programo"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
 msgid ""
 "If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
 msgstr ""
+"Se la nomo de programo estas en la filtrolisto, ĉiuj sciigoj kongruaj kun la "
+"nomo de la programo estos forĵetitaj."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
 msgid "Clear notifications on middle click"
