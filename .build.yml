@@ -102,15 +102,14 @@ before_scripts:
 
 build_scripts:
   - if [ ${DISTRO_NAME} == "debian" ];then
-  -     export CFLAGS+=" -Wsign-compare -Wunused-parameter"
   -     cppcheck --enable=warning,style,performance,portability,information,missingInclude .
   - fi
   -
   - if [ -e ./CMakeLists.txt ]; then
   -     if [ ${DISTRO_NAME} == "debian" ];then
-  -         scan-build $CHECKERS cmake . -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_VERBOSE_MAKEFILE=ON -DENABLE_TESTS=ON
+  -         scan-build $CHECKERS cmake . -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_VERBOSE_MAKEFILE=ON -DENABLE_WERROR=ON -DENABLE_TESTS=ON
   -     else
-  -         scan-build $CHECKERS cmake . -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_VERBOSE_MAKEFILE=ON
+  -         scan-build $CHECKERS cmake . -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_VERBOSE_MAKEFILE=ON -DENABLE_WERROR=ON
   -     fi
   - else
   -     exit 1
