@@ -1,10 +1,31 @@
 project(ayatana-indicator-notifications C CXX)
-cmake_minimum_required(VERSION 2.8.9)
-
-list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
+cmake_minimum_required(VERSION 3.13)
 
 set(PROJECT_VERSION "0.9.0")
 set(PACKAGE ${CMAKE_PROJECT_NAME})
+
+# Options
+
+option(ENABLE_TESTS "Enable all tests and checks" OFF)
+option(ENABLE_COVERAGE "Enable coverage reports (includes enabling all tests and checks)" OFF)
+option(ENABLE_WERROR "Treat all build warnings as errors" OFF)
+
+if(ENABLE_COVERAGE)
+    set(ENABLE_TESTS ON)
+    set(CMAKE_BUILD_TYPE "Coverage")
+else()
+    set(CMAKE_BUILD_TYPE "Release")
+endif()
+
+if(ENABLE_WERROR)
+    add_definitions("-Werror")
+endif()
+
+if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
+    add_definitions("-Weverything")
+else()
+    add_definitions("-Wall")
+endif()
 
 ##
 ##  GNU standard installation directories
@@ -53,20 +74,24 @@ add_custom_target (cppcheck COMMAND cppcheck --enable=all -q --error-exitcode=2 
 ##  Actual building
 ##
 
-if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
-  set(C_WARNING_ARGS "${C_WARNING_ARGS} -Weverything")
-  set(C_WARNING_ARGS "${C_WARNING_ARGS} -Wno-c++98-compat -Wno-padded") # these are annoying
-  set(C_WARNING_ARGS "${C_WARNING_ARGS} -Wno-documentation") # gtk-doc != doxygen
-else()
-  set(C_WARNING_ARGS "${C_WARNING_ARGS} -Wall -Wformat=2") # Use -Wextra and -Wpedantic explicitly if needed
-endif()
-set(C_WARNING_ARGS "${C_WARNING_ARGS} -Wno-missing-field-initializers") # GActionEntry
-
-
 include_directories (${CMAKE_CURRENT_SOURCE_DIR}/include)
 include_directories (${CMAKE_CURRENT_BINARY_DIR}/include)
 
-# actually build things
 add_subdirectory(src)
 add_subdirectory(data)
 add_subdirectory(po)
+
+if (ENABLE_TESTS)
+    include(CTest)
+    enable_testing()
+
+    if (ENABLE_COVERAGE)
+        find_package(CoverageReport)
+    endif()
+endif()
+
+# Display config info
+
+message(STATUS "Install prefix: ${CMAKE_INSTALL_PREFIX}")
+message(STATUS "Unit tests: ${ENABLE_TESTS}")
+message(STATUS "Build with -Werror: ${ENABLE_WERROR}")
