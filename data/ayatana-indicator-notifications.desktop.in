@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=Ayatana Indicator Notifications
-Exec=@pkglibexecdir@/ayatana-indicator-notifications-service
+Exec=@CMAKE_INSTALL_FULL_LIBEXECDIR@/ayatana-indicator-notifications/ayatana-indicator-notifications-service
 OnlyShowIn=Unity;MATE;XFCE;
 NoDisplay=true
 StartupNotify=false

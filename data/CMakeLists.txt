@@ -29,7 +29,6 @@ if (${SYSTEMD_FOUND})
     set (SYSTEMD_USER_FILE_IN "${CMAKE_CURRENT_SOURCE_DIR}/${SYSTEMD_USER_NAME}.in")
 
     # build it
-    set (pkglibexecdir "${CMAKE_INSTALL_FULL_PKGLIBEXECDIR}")
     configure_file ("${SYSTEMD_USER_FILE_IN}" "${SYSTEMD_USER_FILE}")
 
     # install it
@@ -50,7 +49,6 @@ set (XDG_AUTOSTART_FILE "${CMAKE_CURRENT_BINARY_DIR}/${XDG_AUTOSTART_NAME}")
 set (XDG_AUTOSTART_FILE_IN "${CMAKE_CURRENT_SOURCE_DIR}/${XDG_AUTOSTART_NAME}.in")
 
 # build it
-set (pkglibexecdir "${CMAKE_INSTALL_FULL_PKGLIBEXECDIR}")
 configure_file ("${XDG_AUTOSTART_FILE_IN}" "${XDG_AUTOSTART_FILE}")
 
 # install it
