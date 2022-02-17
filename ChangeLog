@@ -1,6 +1,55 @@
+2022-02-17 Mike Gabriel
+
+        * release 22.2.0 (HEAD -> main, tag: 22.2.0)
+
+2022-02-16 Mike Gabriel
+
+        * Merge branch 'tari01-pr/drop-cmake-install-full-pkglibexecdir'
+          (0268f09)
+
+2022-02-15 Robert Tari
+
+        * Drop pkglibexecdir and use native CMake file configuration
+          (db51353)
+
+2022-02-08 Robert Tari
+
+        * .travis.yml: Run CI builds on Travis CI's Ubuntu focal base system
+          (1356964)
+
+2022-01-27 Mike Gabriel
+
+        * Merge branch 'tari01-pr/cleanup-compile-flags' (a949160)
+
+2022-01-13 Robert Tari
+
+        * .build.yml: Drop extra compilation flags and build with -Werror
+          (b835d12)
+        * Use Ayatana-style CMakeList + clean up compilation flags (e626ade)
+
+2022-01-24 Eric
+
+        * Translated using Weblate (Chinese (Simplified)) (f9e30eb)
+
+2022-01-02 ssantos
+
+        * Translated using Weblate (Portuguese) (f7d548d)
+
+2021-11-21 phlostically
+
+        * Translated using Weblate (Esperanto) (95bbde9)
+
+2021-11-20 phlostically
+
+        * Translated using Weblate (Esperanto) (aa022b0)
+
+2021-11-18 phlostically
+
+        * Translated using Weblate (Esperanto) (a7e5643)
+
 2021-11-18 Mike Gabriel
 
-        * release 0.9.0 (HEAD -> main, tag: 0.9.0)
+        * release 0.9.0 (378e9eb) (tag: 0.9.0)
 
 2021-11-16 Phil Clifford
 
