@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-12 14:54+0100\n"
-"PO-Revision-Date: 2022-04-23 10:54+0000\n"
+"PO-Revision-Date: 2022-04-23 12:18+0000\n"
 "Last-Translator: Sergii Horichenko <m@sgg.im>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/"
 "ayatana-indicators/notifications-applet/uk/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
 msgid "Discard notifications by application name"
-msgstr "Ігнорувати сповіщення за назвою застосунку"
+msgstr "Відкидати сповіщення за назвою програми"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
 msgid ""
@@ -74,11 +74,11 @@ msgstr "Сповіщення"
 
 #: ../src/service.c:327
 msgid "Clear"
-msgstr ""
+msgstr "Очистити"
 
 #: ../src/service.c:338
 msgid "Do not disturb"
-msgstr ""
+msgstr "Не турбувати"
 
 #, fuzzy
 #~ msgid "Settings…"
