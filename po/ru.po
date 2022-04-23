@@ -8,21 +8,21 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-12 14:54+0100\n"
-"PO-Revision-Date: 2020-10-09 11:26+0000\n"
-"Last-Translator: koffevar <egor.kafisov@gmail.com>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/ayatana-"
-"indicators/notifications-applet/ru/>\n"
+"PO-Revision-Date: 2022-04-23 13:36+0000\n"
+"Last-Translator: Sergii Horichenko <m@sgg.im>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/"
+"ayatana-indicators/notifications-applet/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.3-dev\n"
+"X-Generator: Weblate 4.12.1-dev\n"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
 msgid "Discard notifications by application name"
-msgstr "Игнорировать уведомления по названию приложения"
+msgstr "Отклонять уведомления по имени приложения"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
 msgid ""
@@ -56,7 +56,7 @@ msgstr "Если истинно, индикатор будет спрятан."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:7
 msgid "Maximum number of visible items"
-msgstr "Наибольшее количество видимых элементов"
+msgstr "Максимальное количество видимых элементов"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:8
 msgid ""
@@ -74,7 +74,7 @@ msgstr "Уведомления"
 
 #: ../src/service.c:327
 msgid "Clear"
-msgstr ""
+msgstr "Очистить"
 
 #: ../src/service.c:338
 msgid "Do not disturb"
