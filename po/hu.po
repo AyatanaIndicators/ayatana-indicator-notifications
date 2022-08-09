@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-12 14:54+0100\n"
-"PO-Revision-Date: 2020-11-27 14:29+0000\n"
+"PO-Revision-Date: 2022-08-10 13:23+0000\n"
 "Last-Translator: Ács Zoltán <acszoltan111@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/"
 "ayatana-indicators/notifications-applet/hu/>\n"
@@ -17,19 +17,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4-dev\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
 msgid "Discard notifications by application name"
 msgstr "Értesítések elutasítása az alkalmazásnév alapján"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
-#, fuzzy
 msgid ""
 "If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
 msgstr ""
-"Ha egy alkalmazás neve rajta van a feketelistán, az összes értesítés amely "
+"Ha egy alkalmazás neve rajta van a szűrőlistán, az összes értesítés amely "
 "egyezik az alkalmazásnévvel el lesz utasítva."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
@@ -37,11 +36,15 @@ msgid "Clear notifications on middle click"
 msgstr "Értesítések törlése középső kattintásra"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:4
+#, fuzzy
 msgid ""
 "Normally when middle clicking the notification icon, the unread status will "
 "be toggled if the queue is not empty. With this option enabled, the "
 "notification queue will be cleared instead."
 msgstr ""
+"Normál esetben az értesítés ikonjára való középső kattintáskor az olvasatlan "
+"státusz változik, ha a várólista nem üres. Ha ez az opció engedélyezve van, "
+"az értesítési várólista ehelyett kiürül."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:5
 msgid "Hide the indicator"
