@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-12 14:54+0100\n"
+"POT-Creation-Date: 2022-09-05 13:31+0200\n"
 "PO-Revision-Date: 2020-09-05 16:36+0000\n"
 "Last-Translator: tommymaple <godoffrog@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
@@ -65,15 +65,19 @@ msgstr "指示器最多只顯示此值指示的通知數量。"
 msgid "from"
 msgstr "來自"
 
-#: ../src/service.c:270 ../src/service.c:299
+#: ../src/service.c:270 ../src/service.c:300
 msgid "Notifications"
 msgstr "通知"
 
-#: ../src/service.c:327
+#: ../src/service.c:271
+msgid "List of past system notifications, do-not-disturb switch"
+msgstr ""
+
+#: ../src/service.c:328
 msgid "Clear"
 msgstr ""
 
-#: ../src/service.c:338
+#: ../src/service.c:339
 msgid "Do not disturb"
 msgstr "請勿打擾"
 

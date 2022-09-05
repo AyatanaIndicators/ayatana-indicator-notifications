@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-12 14:54+0100\n"
+"POT-Creation-Date: 2022-09-05 13:31+0200\n"
 "PO-Revision-Date: 2021-03-18 17:29+0000\n"
 "Last-Translator: Reza Almanda <rezaalmanda27@gmail.com>\n"
-"Language-Team: Indonesian <https://hosted.weblate.org/projects/"
-"ayatana-indicators/notifications-applet/id/>\n"
+"Language-Team: Indonesian <https://hosted.weblate.org/projects/ayatana-"
+"indicators/notifications-applet/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -62,14 +62,18 @@ msgstr ""
 msgid "from"
 msgstr ""
 
-#: ../src/service.c:270 ../src/service.c:299
+#: ../src/service.c:270 ../src/service.c:300
 msgid "Notifications"
 msgstr "Pemberitahuan"
 
-#: ../src/service.c:327
+#: ../src/service.c:271
+msgid "List of past system notifications, do-not-disturb switch"
+msgstr ""
+
+#: ../src/service.c:328
 msgid "Clear"
 msgstr "Bersihkan"
 
-#: ../src/service.c:338
+#: ../src/service.c:339
 msgid "Do not disturb"
 msgstr ""

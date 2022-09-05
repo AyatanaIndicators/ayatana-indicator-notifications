@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-12 14:54+0100\n"
+"POT-Creation-Date: 2022-09-05 13:31+0200\n"
 "PO-Revision-Date: 2020-12-31 03:29+0000\n"
 "Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
-"Language-Team: French (Canada) <https://hosted.weblate.org/projects/"
-"ayatana-indicators/notifications-applet/fr_CA/>\n"
+"Language-Team: French (Canada) <https://hosted.weblate.org/projects/ayatana-"
+"indicators/notifications-applet/fr_CA/>\n"
 "Language: fr_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -69,15 +69,19 @@ msgstr ""
 msgid "from"
 msgstr "de"
 
-#: ../src/service.c:270 ../src/service.c:299
+#: ../src/service.c:270 ../src/service.c:300
 msgid "Notifications"
 msgstr "Notifications"
 
-#: ../src/service.c:327
+#: ../src/service.c:271
+msgid "List of past system notifications, do-not-disturb switch"
+msgstr ""
+
+#: ../src/service.c:328
 msgid "Clear"
 msgstr "Effacer"
 
-#: ../src/service.c:338
+#: ../src/service.c:339
 msgid "Do not disturb"
 msgstr "Ne pas déranger"
 

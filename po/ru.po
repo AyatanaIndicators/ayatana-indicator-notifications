@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-12 14:54+0100\n"
+"POT-Creation-Date: 2022-09-05 13:31+0200\n"
 "PO-Revision-Date: 2022-04-23 13:36+0000\n"
 "Last-Translator: Sergii Horichenko <m@sgg.im>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/"
-"ayatana-indicators/notifications-applet/ru/>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/ayatana-"
+"indicators/notifications-applet/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -68,15 +68,19 @@ msgstr "Индикатор будет отображать уведомлени�
 msgid "from"
 msgstr "от"
 
-#: ../src/service.c:270 ../src/service.c:299
+#: ../src/service.c:270 ../src/service.c:300
 msgid "Notifications"
 msgstr "Уведомления"
 
-#: ../src/service.c:327
+#: ../src/service.c:271
+msgid "List of past system notifications, do-not-disturb switch"
+msgstr ""
+
+#: ../src/service.c:328
 msgid "Clear"
 msgstr "Очистить"
 
-#: ../src/service.c:338
+#: ../src/service.c:339
 msgid "Do not disturb"
 msgstr "Не беспокоить"
 

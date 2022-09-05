@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-12 14:54+0100\n"
+"POT-Creation-Date: 2022-09-05 13:31+0200\n"
 "PO-Revision-Date: 2022-03-16 13:55+0000\n"
 "Last-Translator: 이정희 <daemul72@gmail.com>\n"
-"Language-Team: Korean <https://hosted.weblate.org/projects/"
-"ayatana-indicators/notifications-applet/ko/>\n"
+"Language-Team: Korean <https://hosted.weblate.org/projects/ayatana-"
+"indicators/notifications-applet/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,8 +27,9 @@ msgstr "응용프로그램 이름별 알림 무시"
 msgid ""
 "If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
-msgstr "응용프로그램 이름이 필터 목록에 있으면 응용프로그램 이름과 일치하는 모든 "
-"알림이 삭제됩니다."
+msgstr ""
+"응용프로그램 이름이 필터 목록에 있으면 응용프로그램 이름과 일치하는 모든 알림"
+"이 삭제됩니다."
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
 msgid "Clear notifications on middle click"
@@ -65,15 +66,19 @@ msgstr "표시기는 이 값으로 표시된 최대 알림 수만 표시합니�
 msgid "from"
 msgstr ""
 
-#: ../src/service.c:270 ../src/service.c:299
+#: ../src/service.c:270 ../src/service.c:300
 msgid "Notifications"
 msgstr "알림"
 
-#: ../src/service.c:327
+#: ../src/service.c:271
+msgid "List of past system notifications, do-not-disturb switch"
+msgstr ""
+
+#: ../src/service.c:328
 msgid "Clear"
 msgstr "지우기"
 
-#: ../src/service.c:338
+#: ../src/service.c:339
 msgid "Do not disturb"
 msgstr "방해하지 않음"
 
