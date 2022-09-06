@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-05 13:31+0200\n"
-"PO-Revision-Date: 2020-12-31 03:29+0000\n"
+"PO-Revision-Date: 2022-09-07 03:22+0000\n"
 "Last-Translator: Wellington Terumi Uemura <wellingtonuemura@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "ayatana-indicators/notifications-applet/pt_BR/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4.1-dev\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
 msgid "Discard notifications by application name"
@@ -75,7 +75,7 @@ msgstr "Notificações"
 
 #: ../src/service.c:271
 msgid "List of past system notifications, do-not-disturb switch"
-msgstr ""
+msgstr "Lista das notificações anteriores do sistema, interruptor não perturbe"
 
 #: ../src/service.c:328
 msgid "Clear"
