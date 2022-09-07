@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-05 13:31+0200\n"
-"PO-Revision-Date: 2020-11-19 20:29+0000\n"
+"PO-Revision-Date: 2022-09-08 18:19+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
-"Language-Team: Occitan <https://hosted.weblate.org/projects/ayatana-"
-"indicators/notifications-applet/oc/>\n"
+"Language-Team: Occitan <https://hosted.weblate.org/projects/"
+"ayatana-indicators/notifications-applet/oc/>\n"
 "Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4-dev\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 
 #: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
 msgid "Discard notifications by application name"
@@ -74,7 +74,7 @@ msgstr "Notificacions"
 
 #: ../src/service.c:271
 msgid "List of past system notifications, do-not-disturb switch"
-msgstr ""
+msgstr "Lista de notificacions sistèma passadas, alternador de me-desrengar-pas"
 
 #: ../src/service.c:328
 msgid "Clear"
