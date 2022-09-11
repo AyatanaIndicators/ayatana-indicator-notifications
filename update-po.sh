@@ -29,10 +29,11 @@ cat LINGUAS | while read lingua; do
 	fi
 
 	sed -e 's/\.xml\.in\.in\.h:/.xml.in.in:/g'	\
-            -e 's/\.xml\.in\.h:/.xml.in:/g'		\
+	    -e 's/\.xml\.in\.h:/.xml.in:/g'		\
 	    -e 's/\.ini\.in\.h:/.ini.in:/g'		\
 	    -e 's/\.xml\.h:/.xml:/g'			\
 	    -e 's/\.ini\.h:/.ini:/g'			\
+	    -e 's@#: \.\./@#: @g'			\
 	    -i ${lingua}.po
 
 done
