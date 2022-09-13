@@ -1,4 +1,4 @@
-data/org.ayatana.indicator.notifications.gschema.xml.in.in
+data/org.ayatana.indicator.notifications.gschema.xml
 src/dbus-spy.c
 src/dbus-spy.h
 src/main.c
