@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-14 08:49+0200\n"
-"PO-Revision-Date: 2022-09-05 19:42+0000\n"
+"PO-Revision-Date: 2022-09-14 11:46+0000\n"
 "Last-Translator: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/ayatana-"
-"indicators/notifications-applet/de/>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/"
+"ayatana-indicators/notifications-applet/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,22 +33,26 @@ msgstr ""
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:3
 msgid "Recent application names to suggest for the filter list"
-msgstr ""
+msgstr "Kürzlich verwendete Anwendungen als Vorschläge für die Filterliste"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:4
 msgid ""
 "Keeps track of recent application names so we can suggest them in the "
 "settings."
 msgstr ""
+"Erfasst kürzlich verwendete Anwendungen, um diese dann in den Einstellungen "
+"vorzuschlagen."
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:5
 msgid "Enable do-not-disturb mode"
-msgstr ""
+msgstr "Bitte-nicht-Stören Modus aktivieren"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:6
 msgid ""
 "On supported desktops enables do-not-disturb mode on the notification daemon."
 msgstr ""
+"Aktivert im Benachrichtigungsdienst den Bitte-nicht-Stören Modus auf "
+"Arbeitsoberflächen, die diese Funktionalität unterstützen."
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:7
 msgid "Maximum number of visible items"
