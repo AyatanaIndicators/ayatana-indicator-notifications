@@ -1,7 +1,7 @@
 project(ayatana-indicator-notifications C CXX)
 cmake_minimum_required(VERSION 3.13)
 
-set(PROJECT_VERSION "22.2.0")
+set(PROJECT_VERSION "22.9.0")
 set(PACKAGE ${CMAKE_PROJECT_NAME})
 
 # Options

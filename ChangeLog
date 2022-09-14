@@ -1,6 +1,109 @@
+2022-09-14 Mike Gabriel
+
+        * release 22.9.0 (HEAD -> main, tag: 22.9.0)
+        * Translated using Weblate (German) (5e888c2)
+
+2022-09-14 Milan Korecky
+
+        * Translated using Weblate (Czech) (a968715)
+
+2022-09-14 Mike Gabriel
+
+        * po/*.po{,t}: Translation strings update. (21fcbed)
+        * update-po{,t}.sh: Also catch multi-file source file references.
+          (12775e6)
+
+2022-09-13 Robert Tari
+
+        * Merge branch 'sunweaver-pr/fix-and-update-translations' (bbea249)
+
+2022-09-07 Quentin PAGÈS
+
+        * Translated using Weblate (Occitan) (5a5913a)
+
+2022-09-07 Moo
+
+        * Translated using Weblate (Lithuanian) (1db4373)
+
+2022-09-06 Wellington Terumi Uemura
+
+        * Translated using Weblate (Portuguese (Brazil)) (be711b0)
+
+2022-09-05 Mike Gabriel
+
+        * Translated using Weblate (German) (ed8854d)
+
+2022-09-05 Yaron Shahrabani
+
+        * Translated using Weblate (Hebrew) (d39c410)
+
+2022-09-11 Mike Gabriel
+
+        * po/ayatana-indicator-notifications.pot: Update translation template
+          file. (29c4f40)
+        * update-po{,t}.sh: Omit ../ at beginning of file names in .po(t)
+          file(s). (5b72dcf)
+        * data/: Fix translation of .gschema.xml file. (6309311)
+        * data/org.ayatana.indicator.notifications.gschema.xml.in.in: Drop
+          .gschema.xml.in.in file. Unused these days. (7309b1d)
+
+2022-09-07 Quentin PAGÈS
+
+        * Translated using Weblate (Occitan) (e675747)
+
+2022-09-07 Moo
+
+        * Translated using Weblate (Lithuanian) (3b92cd3)
+
+2022-09-06 Wellington Terumi Uemura
+
+        * Translated using Weblate (Portuguese (Brazil)) (42ba2f5)
+
+2022-09-05 Mike Gabriel
+
+        * Translated using Weblate (German) (e8c0fcf)
+
+2022-09-05 Yaron Shahrabani
+
+        * Translated using Weblate (Hebrew) (1be4b4b)
+
+2022-09-05 Mike Gabriel
+
+        * po/*.po{,t}: Translation strings update. (dbaf86f)
+
+2022-09-01 Mike Gabriel
+
+        * Merge branch 'sunweaver-pr/tooltip-support' (e3807fd)
+
+2022-07-22 Mike Gabriel
+
+        * src/im-application-list.c: Add tooltip support. (1b193e8)
+
+2022-08-09 Ács Zoltán
+
+        * Translated using Weblate (Hungarian) (88c1c2c)
+
+2022-05-07 Rondy Andersson
+
+        * Translated using Weblate (Swedish) (09d3b47)
+
+2022-04-23 Sergii Horichenko
+
+        * Translated using Weblate (Russian) (1053488)
+        * Translated using Weblate (Ukrainian) (185d7dd)
+        * Translated using Weblate (Ukrainian) (487cbf9)
+
+2022-03-15 이정희
+
+        * Translated using Weblate (Korean) (5fdfe7c)
+
+2022-02-27 이정희
+
+        * Translated using Weblate (Korean) (64093c6)
+
 2022-02-17 Mike Gabriel
 
-        * release 22.2.0 (HEAD -> main, tag: 22.2.0)
+        * release 22.2.0 (0d51469) (tag: 22.2.0)
 
 2022-02-16 Mike Gabriel
 

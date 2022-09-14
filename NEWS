@@ -1,3 +1,9 @@
+Overview of changes in ayatana-indicator-notifications 22.9.0
+
+  - Add tooltip support.
+  - data/: Fix translation of .gschema.xml file.
+  - Translation updates.
+
 Overview of changes in ayatana-indicator-notifications 22.2.0
 
   - Upstream version bump to new release versioning scheme:
