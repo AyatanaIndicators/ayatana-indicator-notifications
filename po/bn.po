@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-05 13:31+0200\n"
+"POT-Creation-Date: 2022-09-14 08:49+0200\n"
 "PO-Revision-Date: 2020-10-12 09:26+0000\n"
 "Last-Translator: Yota321 <golamsayan@gmail.com>\n"
 "Language-Team: Bengali <https://hosted.weblate.org/projects/ayatana-"
@@ -19,11 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.3-dev\n"
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
+#: data/org.ayatana.indicator.notifications.gschema.xml:1
 msgid "Discard notifications by application name"
 msgstr "অ্যাপ্লিকেশন নাম দ্বারা বিজ্ঞপ্তি বাতিল করুন"
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
+#: data/org.ayatana.indicator.notifications.gschema.xml:2
 msgid ""
 "If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
@@ -31,56 +31,65 @@ msgstr ""
 "যদি কোনও অ্যাপ্লিকেশন নাম ফিল্টার তালিকায় থাকে তবে অ্যাপ্লিকেশন নামের সাথে মেলে "
 "এমন সমস্ত বিজ্ঞপ্তি বাতিল করা হবে।"
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
-#, fuzzy
-msgid "Clear notifications on middle click"
-msgstr "মিডল ক্লিক এ বিজ্ঞপ্তি সাফ করুন"
-
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:4
-msgid ""
-"Normally when middle clicking the notification icon, the unread status will "
-"be toggled if the queue is not empty. With this option enabled, the "
-"notification queue will be cleared instead."
+#: data/org.ayatana.indicator.notifications.gschema.xml:3
+msgid "Recent application names to suggest for the filter list"
 msgstr ""
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:5
-msgid "Hide the indicator"
-msgstr "সূচকটি লুকান"
+#: data/org.ayatana.indicator.notifications.gschema.xml:4
+msgid ""
+"Keeps track of recent application names so we can suggest them in the "
+"settings."
+msgstr ""
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:6
-msgid "If true, the indicator is hidden."
-msgstr "যদি সত্য হয় তবে সূচকটি গোপন থাকে।"
+#: data/org.ayatana.indicator.notifications.gschema.xml:5
+msgid "Enable do-not-disturb mode"
+msgstr ""
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:7
+#: data/org.ayatana.indicator.notifications.gschema.xml:6
+msgid ""
+"On supported desktops enables do-not-disturb mode on the notification daemon."
+msgstr ""
+
+#: data/org.ayatana.indicator.notifications.gschema.xml:7
 msgid "Maximum number of visible items"
 msgstr "দৃশ্যমান আইটেমের সর্বাধিক সংখ্যা"
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:8
+#: data/org.ayatana.indicator.notifications.gschema.xml:8
 msgid ""
 "The indicator will only display at most the number of notifications "
 "indicated by this value."
 msgstr ""
 
-#: ../src/service.c:221
+#: src/service.c:221
 msgid "from"
 msgstr ""
 
-#: ../src/service.c:270 ../src/service.c:300
+#: src/service.c:270 src/service.c:300
 msgid "Notifications"
 msgstr "বিজ্ঞপ্তি"
 
-#: ../src/service.c:271
+#: src/service.c:271
 msgid "List of past system notifications, do-not-disturb switch"
 msgstr ""
 
-#: ../src/service.c:328
+#: src/service.c:328
 msgid "Clear"
 msgstr ""
 
-#: ../src/service.c:339
+#: src/service.c:339
 #, fuzzy
 msgid "Do not disturb"
 msgstr "বিরক্ত করবেন না"
+
+#, fuzzy
+#~ msgid "Clear notifications on middle click"
+#~ msgstr "মিডল ক্লিক এ বিজ্ঞপ্তি সাফ করুন"
+
+#~ msgid "Hide the indicator"
+#~ msgstr "সূচকটি লুকান"
+
+#~ msgid "If true, the indicator is hidden."
+#~ msgstr "যদি সত্য হয় তবে সূচকটি গোপন থাকে।"
 
 #~ msgid "Settings…"
 #~ msgstr "সেটিংস…"

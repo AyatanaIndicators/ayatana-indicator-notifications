@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-05 13:31+0200\n"
+"POT-Creation-Date: 2022-09-14 08:49+0200\n"
 "PO-Revision-Date: 2020-12-31 03:29+0000\n"
 "Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
 "Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects/"
@@ -19,11 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.4.1-dev\n"
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
+#: data/org.ayatana.indicator.notifications.gschema.xml:1
 msgid "Discard notifications by application name"
 msgstr "Discard notifications by application name"
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
+#: data/org.ayatana.indicator.notifications.gschema.xml:2
 msgid ""
 "If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
@@ -31,33 +31,30 @@ msgstr ""
 "If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
-msgid "Clear notifications on middle click"
-msgstr "Clear notifications on middle click"
-
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:4
-msgid ""
-"Normally when middle clicking the notification icon, the unread status will "
-"be toggled if the queue is not empty. With this option enabled, the "
-"notification queue will be cleared instead."
+#: data/org.ayatana.indicator.notifications.gschema.xml:3
+msgid "Recent application names to suggest for the filter list"
 msgstr ""
-"Normally when middle clicking the notification icon, the unread status will "
-"be toggled if the queue is not empty. With this option enabled, the "
-"notification queue will be cleared instead."
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:5
-msgid "Hide the indicator"
-msgstr "Hide the indicator"
+#: data/org.ayatana.indicator.notifications.gschema.xml:4
+msgid ""
+"Keeps track of recent application names so we can suggest them in the "
+"settings."
+msgstr ""
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:6
-msgid "If true, the indicator is hidden."
-msgstr "If true, the indicator is hidden."
+#: data/org.ayatana.indicator.notifications.gschema.xml:5
+msgid "Enable do-not-disturb mode"
+msgstr ""
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:7
+#: data/org.ayatana.indicator.notifications.gschema.xml:6
+msgid ""
+"On supported desktops enables do-not-disturb mode on the notification daemon."
+msgstr ""
+
+#: data/org.ayatana.indicator.notifications.gschema.xml:7
 msgid "Maximum number of visible items"
 msgstr "Maximum number of visible items"
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:8
+#: data/org.ayatana.indicator.notifications.gschema.xml:8
 msgid ""
 "The indicator will only display at most the number of notifications "
 "indicated by this value."
@@ -65,25 +62,43 @@ msgstr ""
 "The indicator will only display at most the number of notifications "
 "indicated by this value."
 
-#: ../src/service.c:221
+#: src/service.c:221
 msgid "from"
 msgstr "from"
 
-#: ../src/service.c:270 ../src/service.c:300
+#: src/service.c:270 src/service.c:300
 msgid "Notifications"
 msgstr "Notifications"
 
-#: ../src/service.c:271
+#: src/service.c:271
 msgid "List of past system notifications, do-not-disturb switch"
 msgstr ""
 
-#: ../src/service.c:328
+#: src/service.c:328
 msgid "Clear"
 msgstr "Clear"
 
-#: ../src/service.c:339
+#: src/service.c:339
 msgid "Do not disturb"
 msgstr "Do not disturb"
+
+#~ msgid "Clear notifications on middle click"
+#~ msgstr "Clear notifications on middle click"
+
+#~ msgid ""
+#~ "Normally when middle clicking the notification icon, the unread status "
+#~ "will be toggled if the queue is not empty. With this option enabled, the "
+#~ "notification queue will be cleared instead."
+#~ msgstr ""
+#~ "Normally when middle clicking the notification icon, the unread status "
+#~ "will be toggled if the queue is not empty. With this option enabled, the "
+#~ "notification queue will be cleared instead."
+
+#~ msgid "Hide the indicator"
+#~ msgstr "Hide the indicator"
+
+#~ msgid "If true, the indicator is hidden."
+#~ msgstr "If true, the indicator is hidden."
 
 #~ msgid "Settings…"
 #~ msgstr "Settings…"

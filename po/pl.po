@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-05 13:31+0200\n"
+"POT-Creation-Date: 2022-09-14 08:49+0200\n"
 "PO-Revision-Date: 2019-10-08 16:58+0000\n"
 "Last-Translator: Mateusz Rumiński <matt.ruminski@protonmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/ayatana-"
@@ -20,11 +20,11 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.9-dev\n"
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
+#: data/org.ayatana.indicator.notifications.gschema.xml:1
 msgid "Discard notifications by application name"
 msgstr "Odrzuć powiadomienia według nazwy aplikacji"
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
+#: data/org.ayatana.indicator.notifications.gschema.xml:2
 #, fuzzy
 msgid ""
 "If an application name is in the filter list, all notifications matching the "
@@ -33,33 +33,30 @@ msgstr ""
 "Jeśli nazwa aplikacji znajduje się na czarnej liście, wszystkie "
 "powiadomienia pasujące do nazwy aplikacji zostaną odrzucone."
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
-msgid "Clear notifications on middle click"
-msgstr "Wyczyść powiadomienia za pomocą środkowego kliknięcia"
-
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:4
-msgid ""
-"Normally when middle clicking the notification icon, the unread status will "
-"be toggled if the queue is not empty. With this option enabled, the "
-"notification queue will be cleared instead."
+#: data/org.ayatana.indicator.notifications.gschema.xml:3
+msgid "Recent application names to suggest for the filter list"
 msgstr ""
-"Zwykle po kliknięciu środkowej ikony powiadomienia status nieprzeczytania "
-"zostanie przełączony, jeśli kolejka nie jest pusta. Po włączeniu tej opcji "
-"kolejka powiadomień zostanie wyczyszczona."
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:5
-msgid "Hide the indicator"
-msgstr "Ukryj wskaźnik"
+#: data/org.ayatana.indicator.notifications.gschema.xml:4
+msgid ""
+"Keeps track of recent application names so we can suggest them in the "
+"settings."
+msgstr ""
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:6
-msgid "If true, the indicator is hidden."
-msgstr "Jeśli true, wskaźnik jest ukryty."
+#: data/org.ayatana.indicator.notifications.gschema.xml:5
+msgid "Enable do-not-disturb mode"
+msgstr ""
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:7
+#: data/org.ayatana.indicator.notifications.gschema.xml:6
+msgid ""
+"On supported desktops enables do-not-disturb mode on the notification daemon."
+msgstr ""
+
+#: data/org.ayatana.indicator.notifications.gschema.xml:7
 msgid "Maximum number of visible items"
 msgstr "Maksymalna liczba widocznych elementów"
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:8
+#: data/org.ayatana.indicator.notifications.gschema.xml:8
 msgid ""
 "The indicator will only display at most the number of notifications "
 "indicated by this value."
@@ -67,25 +64,43 @@ msgstr ""
 "Wskaźnik będzie wyświetlał co najwyżej liczbę powiadomień wskazanych przez "
 "tę wartość."
 
-#: ../src/service.c:221
+#: src/service.c:221
 msgid "from"
 msgstr "od"
 
-#: ../src/service.c:270 ../src/service.c:300
+#: src/service.c:270 src/service.c:300
 msgid "Notifications"
 msgstr "Powiadomienia"
 
-#: ../src/service.c:271
+#: src/service.c:271
 msgid "List of past system notifications, do-not-disturb switch"
 msgstr ""
 
-#: ../src/service.c:328
+#: src/service.c:328
 msgid "Clear"
 msgstr ""
 
-#: ../src/service.c:339
+#: src/service.c:339
 msgid "Do not disturb"
 msgstr ""
+
+#~ msgid "Clear notifications on middle click"
+#~ msgstr "Wyczyść powiadomienia za pomocą środkowego kliknięcia"
+
+#~ msgid ""
+#~ "Normally when middle clicking the notification icon, the unread status "
+#~ "will be toggled if the queue is not empty. With this option enabled, the "
+#~ "notification queue will be cleared instead."
+#~ msgstr ""
+#~ "Zwykle po kliknięciu środkowej ikony powiadomienia status nieprzeczytania "
+#~ "zostanie przełączony, jeśli kolejka nie jest pusta. Po włączeniu tej "
+#~ "opcji kolejka powiadomień zostanie wyczyszczona."
+
+#~ msgid "Hide the indicator"
+#~ msgstr "Ukryj wskaźnik"
+
+#~ msgid "If true, the indicator is hidden."
+#~ msgstr "Jeśli true, wskaźnik jest ukryty."
 
 #, fuzzy
 #~ msgid "Settings…"

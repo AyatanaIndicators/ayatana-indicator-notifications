@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-05 13:31+0200\n"
+"POT-Creation-Date: 2022-09-14 08:49+0200\n"
 "PO-Revision-Date: 2022-05-08 07:41+0000\n"
 "Last-Translator: Rondy Andersson <rondarius@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/ayatana-"
@@ -19,11 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.12.1\n"
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
+#: data/org.ayatana.indicator.notifications.gschema.xml:1
 msgid "Discard notifications by application name"
 msgstr "Kassera aviseringar via applikationens namn"
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
+#: data/org.ayatana.indicator.notifications.gschema.xml:2
 msgid ""
 "If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
@@ -31,57 +31,72 @@ msgstr ""
 "Om ett programnamn finns i filterlistan kommer alla aviseringar som matchar "
 "programnamnet att förkastas."
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
-msgid "Clear notifications on middle click"
-msgstr "Rensa aviseringar vid mittenklick"
-
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:4
-msgid ""
-"Normally when middle clicking the notification icon, the unread status will "
-"be toggled if the queue is not empty. With this option enabled, the "
-"notification queue will be cleared instead."
+#: data/org.ayatana.indicator.notifications.gschema.xml:3
+msgid "Recent application names to suggest for the filter list"
 msgstr ""
-"Normalt när aviseringsikonen mittenklickas på kommer tillståndet oläst att "
-"växlas om kön inte är tom. Med detta alternativ aktiverat kommer "
-"aviseringskön att rensas istället."
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:5
-msgid "Hide the indicator"
-msgstr "Göm indikatorn"
+#: data/org.ayatana.indicator.notifications.gschema.xml:4
+msgid ""
+"Keeps track of recent application names so we can suggest them in the "
+"settings."
+msgstr ""
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:6
-msgid "If true, the indicator is hidden."
-msgstr "Om sant kommer indikatorn att gömmas."
+#: data/org.ayatana.indicator.notifications.gschema.xml:5
+msgid "Enable do-not-disturb mode"
+msgstr ""
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:7
+#: data/org.ayatana.indicator.notifications.gschema.xml:6
+msgid ""
+"On supported desktops enables do-not-disturb mode on the notification daemon."
+msgstr ""
+
+#: data/org.ayatana.indicator.notifications.gschema.xml:7
 msgid "Maximum number of visible items"
 msgstr "Maximalt antal synlig fält"
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:8
+#: data/org.ayatana.indicator.notifications.gschema.xml:8
 msgid ""
 "The indicator will only display at most the number of notifications "
 "indicated by this value."
 msgstr "Indikatorn kommer som mest att visa detta antal aviseringar."
 
-#: ../src/service.c:221
+#: src/service.c:221
 msgid "from"
 msgstr "från"
 
-#: ../src/service.c:270 ../src/service.c:300
+#: src/service.c:270 src/service.c:300
 msgid "Notifications"
 msgstr "Aviseringar"
 
-#: ../src/service.c:271
+#: src/service.c:271
 msgid "List of past system notifications, do-not-disturb switch"
 msgstr ""
 
-#: ../src/service.c:328
+#: src/service.c:328
 msgid "Clear"
 msgstr "Rensa"
 
-#: ../src/service.c:339
+#: src/service.c:339
 msgid "Do not disturb"
 msgstr "Stör ej"
+
+#~ msgid "Clear notifications on middle click"
+#~ msgstr "Rensa aviseringar vid mittenklick"
+
+#~ msgid ""
+#~ "Normally when middle clicking the notification icon, the unread status "
+#~ "will be toggled if the queue is not empty. With this option enabled, the "
+#~ "notification queue will be cleared instead."
+#~ msgstr ""
+#~ "Normalt när aviseringsikonen mittenklickas på kommer tillståndet oläst "
+#~ "att växlas om kön inte är tom. Med detta alternativ aktiverat kommer "
+#~ "aviseringskön att rensas istället."
+
+#~ msgid "Hide the indicator"
+#~ msgstr "Göm indikatorn"
+
+#~ msgid "If true, the indicator is hidden."
+#~ msgstr "Om sant kommer indikatorn att gömmas."
 
 #~ msgid "Settings…"
 #~ msgstr "Inställningar…"

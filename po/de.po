@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-05 13:31+0200\n"
+"POT-Creation-Date: 2022-09-14 08:49+0200\n"
 "PO-Revision-Date: 2022-09-05 19:42+0000\n"
 "Last-Translator: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/"
-"ayatana-indicators/notifications-applet/de/>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/ayatana-"
+"indicators/notifications-applet/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,11 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.14.1-dev\n"
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
+#: data/org.ayatana.indicator.notifications.gschema.xml:1
 msgid "Discard notifications by application name"
 msgstr "Verwerfe Benachrichtigungen anhand des Anwendungsnamen"
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
+#: data/org.ayatana.indicator.notifications.gschema.xml:2
 msgid ""
 "If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
@@ -31,34 +31,30 @@ msgstr ""
 "Wenn ein Anwendungsname auf der Filterliste steht, dann werden alle "
 "Benachrichtigungen dieser Anwendung verworfen."
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
-msgid "Clear notifications on middle click"
-msgstr "Benachrichtigungen löschen durch Klick auf mittlere Maustaste"
-
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:4
-msgid ""
-"Normally when middle clicking the notification icon, the unread status will "
-"be toggled if the queue is not empty. With this option enabled, the "
-"notification queue will be cleared instead."
+#: data/org.ayatana.indicator.notifications.gschema.xml:3
+msgid "Recent application names to suggest for the filter list"
 msgstr ""
-"Ist die Nachrichtenliste nicht leer, dann wird normalerweise bei Anklicken "
-"des Benachrichtigungssymbols mit mittlerer Maustaste der Gelesen-Ungelesen-"
-"Status hin- und hergeschaltet. Ist diese Option aktiviert, dann wird die "
-"Nachrichtenliste statt dessen geleert."
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:5
-msgid "Hide the indicator"
-msgstr "Verstecke den Indikator"
+#: data/org.ayatana.indicator.notifications.gschema.xml:4
+msgid ""
+"Keeps track of recent application names so we can suggest them in the "
+"settings."
+msgstr ""
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:6
-msgid "If true, the indicator is hidden."
-msgstr "Wenn wahr, dann wird der Indikator nicht angezeigt."
+#: data/org.ayatana.indicator.notifications.gschema.xml:5
+msgid "Enable do-not-disturb mode"
+msgstr ""
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:7
+#: data/org.ayatana.indicator.notifications.gschema.xml:6
+msgid ""
+"On supported desktops enables do-not-disturb mode on the notification daemon."
+msgstr ""
+
+#: data/org.ayatana.indicator.notifications.gschema.xml:7
 msgid "Maximum number of visible items"
 msgstr "Maximale Anzahl sichtbarer Einträge"
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:8
+#: data/org.ayatana.indicator.notifications.gschema.xml:8
 msgid ""
 "The indicator will only display at most the number of notifications "
 "indicated by this value."
@@ -66,27 +62,46 @@ msgstr ""
 "Der Indikator wird nur höchstens so viele Benachrichtigungen anzeigen, wie "
 "von diesem Wert festgelegt."
 
-#: ../src/service.c:221
+#: src/service.c:221
 msgid "from"
 msgstr "von"
 
-#: ../src/service.c:270 ../src/service.c:300
+#: src/service.c:270 src/service.c:300
 msgid "Notifications"
 msgstr "Benachrichtigungen"
 
-#: ../src/service.c:271
+#: src/service.c:271
 msgid "List of past system notifications, do-not-disturb switch"
 msgstr ""
 "Liste der letzten Systembenachrichtigungen, Umschalter für Bitte-nicht-"
 "Stören Modus"
 
-#: ../src/service.c:328
+#: src/service.c:328
 msgid "Clear"
 msgstr "Löschen"
 
-#: ../src/service.c:339
+#: src/service.c:339
 msgid "Do not disturb"
 msgstr "Bitte nicht stören"
+
+#~ msgid "Clear notifications on middle click"
+#~ msgstr "Benachrichtigungen löschen durch Klick auf mittlere Maustaste"
+
+#~ msgid ""
+#~ "Normally when middle clicking the notification icon, the unread status "
+#~ "will be toggled if the queue is not empty. With this option enabled, the "
+#~ "notification queue will be cleared instead."
+#~ msgstr ""
+#~ "Ist die Nachrichtenliste nicht leer, dann wird normalerweise bei "
+#~ "Anklicken des Benachrichtigungssymbols mit mittlerer Maustaste der "
+#~ "Gelesen-Ungelesen-Status hin- und hergeschaltet. Ist diese Option "
+#~ "aktiviert, dann wird die Nachrichtenliste statt dessen geleert."
+
+#~ msgid "Hide the indicator"
+#~ msgstr "Verstecke den Indikator"
+
+#~ msgid "If true, the indicator is hidden."
+#~ msgstr "Wenn wahr, dann wird der Indikator nicht angezeigt."
 
 #~ msgid "Settings…"
 #~ msgstr "Einstellungen…"

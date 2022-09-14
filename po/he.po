@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-05 13:31+0200\n"
+"POT-Creation-Date: 2022-09-14 08:49+0200\n"
 "PO-Revision-Date: 2022-09-05 19:31+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://hosted.weblate.org/projects/"
-"ayatana-indicators/notifications-applet/he/>\n"
+"Language-Team: Hebrew <https://hosted.weblate.org/projects/ayatana-"
+"indicators/notifications-applet/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,11 +20,11 @@ msgstr ""
 "n % 10 == 0) ? 2 : 3));\n"
 "X-Generator: Weblate 4.14.1-dev\n"
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:1
+#: data/org.ayatana.indicator.notifications.gschema.xml:1
 msgid "Discard notifications by application name"
 msgstr "התעלמות מהתראות לפי שם היישומון"
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:2
+#: data/org.ayatana.indicator.notifications.gschema.xml:2
 msgid ""
 "If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
@@ -32,56 +32,71 @@ msgstr ""
 "אם שם של יישומון מופיע ברשימת החסימה, כל ההתראות שתואמות לשם היישומון לא "
 "תופענה."
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:3
-msgid "Clear notifications on middle click"
-msgstr "סילוק התראות בלחיצה אמצעית"
-
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:4
-msgid ""
-"Normally when middle clicking the notification icon, the unread status will "
-"be toggled if the queue is not empty. With this option enabled, the "
-"notification queue will be cleared instead."
+#: data/org.ayatana.indicator.notifications.gschema.xml:3
+msgid "Recent application names to suggest for the filter list"
 msgstr ""
-"בדרך כלל בלחיצה עם כפתור העכבר האמצעי, יוחלף מצב „לא נקרא” אם התור אינו ריק. "
-"כשאפשרות זו פעילה, תור ההתראות יסולק במקום."
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:5
-msgid "Hide the indicator"
-msgstr "הסתרת המחוון"
+#: data/org.ayatana.indicator.notifications.gschema.xml:4
+msgid ""
+"Keeps track of recent application names so we can suggest them in the "
+"settings."
+msgstr ""
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:6
-msgid "If true, the indicator is hidden."
-msgstr "אם אפשרות זו מוגדרת לאמת, המחוון יוסתר."
+#: data/org.ayatana.indicator.notifications.gschema.xml:5
+msgid "Enable do-not-disturb mode"
+msgstr ""
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:7
+#: data/org.ayatana.indicator.notifications.gschema.xml:6
+msgid ""
+"On supported desktops enables do-not-disturb mode on the notification daemon."
+msgstr ""
+
+#: data/org.ayatana.indicator.notifications.gschema.xml:7
 msgid "Maximum number of visible items"
 msgstr "מספר הפריטים הגלויים המרבי"
 
-#: ../data/org.ayatana.indicator.notifications.gschema.xml.in.in:8
+#: data/org.ayatana.indicator.notifications.gschema.xml:8
 msgid ""
 "The indicator will only display at most the number of notifications "
 "indicated by this value."
 msgstr "המחוון יציג כמות כזו של התראות לכל היותר בהתאם לערך זה."
 
-#: ../src/service.c:221
+#: src/service.c:221
 msgid "from"
 msgstr "מ־"
 
-#: ../src/service.c:270 ../src/service.c:300
+#: src/service.c:270 src/service.c:300
 msgid "Notifications"
 msgstr "התראות"
 
-#: ../src/service.c:271
+#: src/service.c:271
 msgid "List of past system notifications, do-not-disturb switch"
 msgstr "רשימה של התראות מערכת קודמות, מתג „לא להפריע”"
 
-#: ../src/service.c:328
+#: src/service.c:328
 msgid "Clear"
 msgstr "מחיקה"
 
-#: ../src/service.c:339
+#: src/service.c:339
 msgid "Do not disturb"
 msgstr "לא להפריע"
+
+#~ msgid "Clear notifications on middle click"
+#~ msgstr "סילוק התראות בלחיצה אמצעית"
+
+#~ msgid ""
+#~ "Normally when middle clicking the notification icon, the unread status "
+#~ "will be toggled if the queue is not empty. With this option enabled, the "
+#~ "notification queue will be cleared instead."
+#~ msgstr ""
+#~ "בדרך כלל בלחיצה עם כפתור העכבר האמצעי, יוחלף מצב „לא נקרא” אם התור אינו "
+#~ "ריק. כשאפשרות זו פעילה, תור ההתראות יסולק במקום."
+
+#~ msgid "Hide the indicator"
+#~ msgstr "הסתרת המחוון"
+
+#~ msgid "If true, the indicator is hidden."
+#~ msgstr "אם אפשרות זו מוגדרת לאמת, המחוון יוסתר."
 
 #~ msgid "Clear <small>(%d Notification)</small>"
 #~ msgid_plural "Clear <small>(%d Notifications)</small>"
