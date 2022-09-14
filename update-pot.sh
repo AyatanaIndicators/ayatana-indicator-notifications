@@ -18,10 +18,12 @@ GETTEXT_DOMAIN=$(cat CMakeLists.txt | grep 'set.*(.*GETTEXT_PACKAGE' | sed -r -e
 
 cd po/ && intltool-update --gettext-package ${GETTEXT_DOMAIN} --pot && cd - 1>/dev/null
 
-sed -e 's/\.xml\.in\.in.\h:/.xml.in.in:/g'	\
+sed -E						\
+    -e 's/\.xml\.in\.in.\h:/.xml.in.in:/g'	\
     -e 's/\.xml\.in\.h:/.xml.in:/g'		\
     -e 's/\.ini\.in\.h:/.ini.in:/g'		\
     -e 's/\.xml\.h:/.xml:/g'			\
     -e 's/\.ini\.h:/.ini:/g'			\
-    -e 's@#: \.\./@#: @g'			\
+    -e 's@^#: \.\./@#: @g'			\
+    -e 's@(:[0-9]+) \.\./@\1 @g'		\
     -i po/${GETTEXT_DOMAIN}.pot
