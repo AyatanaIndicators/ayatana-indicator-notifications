@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-14 08:49+0200\n"
-"PO-Revision-Date: 2022-04-23 13:36+0000\n"
+"PO-Revision-Date: 2022-09-16 10:17+0000\n"
 "Last-Translator: Sergii Horichenko <m@sgg.im>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/ayatana-"
-"indicators/notifications-applet/ru/>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/"
+"ayatana-indicators/notifications-applet/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.12.1-dev\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:1
 msgid "Discard notifications by application name"
@@ -34,22 +34,26 @@ msgstr ""
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:3
 msgid "Recent application names to suggest for the filter list"
-msgstr ""
+msgstr "Недавние имена программ, которые можно предложить для списка фильтров"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:4
 msgid ""
 "Keeps track of recent application names so we can suggest them in the "
 "settings."
 msgstr ""
+"Отслеживает названия последних программ, чтобы мы могли предложить их в "
+"настройках."
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:5
 msgid "Enable do-not-disturb mode"
-msgstr ""
+msgstr "Включить режим \"не беспокоить\""
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:6
 msgid ""
 "On supported desktops enables do-not-disturb mode on the notification daemon."
 msgstr ""
+"В оболочках, которые это поддерживают, включает для службы уведомлений режим "
+"\"не беспокоить\"."
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:7
 msgid "Maximum number of visible items"
@@ -72,6 +76,7 @@ msgstr "Уведомления"
 #: src/service.c:271
 msgid "List of past system notifications, do-not-disturb switch"
 msgstr ""
+"Список предыдущих системных уведомлений, переключатель \"не беспокоить\""
 
 #: src/service.c:328
 msgid "Clear"
