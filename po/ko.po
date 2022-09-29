@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-14 08:49+0200\n"
-"PO-Revision-Date: 2022-03-16 13:55+0000\n"
+"PO-Revision-Date: 2022-09-30 18:21+0000\n"
 "Last-Translator: 이정희 <daemul72@gmail.com>\n"
-"Language-Team: Korean <https://hosted.weblate.org/projects/ayatana-"
-"indicators/notifications-applet/ko/>\n"
+"Language-Team: Korean <https://hosted.weblate.org/projects/"
+"ayatana-indicators/notifications-applet/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.12-dev\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:1
 msgid "Discard notifications by application name"
@@ -33,22 +33,22 @@ msgstr ""
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:3
 msgid "Recent application names to suggest for the filter list"
-msgstr ""
+msgstr "필터 목록에 제안할 최근 응용 프로그램 이름"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:4
 msgid ""
 "Keeps track of recent application names so we can suggest them in the "
 "settings."
-msgstr ""
+msgstr "설정에서 제안할 수 있도록 최근 응용 프로그램 이름을 추적합니다."
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:5
 msgid "Enable do-not-disturb mode"
-msgstr ""
+msgstr "방해 금지 모드 활성화"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:6
 msgid ""
 "On supported desktops enables do-not-disturb mode on the notification daemon."
-msgstr ""
+msgstr "지원되는 데스크톱에서는 알림 디먼에서 방해 금지 모드를 사용하도록 설정합니다."
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:7
 msgid "Maximum number of visible items"
@@ -62,7 +62,7 @@ msgstr "표시기는 이 값으로 표시된 최대 알림 수만 표시합니�
 
 #: src/service.c:221
 msgid "from"
-msgstr ""
+msgstr "보낸 사람"
 
 #: src/service.c:270 src/service.c:300
 msgid "Notifications"
@@ -70,7 +70,7 @@ msgstr "알림"
 
 #: src/service.c:271
 msgid "List of past system notifications, do-not-disturb switch"
-msgstr ""
+msgstr "과거 시스템 알림 목록, 방해 금지 스위치"
 
 #: src/service.c:328
 msgid "Clear"
