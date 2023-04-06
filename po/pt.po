@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-14 08:49+0200\n"
-"PO-Revision-Date: 2022-01-03 09:55+0000\n"
+"PO-Revision-Date: 2023-04-06 16:52+0000\n"
 "Last-Translator: ssantos <ssantos@web.de>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/ayatana-"
-"indicators/notifications-applet/pt/>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/"
+"ayatana-indicators/notifications-applet/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.17-dev\n"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:1
 msgid "Discard notifications by application name"
@@ -34,6 +34,7 @@ msgstr ""
 #: data/org.ayatana.indicator.notifications.gschema.xml:3
 msgid "Recent application names to suggest for the filter list"
 msgstr ""
+"Os nomes das aplicações mais recentes para sugerir para a lista de filtros"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:4
 msgid ""
