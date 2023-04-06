@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-14 08:49+0200\n"
-"PO-Revision-Date: 2023-04-06 16:52+0000\n"
+"PO-Revision-Date: 2023-04-07 17:48+0000\n"
 "Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/"
 "ayatana-indicators/notifications-applet/pt/>\n"
@@ -41,15 +41,19 @@ msgid ""
 "Keeps track of recent application names so we can suggest them in the "
 "settings."
 msgstr ""
+"Mantem o controlo dos nomes das aplicações mais recentes para podermos "
+"sugeri-las nas configurações."
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:5
 msgid "Enable do-not-disturb mode"
-msgstr ""
+msgstr "Ativar o modo de não perturbar"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:6
 msgid ""
 "On supported desktops enables do-not-disturb mode on the notification daemon."
 msgstr ""
+"Em desktops compatíveis, ativa o modo de não perturbar no daemon de "
+"notificação."
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:7
 msgid "Maximum number of visible items"
@@ -73,7 +77,7 @@ msgstr "Notificações"
 
 #: src/service.c:271
 msgid "List of past system notifications, do-not-disturb switch"
-msgstr ""
+msgstr "Lista das notificações anteriores do sistema, alterar não perturbar"
 
 #: src/service.c:328
 msgid "Clear"
