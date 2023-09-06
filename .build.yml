@@ -107,7 +107,7 @@ build_scripts:
   -
   - if [ -e ./CMakeLists.txt ]; then
   -     if [ ${DISTRO_NAME} == "debian" ];then
-  -         scan-build $CHECKERS cmake . -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_VERBOSE_MAKEFILE=ON -DENABLE_WERROR=ON -DENABLE_TESTS=ON
+  -         scan-build $CHECKERS cmake . -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_VERBOSE_MAKEFILE=ON -DENABLE_WERROR=ON
   -     else
   -         scan-build $CHECKERS cmake . -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_VERBOSE_MAKEFILE=ON -DENABLE_WERROR=ON
   -     fi

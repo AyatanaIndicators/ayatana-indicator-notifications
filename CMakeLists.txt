@@ -1,21 +1,10 @@
-project(ayatana-indicator-notifications C CXX)
-cmake_minimum_required(VERSION 3.13)
-
-set(PROJECT_VERSION "22.9.0")
-set(PACKAGE ${CMAKE_PROJECT_NAME})
+cmake_minimum_required (VERSION 3.13)
+project (ayatana-indicator-notifications VERSION 22.9.0 LANGUAGES C CXX)
 
 # Options
 
-option(ENABLE_TESTS "Enable all tests and checks" OFF)
-option(ENABLE_COVERAGE "Enable coverage reports (includes enabling all tests and checks)" OFF)
 option(ENABLE_WERROR "Treat all build warnings as errors" OFF)
-
-if(ENABLE_COVERAGE)
-    set(ENABLE_TESTS ON)
-    set(CMAKE_BUILD_TYPE "Coverage")
-else()
-    set(CMAKE_BUILD_TYPE "Release")
-endif()
+set (CMAKE_BUILD_TYPE "Release")
 
 if(ENABLE_WERROR)
     add_definitions("-Werror")
@@ -60,7 +49,7 @@ include_directories (SYSTEM ${SERVICE_DEPS_INCLUDE_DIRS})
 ##  custom targets
 ##
 
-set (ARCHIVE_NAME ${CMAKE_PROJECT_NAME}-${PROJECT_VERSION})
+set (ARCHIVE_NAME ${CMAKE_PROJECT_NAME}-${CMAKE_PROJECT_VERSION})
 add_custom_target (dist
                    COMMAND bzr export --root=${ARCHIVE_NAME} ${CMAKE_BINARY_DIR}/${ARCHIVE_NAME}.tar.gz
                    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
@@ -79,17 +68,7 @@ add_subdirectory(src)
 add_subdirectory(data)
 add_subdirectory(po)
 
-if (ENABLE_TESTS)
-    include(CTest)
-    enable_testing()
-
-    if (ENABLE_COVERAGE)
-        find_package(CoverageReport)
-    endif()
-endif()
-
 # Display config info
 
 message(STATUS "Install prefix: ${CMAKE_INSTALL_PREFIX}")
-message(STATUS "Unit tests: ${ENABLE_TESTS}")
 message(STATUS "Build with -Werror: ${ENABLE_WERROR}")

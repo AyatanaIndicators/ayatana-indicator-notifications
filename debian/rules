@@ -11,8 +11,6 @@ DPKG_EXPORT_BUILDFLAGS = 1
 include /usr/share/dpkg/buildflags.mk
 
 DEB_CMAKE_EXTRA_FLAGS = \
-    -DENABLE_TESTS=ON \
-    -DENABLE_COVERAGE=OFF \
     $(NULL)
 
 %:
