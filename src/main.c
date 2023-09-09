@@ -1,5 +1,6 @@
 /*
  * Copyright 2013 Canonical Ltd.
+ * Copyright 2023 Robert Tari <robert@tari.in>
  *
  * Authors:
  *   Charles Kerr <charles.kerr@canonical.com>
@@ -39,7 +40,7 @@ int main (int argc G_GNUC_UNUSED, char ** argv G_GNUC_UNUSED)
     textdomain (GETTEXT_PACKAGE);
 
     /* run */
-    service = indicator_notifications_service_new (NULL);
+    service = indicator_notifications_service_new ();
     loop = g_main_loop_new (NULL, FALSE);
     g_signal_connect (service, INDICATOR_NOTIFICATIONS_SERVICE_SIGNAL_NAME_LOST, G_CALLBACK(on_name_lost), loop);
     g_main_loop_run (loop);

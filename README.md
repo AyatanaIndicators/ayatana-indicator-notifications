@@ -6,9 +6,9 @@ keyboard. It also features filtering out notifications from specific
 applications and provides a do-not-disturb feature (currently only functional
 on the MATE desktop environment).
 
-## Installation and Unit Tests
+## Installation
 
-For instructions on building and running built-in tests, see the INSTALL file.
+For instructions on building, see the INSTALL file.
 
 ## Author and License
 
