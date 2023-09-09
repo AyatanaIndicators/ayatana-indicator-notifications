@@ -16,8 +16,6 @@
 
 #define COLUMN_COUNT 8
 
-#define X_CANONICAL_PRIVATE_SYNCHRONOUS "x-canonical-private-synchronous"
-
 static void notification_class_init(NotificationClass *klass);
 static void notification_init(Notification *self);
 static void notification_dispose(GObject *object);
