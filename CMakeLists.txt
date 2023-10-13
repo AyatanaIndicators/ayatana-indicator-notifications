@@ -1,5 +1,5 @@
 cmake_minimum_required (VERSION 3.13)
-project (ayatana-indicator-notifications VERSION 22.9.0 LANGUAGES C CXX)
+project (ayatana-indicator-notifications VERSION 23.10.0 LANGUAGES C CXX)
 
 # Options
 

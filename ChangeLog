@@ -1,6 +1,97 @@
+2023-10-13 Mike Gabriel
+
+        * release 23.10.0 (HEAD -> main, tag: 23.10.0)
+
+2023-09-09 Mike Gabriel
+
+        * Merge branch 'tari01-pr/drop-testing' (2f3dee8)
+
+2023-09-06 Robert Tari
+
+        * src/main.c: Fix function argument error (22b759e)
+        * Drop testing/coverage options (8f3234c)
+
+2023-07-01 spnux
+
+        * Translated using Weblate (French) (cd22a9e)
+
+2023-06-27 Sylke Vicious
+
+        * Translated using Weblate (Italian) (f307fc9)
+
+2023-06-22 Joan CiberSheep
+
+        * Translated using Weblate (Catalan) (18db624)
+
+2023-05-20 Milo Ivir
+
+        * Translated using Weblate (Croatian) (fc9e98e)
+
+2023-05-02 Eryk Michalak
+
+        * Translated using Weblate (Polish) (ba0b780)
+
+2023-04-25 Kristjan Räts
+
+        * Translated using Weblate (Estonian) (574a566)
+
+2023-04-06 ssantos
+
+        * Translated using Weblate (Portuguese) (21808ee)
+        * Translated using Weblate (Portuguese) (1c2eb2b)
+
+2023-03-15 Heimen Stoffels
+
+        * Translated using Weblate (Dutch) (f53195f)
+
+2023-03-03 gallegonovato
+
+        * Translated using Weblate (Spanish) (c15c529)
+
+2023-02-10 Luna Jernberg
+
+        * Translated using Weblate (Swedish) (0181d01)
+
+2022-10-22 Gediminas Murauskas
+
+        * Translated using Weblate (Lithuanian) (477660d)
+
+2022-10-19 Kristjan Räts
+
+        * Translated using Weblate (Estonian) (9d2856c)
+
+2022-10-17 Gediminas Murauskas
+
+        * Translated using Weblate (Lithuanian) (e5d9b8b)
+
+2022-09-29 이정희
+
+        * Translated using Weblate (Korean) (ee41c70)
+
+2022-09-25 Oğuz Ersen
+
+        * Translated using Weblate (Turkish) (de561fd)
+
+2022-09-22 Yaron Shahrabani
+
+        * Translated using Weblate (Hebrew) (39e2950)
+
+2022-09-14 Sergii Horichenko
+
+        * Translated using Weblate (Ukrainian) (077eb67)
+        * Translated using Weblate (Russian) (0a407f6)
+
+2022-09-14 Wellington Terumi Uemura
+
+        * Translated using Weblate (Portuguese (Brazil)) (bf6a3c9)
+
+2022-09-15 Quentin PAGÈS
+
+        * Translated using Weblate (Occitan) (8551fe9)
+
 2022-09-14 Mike Gabriel
 
-        * release 22.9.0 (HEAD -> main, tag: 22.9.0)
+        * release 22.9.0 (fc2f3ee) (tag: 22.9.0)
         * Translated using Weblate (German) (5e888c2)
 
 2022-09-14 Milan Korecky

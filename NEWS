@@ -1,3 +1,9 @@
+Overview of changes in ayatana-indicator-notifications 23.10.0
+
+  - Drop testing/coverage options.
+  - src/main.c: Fix function argument error.
+  - Translation updates.
+
 Overview of changes in ayatana-indicator-notifications 22.9.0
 
   - Add tooltip support.
