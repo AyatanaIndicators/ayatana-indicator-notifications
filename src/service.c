@@ -20,6 +20,7 @@
 
 #include <glib/gi18n.h>
 #include <gio/gio.h>
+#include <ayatana/common/utils.h>
 #include "service.h"
 #include "dbus-spy.h"
 #include "urlregex.h"
@@ -269,8 +270,15 @@ static GVariant *createHeaderState(IndicatorNotificationsService *self)
     g_variant_builder_init (&b, G_VARIANT_TYPE("a{sv}"));
     g_variant_builder_add (&b, "{sv}", "title", g_variant_new_string (_("Notifications")));
     g_variant_builder_add (&b, "{sv}", "tooltip", g_variant_new_string (_("List of past system notifications, do-not-disturb switch")));
-    g_variant_builder_add (&b, "{sv}", "visible", g_variant_new_boolean (TRUE));
 
+    /* notifications indicator is not designed for running in Lomiri, so let's hide it when running in Lomiri */
+    if (ayatana_common_utils_is_lomiri()) {
+        g_variant_builder_add (&b, "{sv}", "visible", g_variant_new_boolean (FALSE));
+    }
+    else
+    {
+        g_variant_builder_add (&b, "{sv}", "visible", g_variant_new_boolean (TRUE));
+    }
     gchar *sIcon = NULL;
 
     if (self->priv->bHasUnread)
