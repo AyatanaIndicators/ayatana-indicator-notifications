@@ -8,6 +8,7 @@ Build-Depends: cmake,
                cmake-extras (>= 0.10),
                gcovr,
                lcov,
+               libayatana-common-dev (>= 0.9.3),
                libnotify-dev (>= 0.7.6),
                libglib2.0-dev (>= 2.36),
 # for packaging
