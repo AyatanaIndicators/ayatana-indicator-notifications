@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-14 08:49+0200\n"
-"PO-Revision-Date: 2023-07-02 18:50+0000\n"
-"Last-Translator: spnux <stephane.petrus@posteo.net>\n"
+"PO-Revision-Date: 2024-03-23 23:01+0000\n"
+"Last-Translator: Steve <steve.kueffer.ch@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/"
 "ayatana-indicators/notifications-applet/fr/>\n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:1
 msgid "Discard notifications by application name"
@@ -75,9 +75,9 @@ msgid "Notifications"
 msgstr "Notifications"
 
 #: src/service.c:271
-#, fuzzy
 msgid "List of past system notifications, do-not-disturb switch"
-msgstr "Liste des notifications système antérieures, do-not-disturb switch"
+msgstr ""
+"Liste des notifications système antérieures, commutateur \"ne pas déranger\""
 
 #: src/service.c:328
 msgid "Clear"
