@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-14 08:50+0200\n"
-"PO-Revision-Date: 2022-01-25 09:55+0000\n"
-"Last-Translator: Eric <alchemillatruth@purelymail.com>\n"
+"PO-Revision-Date: 2024-04-01 22:37+0000\n"
+"Last-Translator: 复予 <clonewith@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "ayatana-indicators/notifications-applet/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.11-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:1
 msgid "Discard notifications by application name"
-msgstr "按应用程序名称屏蔽通知"
+msgstr "按应用名屏蔽通知"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:2
 msgid ""
@@ -31,22 +31,22 @@ msgstr "如果有一个应用程序在过滤名单中， 所有与该程序相�
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:3
 msgid "Recent application names to suggest for the filter list"
-msgstr ""
+msgstr "过滤列表建议显示的最近应用名称"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:4
 msgid ""
 "Keeps track of recent application names so we can suggest them in the "
 "settings."
-msgstr ""
+msgstr "保持跟踪最近使用的应用名称，这样我们可以在设置中给出建议。"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:5
 msgid "Enable do-not-disturb mode"
-msgstr ""
+msgstr "启用请勿打扰模式"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:6
 msgid ""
 "On supported desktops enables do-not-disturb mode on the notification daemon."
-msgstr ""
+msgstr "在支持的桌面环境中，启用通知守护进程的请勿打扰模式。"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:7
 msgid "Maximum number of visible items"
@@ -68,7 +68,7 @@ msgstr "通知"
 
 #: src/service.c:271
 msgid "List of past system notifications, do-not-disturb switch"
-msgstr ""
+msgstr "过去的系统通知列表，请勿打扰开关"
 
 #: src/service.c:328
 msgid "Clear"
