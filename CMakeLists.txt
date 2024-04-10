@@ -1,6 +1,10 @@
 cmake_minimum_required (VERSION 3.13)
 project (ayatana-indicator-notifications VERSION 23.10.0 LANGUAGES C CXX)
 
+if (CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
+    SET (CMAKE_INSTALL_PREFIX "/usr" CACHE PATH "..." FORCE)
+endif (CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
+
 # Options
 
 option(ENABLE_WERROR "Treat all build warnings as errors" OFF)
