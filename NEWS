@@ -1,3 +1,9 @@
+Overview of changes in ayatana-indicator-notifications 23.10.1
+
+  - service.c: Hide indicator when running in Lomiri.
+  - CMakeLists.txt: Add default install prefix
+  - Translation updates.
+
 Overview of changes in ayatana-indicator-notifications 23.10.0
 
   - Drop testing/coverage options.

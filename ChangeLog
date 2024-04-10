@@ -1,1175 +1,1210 @@
+2024-04-10 Mike Gabriel
+
+        * release 23.10.1 (HEAD -> main, tag: 23.10.1)
+        * Merge branch 'tari01-pr/fix-install-prefix' (e1d791ce)
+
+2024-04-10 Robert Tari
+
+        * CMakeLists.txt: Add default install prefix (a463efd3)
+
+2024-04-01 复予
+
+        * Translated using Weblate (Chinese (Simplified)) (1946a976)
+
+2024-03-22 Steve
+
+        * Translated using Weblate (French) (877aa3fc)
+
+2024-03-14 이정희
+
+        * Translated using Weblate (Korean) (03d9fd7f)
+
+2024-03-12 Mike Gabriel
+
+        * debian/control: Add B-D: libayatana-common-dev (>= 0.9.3).
+          (3bf32726)
+        * service.c: Hide indicator when running in Lomiri. (ece3f41a)
+
+2023-11-29 bittin1ddc447d824349b2
+
+        * Translated using Weblate (Swedish) (b088df1a)
+
+2023-11-08 bittin1ddc447d824349b2
+
+        * Translated using Weblate (Swedish) (aecf700f)
+
 2023-10-13 Mike Gabriel
 
-        * release 23.10.0 (HEAD -> main, tag: 23.10.0)
+        * release 23.10.0 (851eeacb) (tag: 23.10.0)
 
 2023-09-09 Mike Gabriel
 
-        * Merge branch 'tari01-pr/drop-testing' (2f3dee8)
+        * Merge branch 'tari01-pr/drop-testing' (2f3dee80)
 
 2023-09-06 Robert Tari
 
-        * src/main.c: Fix function argument error (22b759e)
-        * Drop testing/coverage options (8f3234c)
+        * src/main.c: Fix function argument error (22b759ef)
+        * Drop testing/coverage options (8f3234c2)
 
 2023-07-01 spnux
 
-        * Translated using Weblate (French) (cd22a9e)
+        * Translated using Weblate (French) (cd22a9eb)
 
 2023-06-27 Sylke Vicious
 
-        * Translated using Weblate (Italian) (f307fc9)
+        * Translated using Weblate (Italian) (f307fc99)
 
 2023-06-22 Joan CiberSheep
 
-        * Translated using Weblate (Catalan) (18db624)
+        * Translated using Weblate (Catalan) (18db6242)
 
 2023-05-20 Milo Ivir
 
-        * Translated using Weblate (Croatian) (fc9e98e)
+        * Translated using Weblate (Croatian) (fc9e98eb)
 
 2023-05-02 Eryk Michalak
 
-        * Translated using Weblate (Polish) (ba0b780)
+        * Translated using Weblate (Polish) (ba0b7806)
 
 2023-04-25 Kristjan Räts
 
-        * Translated using Weblate (Estonian) (574a566)
+        * Translated using Weblate (Estonian) (574a5667)
 
 2023-04-06 ssantos
 
-        * Translated using Weblate (Portuguese) (21808ee)
-        * Translated using Weblate (Portuguese) (1c2eb2b)
+        * Translated using Weblate (Portuguese) (21808eeb)
+        * Translated using Weblate (Portuguese) (1c2eb2b7)
 
 2023-03-15 Heimen Stoffels
 
-        * Translated using Weblate (Dutch) (f53195f)
+        * Translated using Weblate (Dutch) (f53195f7)
 
 2023-03-03 gallegonovato
 
-        * Translated using Weblate (Spanish) (c15c529)
+        * Translated using Weblate (Spanish) (c15c5295)
 
 2023-02-10 Luna Jernberg
 
-        * Translated using Weblate (Swedish) (0181d01)
+        * Translated using Weblate (Swedish) (0181d014)
 
 2022-10-22 Gediminas Murauskas
 
-        * Translated using Weblate (Lithuanian) (477660d)
+        * Translated using Weblate (Lithuanian) (477660db)
 
 2022-10-19 Kristjan Räts
 
-        * Translated using Weblate (Estonian) (9d2856c)
+        * Translated using Weblate (Estonian) (9d2856c6)
 
 2022-10-17 Gediminas Murauskas
 
-        * Translated using Weblate (Lithuanian) (e5d9b8b)
+        * Translated using Weblate (Lithuanian) (e5d9b8b2)
 
 2022-09-29 이정희
 
-        * Translated using Weblate (Korean) (ee41c70)
+        * Translated using Weblate (Korean) (ee41c70a)
 
 2022-09-25 Oğuz Ersen
 
-        * Translated using Weblate (Turkish) (de561fd)
+        * Translated using Weblate (Turkish) (de561fd4)
 
 2022-09-22 Yaron Shahrabani
 
-        * Translated using Weblate (Hebrew) (39e2950)
+        * Translated using Weblate (Hebrew) (39e2950c)
 
 2022-09-14 Sergii Horichenko
 
-        * Translated using Weblate (Ukrainian) (077eb67)
-        * Translated using Weblate (Russian) (0a407f6)
+        * Translated using Weblate (Ukrainian) (077eb67b)
+        * Translated using Weblate (Russian) (0a407f6d)
 
 2022-09-14 Wellington Terumi Uemura
 
-        * Translated using Weblate (Portuguese (Brazil)) (bf6a3c9)
+        * Translated using Weblate (Portuguese (Brazil)) (bf6a3c94)
 
 2022-09-15 Quentin PAGÈS
 
-        * Translated using Weblate (Occitan) (8551fe9)
+        * Translated using Weblate (Occitan) (8551fe98)
 
 2022-09-14 Mike Gabriel
 
-        * release 22.9.0 (fc2f3ee) (tag: 22.9.0)
-        * Translated using Weblate (German) (5e888c2)
+        * release 22.9.0 (fc2f3eed) (tag: 22.9.0)
+        * Translated using Weblate (German) (5e888c2c)
 
 2022-09-14 Milan Korecky
 
-        * Translated using Weblate (Czech) (a968715)
+        * Translated using Weblate (Czech) (a9687159)
 
 2022-09-14 Mike Gabriel
 
-        * po/*.po{,t}: Translation strings update. (21fcbed)
+        * po/*.po{,t}: Translation strings update. (21fcbed0)
         * update-po{,t}.sh: Also catch multi-file source file references.
-          (12775e6)
+          (12775e63)
 
 2022-09-13 Robert Tari
 
-        * Merge branch 'sunweaver-pr/fix-and-update-translations' (bbea249)
+        * Merge branch 'sunweaver-pr/fix-and-update-translations' (bbea249b)
 
 2022-09-07 Quentin PAGÈS
 
-        * Translated using Weblate (Occitan) (5a5913a)
+        * Translated using Weblate (Occitan) (5a5913a0)
 
 2022-09-07 Moo
 
-        * Translated using Weblate (Lithuanian) (1db4373)
+        * Translated using Weblate (Lithuanian) (1db43732)
 
 2022-09-06 Wellington Terumi Uemura
 
-        * Translated using Weblate (Portuguese (Brazil)) (be711b0)
+        * Translated using Weblate (Portuguese (Brazil)) (be711b01)
 
 2022-09-05 Mike Gabriel
 
-        * Translated using Weblate (German) (ed8854d)
+        * Translated using Weblate (German) (ed8854df)
 
 2022-09-05 Yaron Shahrabani
 
-        * Translated using Weblate (Hebrew) (d39c410)
+        * Translated using Weblate (Hebrew) (d39c4101)
 
 2022-09-11 Mike Gabriel
 
         * po/ayatana-indicator-notifications.pot: Update translation template
-          file. (29c4f40)
+          file. (29c4f404)
         * update-po{,t}.sh: Omit ../ at beginning of file names in .po(t)
-          file(s). (5b72dcf)
-        * data/: Fix translation of .gschema.xml file. (6309311)
+          file(s). (5b72dcfd)
+        * data/: Fix translation of .gschema.xml file. (6309311b)
         * data/org.ayatana.indicator.notifications.gschema.xml.in.in: Drop
-          .gschema.xml.in.in file. Unused these days. (7309b1d)
+          .gschema.xml.in.in file. Unused these days. (7309b1d2)
 
 2022-09-07 Quentin PAGÈS
 
-        * Translated using Weblate (Occitan) (e675747)
+        * Translated using Weblate (Occitan) (e6757478)
 
 2022-09-07 Moo
 
-        * Translated using Weblate (Lithuanian) (3b92cd3)
+        * Translated using Weblate (Lithuanian) (3b92cd39)
 
 2022-09-06 Wellington Terumi Uemura
 
-        * Translated using Weblate (Portuguese (Brazil)) (42ba2f5)
+        * Translated using Weblate (Portuguese (Brazil)) (42ba2f56)
 
 2022-09-05 Mike Gabriel
 
-        * Translated using Weblate (German) (e8c0fcf)
+        * Translated using Weblate (German) (e8c0fcf1)
 
 2022-09-05 Yaron Shahrabani
 
-        * Translated using Weblate (Hebrew) (1be4b4b)
+        * Translated using Weblate (Hebrew) (1be4b4b6)
 
 2022-09-05 Mike Gabriel
 
-        * po/*.po{,t}: Translation strings update. (dbaf86f)
+        * po/*.po{,t}: Translation strings update. (dbaf86fe)
 
 2022-09-01 Mike Gabriel
 
-        * Merge branch 'sunweaver-pr/tooltip-support' (e3807fd)
+        * Merge branch 'sunweaver-pr/tooltip-support' (e3807fd3)
 
 2022-07-22 Mike Gabriel
 
-        * src/im-application-list.c: Add tooltip support. (1b193e8)
+        * src/im-application-list.c: Add tooltip support. (1b193e83)
 
 2022-08-09 Ács Zoltán
 
-        * Translated using Weblate (Hungarian) (88c1c2c)
+        * Translated using Weblate (Hungarian) (88c1c2ce)
 
 2022-05-07 Rondy Andersson
 
-        * Translated using Weblate (Swedish) (09d3b47)
+        * Translated using Weblate (Swedish) (09d3b477)
 
 2022-04-23 Sergii Horichenko
 
-        * Translated using Weblate (Russian) (1053488)
-        * Translated using Weblate (Ukrainian) (185d7dd)
-        * Translated using Weblate (Ukrainian) (487cbf9)
+        * Translated using Weblate (Russian) (10534883)
+        * Translated using Weblate (Ukrainian) (185d7dd1)
+        * Translated using Weblate (Ukrainian) (487cbf9a)
 
 2022-03-15 이정희
 
-        * Translated using Weblate (Korean) (5fdfe7c)
+        * Translated using Weblate (Korean) (5fdfe7cd)
 
 2022-02-27 이정희
 
-        * Translated using Weblate (Korean) (64093c6)
+        * Translated using Weblate (Korean) (64093c6c)
 
 2022-02-17 Mike Gabriel
 
-        * release 22.2.0 (0d51469) (tag: 22.2.0)
+        * release 22.2.0 (0d514690) (tag: 22.2.0)
 
 2022-02-16 Mike Gabriel
 
         * Merge branch 'tari01-pr/drop-cmake-install-full-pkglibexecdir'
-          (0268f09)
+          (0268f099)
 
 2022-02-15 Robert Tari
 
         * Drop pkglibexecdir and use native CMake file configuration
-          (db51353)
+          (db513536)
 
 2022-02-08 Robert Tari
 
         * .travis.yml: Run CI builds on Travis CI's Ubuntu focal base system
-          (1356964)
+          (13569642)
 
 2022-01-27 Mike Gabriel
 
-        * Merge branch 'tari01-pr/cleanup-compile-flags' (a949160)
+        * Merge branch 'tari01-pr/cleanup-compile-flags' (a9491609)
 
 2022-01-13 Robert Tari
 
         * .build.yml: Drop extra compilation flags and build with -Werror
-          (b835d12)
-        * Use Ayatana-style CMakeList + clean up compilation flags (e626ade)
+          (b835d122)
+        * Use Ayatana-style CMakeList + clean up compilation flags (e626adea)
 
 2022-01-24 Eric
 
-        * Translated using Weblate (Chinese (Simplified)) (f9e30eb)
+        * Translated using Weblate (Chinese (Simplified)) (f9e30ebd)
 
 2022-01-02 ssantos
 
-        * Translated using Weblate (Portuguese) (f7d548d)
+        * Translated using Weblate (Portuguese) (f7d548d1)
 
 2021-11-21 phlostically
 
-        * Translated using Weblate (Esperanto) (95bbde9)
+        * Translated using Weblate (Esperanto) (95bbde9c)
 
 2021-11-20 phlostically
 
-        * Translated using Weblate (Esperanto) (aa022b0)
+        * Translated using Weblate (Esperanto) (aa022b07)
 
 2021-11-18 phlostically
 
-        * Translated using Weblate (Esperanto) (a7e5643)
+        * Translated using Weblate (Esperanto) (a7e5643a)
 
 2021-11-18 Mike Gabriel
 
-        * release 0.9.0 (378e9eb) (tag: 0.9.0)
+        * release 0.9.0 (378e9ebd) (tag: 0.9.0)
 
 2021-11-16 Phil Clifford
 
-        * Translated using Weblate (Gaelic) (b47e4c8)
+        * Translated using Weblate (Gaelic) (b47e4c8f)
 
 2021-11-09 Joan CiberSheep
 
-        * Translated using Weblate (Catalan) (ea8c08c)
+        * Translated using Weblate (Catalan) (ea8c08cf)
 
 2021-11-03 ElectrifiedSpeed
 
-        * Translated using Weblate (Macedonian) (5e3962d)
+        * Translated using Weblate (Macedonian) (5e3962db)
 
 2021-10-25 Robert Tari
 
-        * Merge branch 'sunweaver-pr/travis-ci' (dc23d05)
+        * Merge branch 'sunweaver-pr/travis-ci' (dc23d05a)
 
 2021-10-25 Mike Gabriel
 
         * .build.yml: Remove source code of locally built dependency after it
-          has been installed. (6a12835)
+          has been installed. (6a12835c)
         * .build.yml: If we ever start having unit tests, run those unit
-          tests in build_scripts: target. (0177abb)
-        * .build.yml: Drop autogen.sh support. (430f663)
+          tests in build_scripts: target. (0177abb3)
+        * .build.yml: Drop autogen.sh support. (430f6637)
 
 2021-10-22 Robert Tari
 
         * data/CMakeLists.txt: Do not use automatic GSchema compilation
-          (230fc52)
+          (230fc525)
 
 2021-10-21 Mike Gabriel
 
-        * Merge branch 'tari01-pr/use-intltool-merge-translations' (5d85bac)
+        * Merge branch 'tari01-pr/use-intltool-merge-translations' (5d85bacd)
 
 2021-10-21 Robert Tari
 
         * data/CMakeLists.txt: Use intltool_merge_translations instead of
-          execute_process (b3794cf)
+          execute_process (b3794cf1)
 
 2021-10-21 Mike Gabriel
 
         * Merge branch 'tari01-pr/use-native-cmake-gsettings-module'
-          (fd3eb1c)
+          (fd3eb1cc)
 
 2021-10-20 Robert Tari
 
-        * Use native CMake GSettings module (633a426)
-        * .travis.yml: Temporarily disable ppc64le builds (11d6a5f)
+        * Use native CMake GSettings module (633a426e)
+        * .travis.yml: Temporarily disable ppc64le builds (11d6a5f8)
 
 2021-08-29 Hosted Weblate
 
-        * Update translation files (25c0830)
+        * Update translation files (25c0830b)
 
 2021-08-29 Mike Gabriel
 
-        * debian/{control,compat}: Bump to level 10. (366848d)
-        * debian/rules: Enable unit tests (if there were any). (2b27994)
+        * debian/{control,compat}: Bump to level 10. (366848d6)
+        * debian/rules: Enable unit tests (if there were any). (2b27994b)
 
 2021-08-28 Mike Gabriel
 
         * .build.yml: Provide extra dependency set for ubuntu:focal (no
-          liblomiri-url-dispatcher-dev). (ed263de)
+          liblomiri-url-dispatcher-dev). (ed263dee)
         * .build.yml: Fix for previous commit (libayata-common build
-          requirements). (8a606b2)
+          requirements). (8a606b23)
         * .build.yml: Add new build requirements for libayatana-common to
-          dependency blocks. (711e1b1)
+          dependency blocks. (711e1b1c)
 
 2021-08-28 Weblate
 
-        * Added translation using Weblate (Kurdish (Southern)) (77de31d)
-        * Added translation using Weblate (Kurdish (Northern)) (281a10a)
+        * Added translation using Weblate (Kurdish (Southern)) (77de31d6)
+        * Added translation using Weblate (Kurdish (Northern)) (281a10a1)
 
 2021-08-28 Mike Gabriel
 
         * .travis.yml: Fix branch name what is now the default branch in
-          ayatana-dev-scripts. (a767560)
+          ayatana-dev-scripts. (a7675605)
 
 2021-07-15 Yaron Shahrabani
 
-        * Translated using Weblate (Hebrew) (332c422)
+        * Translated using Weblate (Hebrew) (332c422c)
 
 2021-05-12 Mike Gabriel
 
-        * Merge branch 'tari01-pr/remove-gtk-update-icon-cache' (5b18f52)
+        * Merge branch 'tari01-pr/remove-gtk-update-icon-cache' (5b18f528)
 
 2021-02-12 Robert Tari
 
-        * Do not update icon cache from CMake (ad974a6)
+        * Do not update icon cache from CMake (ad974a64)
 
 2021-05-11 Robert Tari
 
-        * Merge branch 'sunweaver-pr/travis' (1e912a0)
+        * Merge branch 'sunweaver-pr/travis' (1e912a0d)
 
 2021-05-06 Adolfo Jayme Barrientos
 
-        * Translated using Weblate (Catalan) (10498d3)
+        * Translated using Weblate (Catalan) (10498d3a)
 
 2021-05-01 Tomáš Marný
 
-        * Translated using Weblate (Czech) (919bd79)
+        * Translated using Weblate (Czech) (919bd79c)
 
 2021-03-30 Hosted Weblate
 
-        * Update translation files (4b4312f)
+        * Update translation files (4b4312f5)
 
 2021-03-29 Weblate
 
         * Added translation using Weblate (Chinese (Simplified)
-          (zh_LATN@pinyin)) (e544c9e)
+          (zh_LATN@pinyin)) (e544c9e3)
 
 2021-03-18 Reza Almanda
 
-        * Translated using Weblate (Indonesian) (f3d36a4)
+        * Translated using Weblate (Indonesian) (f3d36a42)
 
 2021-03-11 Boyuan Yang
 
-        * Translated using Weblate (Chinese (Simplified)) (740ebe3)
+        * Translated using Weblate (Chinese (Simplified)) (740ebe30)
 
 2021-02-04 Adolfo Jayme Barrientos
 
-        * Translated using Weblate (Catalan) (f6da908)
+        * Translated using Weblate (Catalan) (f6da908e)
 
 2021-05-06 Adolfo Jayme Barrientos
 
-        * Translated using Weblate (Catalan) (06f0991)
+        * Translated using Weblate (Catalan) (06f09910)
 
 2021-05-04 Mike Gabriel
 
-        * Travis CI: Disable unit test runs (none present). (9c9a8d6)
-        * Travis-CI: Initial draft for CI builds. (907e80e)
+        * Travis CI: Disable unit test runs (none present). (9c9a8d66)
+        * Travis-CI: Initial draft for CI builds. (907e80ee)
 
 2021-05-01 Tomáš Marný
 
-        * Translated using Weblate (Czech) (9b833e0)
+        * Translated using Weblate (Czech) (9b833e0f)
 
 2021-03-30 Hosted Weblate
 
-        * Update translation files (2e35409)
+        * Update translation files (2e354090)
 
 2021-03-29 Weblate
 
         * Added translation using Weblate (Chinese (Simplified)
-          (zh_LATN@pinyin)) (2f74547)
+          (zh_LATN@pinyin)) (2f745477)
 
 2021-03-18 Reza Almanda
 
-        * Translated using Weblate (Indonesian) (bf2f1ef)
+        * Translated using Weblate (Indonesian) (bf2f1ef5)
 
 2021-03-11 Boyuan Yang
 
-        * Translated using Weblate (Chinese (Simplified)) (d37520b)
+        * Translated using Weblate (Chinese (Simplified)) (d37520bd)
 
 2021-02-04 Adolfo Jayme Barrientos
 
-        * Translated using Weblate (Catalan) (1eb1c07)
+        * Translated using Weblate (Catalan) (1eb1c075)
 
 2021-01-28 Mike Gabriel
 
-        * release 0.8.90 (03bb6d5) (tag: 0.8.90)
+        * release 0.8.90 (03bb6d55) (tag: 0.8.90)
 
 2021-01-16 Kristjan Räts
 
-        * Translated using Weblate (Estonian) (f8e575d)
+        * Translated using Weblate (Estonian) (f8e575d6)
 
 2020-12-29 Wellington Terumi Uemura
 
-        * Translated using Weblate (Portuguese (Brazil)) (60cfca2)
+        * Translated using Weblate (Portuguese (Brazil)) (60cfca22)
 
 2020-12-30 J. Lavoie
 
-        * Translated using Weblate (Italian) (7f9b558)
-        * Translated using Weblate (French (Canada)) (454a73c)
-        * Translated using Weblate (French) (4bf7870)
-        * Translated using Weblate (English (United Kingdom)) (b4cf794)
-        * Translated using Weblate (English (Canada)) (92deeea)
-        * Translated using Weblate (English (Australia)) (8466236)
+        * Translated using Weblate (Italian) (7f9b5585)
+        * Translated using Weblate (French (Canada)) (454a73c9)
+        * Translated using Weblate (French) (4bf78708)
+        * Translated using Weblate (English (United Kingdom)) (b4cf7949)
+        * Translated using Weblate (English (Canada)) (92deeeae)
+        * Translated using Weblate (English (Australia)) (84662367)
 
 2020-12-02 Milo Ivir
 
-        * Translated using Weblate (Croatian) (93c72ba)
+        * Translated using Weblate (Croatian) (93c72baa)
 
 2020-11-30 Mike Gabriel
 
-        * Merge branch 'tari01-pr/use-ido-removable' (3ad237d)
+        * Merge branch 'tari01-pr/use-ido-removable' (3ad237d9)
 
 2020-11-30 Robert Tari
 
-        * service.c: Switch over to Removable IDO (316bbee)
+        * service.c: Switch over to Removable IDO (316bbee9)
 
 2020-11-26 Ács Zoltán
 
-        * Translated using Weblate (Hungarian) (737fc32)
+        * Translated using Weblate (Hungarian) (737fc329)
 
 2020-11-23 Adolfo Jayme Barrientos
 
-        * Translated using Weblate (Spanish) (788f469)
+        * Translated using Weblate (Spanish) (788f4697)
 
 2020-11-17 Quentin PAGÈS
 
-        * Translated using Weblate (Occitan) (42cb70b)
+        * Translated using Weblate (Occitan) (42cb70bc)
 
 2020-11-18 Moo
 
-        * Translated using Weblate (Lithuanian) (eab97ad)
+        * Translated using Weblate (Lithuanian) (eab97ada)
 
 2020-11-12 Oğuz Ersen
 
-        * Translated using Weblate (Turkish) (c7e3b9b)
+        * Translated using Weblate (Turkish) (c7e3b9b5)
 
 2020-11-12 Anders Jonsson
 
-        * Translated using Weblate (Swedish) (c23e61b)
+        * Translated using Weblate (Swedish) (c23e61bc)
 
 2020-11-12 Allan Nordhøy
 
-        * Translated using Weblate (Norwegian Bokmål) (e2b9c19)
+        * Translated using Weblate (Norwegian Bokmål) (e2b9c196)
 
 2020-11-12 Mike Gabriel
 
-        * Translated using Weblate (German) (58e2693)
+        * Translated using Weblate (German) (58e26930)
 
 2020-11-12 Milan Korecky
 
-        * Translated using Weblate (Czech) (520cad0)
+        * Translated using Weblate (Czech) (520cad0e)
 
 2020-11-13 Mike Gabriel
 
-        * Merge branch 'tari01-pr/update-icon-on-remove' (f71b416)
+        * Merge branch 'tari01-pr/update-icon-on-remove' (f71b416c)
 
 2020-11-13 Robert Tari
 
         * Change the icon after the last notification has been removed
-          (c007dce)
+          (c007dced)
 
 2020-11-12 Mike Gabriel
 
         * debian/control: Fix B-D field, empty lines not allowed there.
-          (77f0168)
+          (77f01688)
         * locale: Update translation files after rewrite to indicator-ng.h
-          System Indicator style. (a146339)
-        * locale: Update .pot file. (9833b92)
+          System Indicator style. (a146339c)
+        * locale: Update .pot file. (9833b92f)
         * po/POTFILES.in: Update list of code files that might contain
-          translatable strings. (953bdbb)
+          translatable strings. (953bdbb3)
         * update-pot.sh: Fix GETTEXT_DOMAIN detection. This is now a CMake
-          project. (c22f9fb)
-        * Merge branch 'tari01-pr/url-dispatcher' (2219106)
+          project. (c22f9fbe)
+        * Merge branch 'tari01-pr/url-dispatcher' (2219106a)
 
 2020-11-12 Robert Tari
 
-        * Remove all references to url-dispatcher (7d16f61)
+        * Remove all references to url-dispatcher (7d16f615)
 
 2020-11-10 Allan Nordhøy
 
-        * Translated using Weblate (Norwegian Bokmål) (4fd70a5)
+        * Translated using Weblate (Norwegian Bokmål) (4fd70a53)
 
 2020-11-11 Milan Korecky
 
-        * Translated using Weblate (Czech) (e7add1e)
+        * Translated using Weblate (Czech) (e7add1e5)
 
 2020-11-11 Mike Gabriel
 
-        * Merge branch 'tari01-pr/system-indicator-rewrite' (f34109b)
+        * Merge branch 'tari01-pr/system-indicator-rewrite' (f34109bd)
 
 2020-11-08 Robert Tari
 
         * Rewrite to indicator-ng, simplify, drop all GTK references, move to
-          CMake (f9a39b4)
+          CMake (f9a39b44)
 
 2020-11-01 Hosted Weblate
 
-        * Update translation files (f872e90)
+        * Update translation files (f872e909)
 
 2020-10-31 Weblate
 
-        * Added translation using Weblate (Italian) (3a9d041)
-        * Added translation using Weblate (Tamil (Sri Lanka)) (1edb48e)
-        * Added translation using Weblate (Dhivehi) (9526506)
-        * Added translation using Weblate (Venetian) (4a14169)
-        * Added translation using Weblate (Kashubian) (fa03b0b)
-        * Added translation using Weblate (Macedonian) (85f5413)
-        * Added translation using Weblate (Friulian) (b7e1c2a)
-        * Added translation using Weblate (Tatar) (5663566)
+        * Added translation using Weblate (Italian) (3a9d0417)
+        * Added translation using Weblate (Tamil (Sri Lanka)) (1edb48e2)
+        * Added translation using Weblate (Dhivehi) (95265065)
+        * Added translation using Weblate (Venetian) (4a141698)
+        * Added translation using Weblate (Kashubian) (fa03b0b3)
+        * Added translation using Weblate (Macedonian) (85f54139)
+        * Added translation using Weblate (Friulian) (b7e1c2a7)
+        * Added translation using Weblate (Tatar) (5663566d)
 
 2020-10-28 Milan Korecky
 
-        * Translated using Weblate (Czech) (74008ed)
+        * Translated using Weblate (Czech) (74008ed1)
 
 2020-10-27 Adrià Martín
 
-        * Translated using Weblate (Sardinian) (81807c3)
+        * Translated using Weblate (Sardinian) (81807c3d)
 
 2020-10-26 Joan CiberSheep
 
-        * Translated using Weblate (Catalan) (446d2a6)
+        * Translated using Weblate (Catalan) (446d2a6a)
 
 2020-10-27 Hosted Weblate
 
-        * Update translation files (e56cf01)
+        * Update translation files (e56cf010)
 
 2020-10-26 Michele
 
-        * Translated using Weblate (Italian) (5bacccc)
+        * Translated using Weblate (Italian) (5bacccc0)
 
 2020-10-26 Weblate
 
-        * Added translation using Weblate (Manx) (b7bb7fc)
-        * Added translation using Weblate (Afar) (ebe604f)
-        * Added translation using Weblate (Nyanja) (c424b97)
-        * Added translation using Weblate (Assamese) (aa16f0a)
-        * Added translation using Weblate (Wolof) (efc1fb4)
+        * Added translation using Weblate (Manx) (b7bb7fce)
+        * Added translation using Weblate (Afar) (ebe604f7)
+        * Added translation using Weblate (Nyanja) (c424b972)
+        * Added translation using Weblate (Assamese) (aa16f0a2)
+        * Added translation using Weblate (Wolof) (efc1fb49)
 
 2020-10-24 Ács Zoltán
 
-        * Translated using Weblate (Hungarian) (6680b63)
+        * Translated using Weblate (Hungarian) (6680b632)
 
 2020-10-11 Quentin PAGÈS
 
-        * Translated using Weblate (Occitan) (7ae5e9d)
+        * Translated using Weblate (Occitan) (7ae5e9d0)
 
 2020-10-10 Rob Pearson
 
-        * Translated using Weblate (English (United Kingdom)) (e445bd7)
-        * Translated using Weblate (English (Australia)) (9808c2f)
+        * Translated using Weblate (English (United Kingdom)) (e445bd72)
+        * Translated using Weblate (English (Australia)) (9808c2f5)
 
 2020-10-10 Yota321
 
-        * Translated using Weblate (Bengali) (a7d35dd)
+        * Translated using Weblate (Bengali) (a7d35ddb)
 
 2020-10-08 koffevar
 
-        * Translated using Weblate (Russian) (88dc9cc)
+        * Translated using Weblate (Russian) (88dc9cc0)
 
 2020-09-27 Ján Olexa
 
-        * Translated using Weblate (Slovak) (421df9f)
+        * Translated using Weblate (Slovak) (421df9f0)
 
 2020-09-28 Adolfo Jayme Barrientos
 
-        * Translated using Weblate (Spanish) (f8b3c53)
+        * Translated using Weblate (Spanish) (f8b3c53e)
 
 2020-09-25 Talking Panda
 
-        * Translated using Weblate (Turkish) (365473a)
+        * Translated using Weblate (Turkish) (365473a4)
 
 2020-09-25 Quentin PAGÈS
 
-        * Translated using Weblate (Occitan) (6d8f5d3)
+        * Translated using Weblate (Occitan) (6d8f5d3a)
 
 2020-09-23 Viktar Vauchkevich
 
-        * Translated using Weblate (Belarusian) (88329f3)
+        * Translated using Weblate (Belarusian) (88329f38)
 
 2020-09-18 Talking Panda
 
-        * Translated using Weblate (Turkish) (9ba5c82)
+        * Translated using Weblate (Turkish) (9ba5c828)
 
 2020-09-10 Mike Gabriel
 
-        * release 0.8.2 (0a7866e) (tag: 0.8.2)
+        * release 0.8.2 (0a7866e3) (tag: 0.8.2)
 
 2020-09-08 Milo Ivir
 
-        * Translated using Weblate (Croatian) (0af2c78)
+        * Translated using Weblate (Croatian) (0af2c78c)
 
 2020-09-06 Baka Gaijin
 
-        * Translated using Weblate (Japanese) (a3b468b)
+        * Translated using Weblate (Japanese) (a3b468b3)
 
 2020-09-03 tommymaple
 
-        * Translated using Weblate (Chinese (Traditional)) (6938c1d)
+        * Translated using Weblate (Chinese (Traditional)) (6938c1d5)
 
 2020-09-03 sai vineeth kumar tumu
 
-        * Translated using Weblate (Telugu) (229971e)
+        * Translated using Weblate (Telugu) (229971e3)
 
 2020-09-04 antuketot76
 
-        * Translated using Weblate (Malay) (9b38172)
+        * Translated using Weblate (Malay) (9b38172c)
 
 2020-09-04 Rokas Kasnauskas
 
-        * Translated using Weblate (Lithuanian) (8f39ee4)
+        * Translated using Weblate (Lithuanian) (8f39ee42)
 
 2020-09-04 Mike Gabriel
 
-        * Merge branch 'tari01-pr/add-separator' (2c86731)
+        * Merge branch 'tari01-pr/add-separator' (2c867311)
 
 2020-09-04 Robert Tari
 
         * src/indicator-notifications.c: Add separator after notification
-          list. (bbfcf3d)
+          list. (bbfcf3d6)
 
 2020-08-28 Anders Jonsson
 
-        * Translated using Weblate (Swedish) (300f66f)
+        * Translated using Weblate (Swedish) (300f66f5)
 
 2020-08-25 Allan Nordhøy
 
-        * Translated using Weblate (Norwegian Bokmål) (0bf1981)
+        * Translated using Weblate (Norwegian Bokmål) (0bf19811)
 
 2020-08-27 Ulf Lundh
 
-        * Translated using Weblate (Swedish) (f7ac9ae)
+        * Translated using Weblate (Swedish) (f7ac9ae7)
 
 2020-08-22 Anders Jonsson
 
-        * Translated using Weblate (Swedish) (92489f0)
+        * Translated using Weblate (Swedish) (92489f0b)
 
 2020-08-21 Mike Gabriel
 
-        * Translated using Weblate (German) (5dcede2)
-        * release 0.8.1 (dd22415) (tag: 0.8.1)
+        * Translated using Weblate (German) (5dcede23)
+        * release 0.8.1 (dd22415b) (tag: 0.8.1)
         * README.md: Provide some basic information on the notifications
-          indicator. (493e766)
+          indicator. (493e7668)
         * Merge branch
           'sunweaver-pr/port-patches-from-indicator-notifications-by-trism'
-          (e362432)
+          (e3624327)
 
 2020-08-20 Mike Gabriel
 
         * Update translation files (for blacklist/filter-list renaming and
-          do-not-disturb feature). (d50e5a3)
+          do-not-disturb feature). (d50e5a3a)
 
 2020-08-21 Jason Conti
 
         * src/indicator-notifications: settings_try_set_boolean(): Enable the
           recursive schema lookup so we have a better chance of
-          finding it. (ab78838)
+          finding it. (ab788386)
 
 2020-08-20 Jason Conti
 
-        * Rename blacklist to filter-list. (aca92b3)
+        * Rename blacklist to filter-list. (aca92b39)
 
 2020-08-20 Tasos Sahanidis
 
-        * Add option to swap Settings and Clear. (3fbc05d)
+        * Add option to swap Settings and Clear. (3fbc05dc)
 
 2019-09-05 Jason Conti
 
-        * Discard notifications when indicator is hidden. (d1b76b9)
+        * Discard notifications when indicator is hidden. (d1b76b9a)
 
 2020-08-20 Jason Conti
 
-        * Add do-not-disturb mode read/unread icons. (8f19524)
-        * Add our own do-not-disturb setting. (82ca918)
+        * Add do-not-disturb mode read/unread icons. (8f195248)
+        * Add our own do-not-disturb setting. (82ca9185)
 
 2019-08-30 Jason Conti
 
-        * Add mate do-not-disturb option if available. (77fb1c1)
+        * Add mate do-not-disturb option if available. (77fb1c1f)
 
 2020-08-20 Jason Conti
 
-        * Add blacklist hints for recent application names. (e4bf77f)
+        * Add blacklist hints for recent application names. (e4bf77f4)
 
 2020-08-20 Mike Gabriel
 
         * Revert "Start indicator in systemd when ayatana-indicators.target
-          is started." (ed884c0)
+          is started." (ed884c08)
 
 2020-08-19 Mike Gabriel
 
-        * configure.ac: Fix-back author in AC_INIT(). (b03aa69)
+        * configure.ac: Fix-back author in AC_INIT(). (b03aa691)
 
 2020-08-17 Mike Gabriel
 
-        * release 0.8.0 (a128095) (tag: 0.8.0)
+        * release 0.8.0 (a1280959) (tag: 0.8.0)
 
 2020-08-11 Robert Tari
 
         * Merge branch 'sunweaver-pr/sytemd-service-file' Attributes GH PR
           #5:
           https://github.com/AyatanaIndicators/ayatana-indicator-notifications/pull/5
-          (f15307a)
+          (f15307a4)
         * Merge branch 'pr/sytemd-service-file' of
           https://github.com/sunweaver/ayatana-indicator-notifications
           into sunweaver-pr/sytemd-service-file Attributes GH PR #5:
           https://github.com/AyatanaIndicators/ayatana-indicator-notifications/pull/5
-          (7d7dc11)
+          (7d7dc114)
 
 2020-08-10 Robert Tari
 
-        * Fix deprecations (fixes #4) (d9fced1)
+        * Fix deprecations (fixes #4) (d9fced12)
 
 2020-08-10 Mike Gabriel
 
         * debian/*: Install indicator's systemd user service file into DEB
-          package. (d75eb5f)
+          package. (d75eb5fd)
         * Start indicator in systemd when ayatana-indicators.target is
-          started. (8189b65)
+          started. (8189b651)
 
 2020-08-06 Prosta4okua
 
-        * Translated using Weblate (Ukrainian) (ac5d686)
+        * Translated using Weblate (Ukrainian) (ac5d6867)
 
 2020-07-29 Ács Zoltán
 
-        * Translated using Weblate (Hungarian) (af7f749)
+        * Translated using Weblate (Hungarian) (af7f7499)
 
 2020-07-19 Tetra Homer
 
-        * Translated using Weblate (Persian) (944db30)
+        * Translated using Weblate (Persian) (944db30f)
 
 2020-07-03 Tobias p
 
-        * Translated using Weblate (Danish) (7cafce0)
+        * Translated using Weblate (Danish) (7cafce0c)
 
 2020-06-27 Zsolt Pastorek
 
-        * Translated using Weblate (Slovak) (3a99782)
+        * Translated using Weblate (Slovak) (3a99782a)
 
 2020-06-21 Kate Kaz
 
-        * Translated using Weblate (Ukrainian) (fab1cf8)
+        * Translated using Weblate (Ukrainian) (fab1cf8e)
 
 2020-06-19 Ács Zoltán
 
-        * Translated using Weblate (Hungarian) (5fa3a25)
+        * Translated using Weblate (Hungarian) (5fa3a250)
 
 2020-06-14 MarongHappy
 
-        * Translated using Weblate (Korean) (fdf612b)
+        * Translated using Weblate (Korean) (fdf612b0)
 
 2020-05-26 wdggg
 
-        * Translated using Weblate (Chinese (Simplified)) (408851b)
+        * Translated using Weblate (Chinese (Simplified)) (408851b1)
 
 2020-05-09 iNetRoos
 
-        * Translated using Weblate (Afrikaans) (a19852e)
+        * Translated using Weblate (Afrikaans) (a19852e3)
 
 2020-05-08 Abdusalam
 
-        * Translated using Weblate (Uyghur) (4ac1105)
+        * Translated using Weblate (Uyghur) (4ac11056)
 
 2020-04-27 Jeannette L
 
-        * Translated using Weblate (Italian) (2c4e19a)
-        * Translated using Weblate (French (Canada)) (ba07bb9)
-        * Translated using Weblate (English (United Kingdom)) (03281e5)
-        * Translated using Weblate (English (Canada)) (9f45840)
-        * Translated using Weblate (English (Australia)) (0f110d9)
+        * Translated using Weblate (Italian) (2c4e19a0)
+        * Translated using Weblate (French (Canada)) (ba07bb9a)
+        * Translated using Weblate (English (United Kingdom)) (03281e5a)
+        * Translated using Weblate (English (Canada)) (9f45840e)
+        * Translated using Weblate (English (Australia)) (0f110d93)
 
 2020-04-16 george k
 
-        * Translated using Weblate (Greek) (8fc593c)
+        * Translated using Weblate (Greek) (8fc593cc)
 
 2020-04-14 Jeannette L
 
-        * Translated using Weblate (French) (29b8919)
+        * Translated using Weblate (French) (29b89195)
 
 2020-04-04 Kristjan Räts
 
-        * Translated using Weblate (Estonian) (097b646)
+        * Translated using Weblate (Estonian) (097b6461)
 
 2020-04-03 raimon ribal
 
-        * Translated using Weblate (Occitan) (f16bd63)
+        * Translated using Weblate (Occitan) (f16bd630)
 
 2020-04-01 Davit Mayilyan
 
-        * Translated using Weblate (Armenian) (8f3870d)
+        * Translated using Weblate (Armenian) (8f3870d0)
 
 2020-03-29 Alexie Brindusescu
 
-        * Translated using Weblate (Romanian) (cbc68e1)
+        * Translated using Weblate (Romanian) (cbc68e11)
 
 2020-03-26 Adolfo Jayme Barrientos
 
-        * Translated using Weblate (Catalan) (918addb)
+        * Translated using Weblate (Catalan) (918addbc)
 
 2020-03-16 Grace Guo
 
-        * Translated using Weblate (Japanese) (ff14973)
+        * Translated using Weblate (Japanese) (ff149732)
 
 2020-03-14 yagoub fadel
 
-        * Translated using Weblate (Arabic) (a94a393)
+        * Translated using Weblate (Arabic) (a94a393b)
 
 2020-03-05 Zdeněk Klauda
 
-        * Translated using Weblate (Czech) (fe73eb4)
+        * Translated using Weblate (Czech) (fe73eb44)
 
 2020-02-25 Wellington Terumi Uemura
 
-        * Translated using Weblate (Portuguese (Brazil)) (2e2201d)
+        * Translated using Weblate (Portuguese (Brazil)) (2e2201d0)
 
 2020-02-06 Laércio Cordeiro
 
-        * Translated using Weblate (Portuguese (Brazil)) (e139d80)
+        * Translated using Weblate (Portuguese (Brazil)) (e139d805)
 
 2020-01-27 Ryan
 
-        * Translated using Weblate (Korean) (b615cb2)
+        * Translated using Weblate (Korean) (b615cb20)
 
 2020-01-25 Emiliano Gabriele
 
-        * Translated using Weblate (Italian) (9dbc449)
+        * Translated using Weblate (Italian) (9dbc4491)
 
 2020-01-05 k Venkatesan kalimoorthy pillySA
 
-        * Translated using Weblate (Tamil) (faae206)
+        * Translated using Weblate (Tamil) (faae206e)
 
 2020-01-02 Milo Ivir
 
-        * Translated using Weblate (Croatian) (c20b14a)
+        * Translated using Weblate (Croatian) (c20b14ab)
 
 2019-12-20 DHU
 
-        * Translated using Weblate (Portuguese) (ca23f4b)
+        * Translated using Weblate (Portuguese) (ca23f4b2)
 
 2019-12-15 dmaxime
 
-        * Translated using Weblate (Italian) (a687ba9)
+        * Translated using Weblate (Italian) (a687ba95)
 
 2019-12-13 Prosta4okua
 
-        * Translated using Weblate (Ukrainian) (ed35d16)
+        * Translated using Weblate (Ukrainian) (ed35d16f)
 
 2019-11-26 Yuji Hon
 
-        * Translated using Weblate (Japanese) (0d6475c)
+        * Translated using Weblate (Japanese) (0d6475ce)
 
 2019-11-27 Mike Gabriel
 
-        * release 0.4.1 (cdb8b76) (tag: 0.4.1)
+        * release 0.4.1 (cdb8b769) (tag: 0.4.1)
 
 2019-11-22 Burak Balta
 
-        * Translated using Weblate (Turkish) (191e5e5)
+        * Translated using Weblate (Turkish) (191e5e52)
 
 2019-11-15 Theeiss
 
-        * Translated using Weblate (Portuguese) (b10ea19)
+        * Translated using Weblate (Portuguese) (b10ea192)
 
 2019-11-14 winqooq
 
-        * Translated using Weblate (Russian) (48c6f82)
+        * Translated using Weblate (Russian) (48c6f823)
 
 2019-11-10 Allan Nordhøy
 
-        * Translated using Weblate (Norwegian Bokmål) (482fa06)
+        * Translated using Weblate (Norwegian Bokmål) (482fa06f)
 
 2019-11-06 Deleted User
 
-        * Translated using Weblate (Norwegian Bokmål) (1703507)
+        * Translated using Weblate (Norwegian Bokmål) (17035074)
 
 2019-11-04 maryl
 
-        * Translated using Weblate (Russian) (2ca658f)
+        * Translated using Weblate (Russian) (2ca658f8)
 
 2019-11-02 Allan Nordhøy
 
-        * Translated using Weblate (Albanian) (e06845c)
+        * Translated using Weblate (Albanian) (e06845c6)
 
 2019-11-01 Deleted User
 
-        * Translated using Weblate (Portuguese) (ab1d08c)
+        * Translated using Weblate (Portuguese) (ab1d08c6)
 
 2019-10-30 Marcela Korreshi
 
-        * Translated using Weblate (Albanian) (981dd02)
+        * Translated using Weblate (Albanian) (981dd02d)
 
 2019-10-23 Mattias Münster
 
-        * Translated using Weblate (Swedish) (7bfd4fd)
+        * Translated using Weblate (Swedish) (7bfd4fd8)
 
 2019-10-23 Fontanela
 
-        * Translated using Weblate (Portuguese) (3073b64)
+        * Translated using Weblate (Portuguese) (3073b646)
 
 2019-10-12 Andrea Gatti
 
-        * Translated using Weblate (Italian) (c1d9b36)
+        * Translated using Weblate (Italian) (c1d9b36a)
 
 2019-10-07 Mateusz Rumiński
 
-        * Translated using Weblate (Polish) (8e74a90)
+        * Translated using Weblate (Polish) (8e74a909)
 
 2019-09-07 Abraham Roman
 
-        * Translated using Weblate (Spanish) (987f750)
+        * Translated using Weblate (Spanish) (987f750b)
 
 2019-09-02 Swann Martinet
 
-        * Translated using Weblate (French) (96e8bd8)
+        * Translated using Weblate (French) (96e8bd85)
 
 2019-09-01 Moo
 
-        * Translated using Weblate (Lithuanian) (9f1b33d)
+        * Translated using Weblate (Lithuanian) (9f1b33d0)
 
 2019-09-01 trism
 
-        * Merge pull request #2 from leela52452/master (26fd86c)
+        * Merge pull request #2 from leela52452/master (26fd86c0)
 
 2019-09-01 leela
 
-        * typo ellipsis, added (554340f)
+        * typo ellipsis, added (554340fa)
 
 2019-08-29 Anders Jonsson
 
-        * Translated using Weblate (Swedish) (084399b)
+        * Translated using Weblate (Swedish) (084399b8)
 
 2019-08-28 Heimen Stoffels
 
-        * Translated using Weblate (Dutch) (0ed01d6)
+        * Translated using Weblate (Dutch) (0ed01d66)
 
 2019-08-29 Mike Gabriel
 
-        * Translated using Weblate (German) (15d1e00)
+        * Translated using Weblate (German) (15d1e004)
 
 2019-08-28 Mike Gabriel
 
-        * upload locale files (cd1e9aa)
+        * upload locale files (cd1e9aac)
 
 2019-06-08 Jason Conti
 
-        * Add a settings UI (55483b8)
+        * Add a settings UI (55483b87)
 
 2019-08-25 leela
 
-        * Translated using Weblate (Telugu) (fe7ea61)
+        * Translated using Weblate (Telugu) (fe7ea619)
 
 2019-08-10 KotagiriSahithi
 
-        * Translated using Weblate (Telugu) (192d47c)
+        * Translated using Weblate (Telugu) (192d47cd)
 
 2019-08-06 Chang Xin
 
-        * Translated using Weblate (Chinese (Simplified)) (2271553)
+        * Translated using Weblate (Chinese (Simplified)) (22715533)
 
 2019-07-23 Simon Picot
 
-        * Translated using Weblate (French) (3dad1c2)
+        * Translated using Weblate (French) (3dad1c2e)
 
 2019-07-01 Elizabeth Sherrock
 
-        * Translated using Weblate (Chinese (Simplified)) (00f0cfe)
+        * Translated using Weblate (Chinese (Simplified)) (00f0cfee)
 
 2019-06-18 THANOS SIOURDAKIS
 
-        * Translated using Weblate (Greek) (344e562)
+        * Translated using Weblate (Greek) (344e5625)
 
 2019-04-17 Rui Mendes
 
-        * Translated using Weblate (Portuguese) (b4fc77f)
+        * Translated using Weblate (Portuguese) (b4fc77f4)
 
 2019-01-11 Louies
 
-        * Translated using Weblate (Chinese (Traditional)) (55effe9)
+        * Translated using Weblate (Chinese (Traditional)) (55effe90)
 
 2018-11-18 ssantos
 
-        * Translated using Weblate (Portuguese) (3b7d042)
+        * Translated using Weblate (Portuguese) (3b7d042e)
 
 2018-10-23 Iván Seoane
 
-        * Translated using Weblate (Galician) (2c800fe)
+        * Translated using Weblate (Galician) (2c800fe6)
 
 2018-09-27 Володимир Бриняк
 
-        * Translated using Weblate (Ukrainian) (a5edc07)
+        * Translated using Weblate (Ukrainian) (a5edc076)
 
 2018-08-23 WaldiS
 
-        * Translated using Weblate (Polish) (f98c693)
+        * Translated using Weblate (Polish) (f98c693c)
 
 2018-08-05 Yaron Shahrabani
 
-        * Translated using Weblate (Hebrew) (2bd7c2d)
+        * Translated using Weblate (Hebrew) (2bd7c2d6)
 
 2018-07-29 chrismeurer
 
-        * Translated using Weblate (Portuguese (Brazil)) (01bea21)
+        * Translated using Weblate (Portuguese (Brazil)) (01bea210)
 
 2018-06-29 Jonathan Ramos dos Santos
 
-        * Translated using Weblate (Portuguese (Brazil)) (854cabd)
+        * Translated using Weblate (Portuguese (Brazil)) (854cabd1)
 
 2018-05-08 Heimen Stoffels
 
-        * Translated using Weblate (Dutch) (b8b3541)
+        * Translated using Weblate (Dutch) (b8b35417)
 
 2018-05-02 Adolfo Jayme Barrientos
 
-        * Translated using Weblate (Spanish) (b54f0b9)
+        * Translated using Weblate (Spanish) (b54f0b90)
 
 2018-04-03 Pavel Borecki
 
-        * Translated using Weblate (Czech) (1c9c71a)
-        * Translated using Weblate (Czech) (6b1a575)
-        * Translated using Weblate (Czech) (150397c)
-        * Translated using Weblate (Czech) (590e477)
+        * Translated using Weblate (Czech) (1c9c71aa)
+        * Translated using Weblate (Czech) (6b1a575f)
+        * Translated using Weblate (Czech) (150397c3)
+        * Translated using Weblate (Czech) (590e4777)
 
 2018-03-29 Anders Jonsson
 
-        * Translated using Weblate (Swedish) (e20b408)
+        * Translated using Weblate (Swedish) (e20b4086)
 
 2018-03-18 Mike Gabriel
 
-        * release 0.4.0 (4408ecb) (tag: 0.4.0)
-        * debian/rules: Use NEWS file as upstream ChangeLog. (16d9585)
-        * debian/copyright: Fix Source: field's URL. (db57cc0)
+        * release 0.4.0 (4408ecbd) (tag: 0.4.0)
+        * debian/rules: Use NEWS file as upstream ChangeLog. (16d9585b)
+        * debian/copyright: Fix Source: field's URL. (db57cc03)
         * debian/copyright: Use secure URI for copyright format reference.
-          (78bfe0b)
+          (78bfe0b0)
         * debian/control: Bump Standards-Version: to 4.1.3. No changes
-          needed. (534fd91)
+          needed. (534fd915)
         * debian/rules: Make sure config.guess and config.sub are removed
-          during clean, as well. (2a15d3c)
+          during clean, as well. (2a15d3c0)
         * debian/rules: Keep .pot file in po/ after dh_auto_clean. Work
           around for flawed gettext autotools integration it seems.
-          (7340464)
+          (73404649)
 
 2018-03-01 Moo
 
-        * Translated using Weblate (Lithuanian) (bd404e0)
+        * Translated using Weblate (Lithuanian) (bd404e01)
 
 2018-02-28 Мира Странная
 
-        * Translated using Weblate (Russian) (ed1a794)
+        * Translated using Weblate (Russian) (ed1a7943)
 
 2018-02-08 Mertcan Gokgoz
 
-        * Translated using Weblate (Turkish) (c4448e2)
+        * Translated using Weblate (Turkish) (c4448e2e)
 
 2018-02-03 Cristian Gherman
 
-        * Translated using Weblate (Romanian) (e6fec6d)
-        * Translated using Weblate (Romanian) (016933e)
+        * Translated using Weblate (Romanian) (e6fec6d8)
+        * Translated using Weblate (Romanian) (016933ed)
 
 2018-01-22 Марс Ямбар
 
-        * Translated using Weblate (Ukrainian) (d3109e8)
+        * Translated using Weblate (Ukrainian) (d3109e83)
 
 2018-01-01 Anders Jonsson
 
-        * Translated using Weblate (Swedish) (b05583d)
+        * Translated using Weblate (Swedish) (b05583d3)
 
 2017-12-19 Allan Nordhøy
 
-        * Translated using Weblate (Norwegian Bokmål) (3c4a520)
+        * Translated using Weblate (Norwegian Bokmål) (3c4a5206)
 
 2018-01-04 Yaron Shahrabani
 
-        * Translated using Weblate (Hebrew) (ad29133)
+        * Translated using Weblate (Hebrew) (ad291334)
 
 2017-12-31 Sebastian Rasmussen
 
-        * Translated using Weblate (Swedish) (5f930cb)
+        * Translated using Weblate (Swedish) (5f930cb8)
 
 2017-12-23 Kristjan Räts
 
-        * Translated using Weblate (Estonian) (de87650)
+        * Translated using Weblate (Estonian) (de876500)
 
 2017-12-18 Viktar Vauchkevich
 
-        * Translated using Weblate (Belarusian) (b2bd3fc)
+        * Translated using Weblate (Belarusian) (b2bd3fc3)
 
 2017-12-06 Mike Gabriel
 
-        * po/de.po: Tiny translation fix. (3b17cfa)
-        * Enable locale support at runtime. (4053ab0)
-        * po/de.po: White-space fixes. (84fb494)
+        * po/de.po: Tiny translation fix. (3b17cfa0)
+        * Enable locale support at runtime. (4053ab0a)
+        * po/de.po: White-space fixes. (84fb494b)
         * po/de.po: Manually add German translation. We are not on Weblate,
-          yet. (ac0556f)
-        * Update translation files. (6c0e236)
+          yet. (ac0556f7)
+        * Update translation files. (6c0e2364)
         * Makefile.am: Add some build cruft files to DISTCLEANFILES.
-          (7ce7809)
+          (7ce78099)
         * update-po.sh: Tweak file names in .po files ending with
-          .xml.in.in.h. (cabc67e)
+          .xml.in.in.h. (cabc67e9)
         * update-pot.sh: Drop the .h from filenames in .pot file ending with
-          .xml.in.in.h. (48e19a9)
-        * po/: Add LINGUAS file. (cf88f15)
+          .xml.in.in.h. (48e19a91)
+        * po/: Add LINGUAS file. (cf88f157)
 
 2017-12-05 Mike Gabriel
 
         * debian/postinst: Remove. The libglib2.0-bin package has a trigger
-          for that for years. (5e34246)
+          for that for years. (5e34246d)
         * debian/control: Correct the point about the configuration dialog,
-          the dialog is actually dconf-editor for now. (6604804)
+          the dialog is actually dconf-editor for now. (66048042)
 
 2017-12-04 Jason Conti
 
-        * Update icon names in source defines (6bdff16)
+        * Update icon names in source defines (6bdff168)
 
 2017-12-03 Mike Gabriel
 
         * Name change of libnotifications.so -> libayatana-notifications.so.
-          (3c81b45)
+          (3c81b45d)
 
 2017-12-02 Mike Gabriel
 
-        * debian/control: Fix D (glib2.0-bin -> libglib2.0-bin). (08b5d49)
-        * gschema: Namespace adaptations for gschema file. (848ebda)
-        * Drop .bzrignore. (da40552)
+        * debian/control: Fix D (glib2.0-bin -> libglib2.0-bin). (08b5d49c)
+        * gschema: Namespace adaptations for gschema file. (848ebda2)
+        * Drop .bzrignore. (da40552a)
         * debian/{control,postinst}: Recompile GSettings schemas at post
-          installation. (3e0b02e)
-        * Makefile.am: no localinstall anymore. (7ed5f4a)
-        * po/: Initialize translation files. (a6c920d)
-        * update-po(t).sh: Add translation update tools. (ebc7f29)
+          installation. (3e0b02e3)
+        * Makefile.am: no localinstall anymore. (7ed5f4ac)
+        * po/: Initialize translation files. (a6c920da)
+        * update-po(t).sh: Add translation update tools. (ebc7f29b)
         * Import and adapt packaging from recent-notifications' ppa-indicator
-          branch. (a559a64)
-        * Convert to Ayatana Indicators. (6bc2b28)
+          branch. (a559a648)
+        * Convert to Ayatana Indicators. (6bc2b280)
 
 2017-03-15 Jason Conti
 
         * Add option to clear the notifications using middle click on the
-          notification icon.;  Bump version. (27a4b02) (tag: 0.3.3)
+          notification icon.;  Bump version. (27a4b023) (tag: 0.3.3)
 
 2016-08-29 Jason Conti
 
         * Need to escape the url otherwise certain acceptable characters
           can break the   markup parsing in the GtkLabel.;  Bump
-          version. (6dd7a72) (tag: 0.3.2)
+          version. (6dd7a723) (tag: 0.3.2)
         * When updating the notification count on the clear item,
           deactivate the menu   shell if that count is zero. This
           avoids leaving a single clear menuitem on   screen after
           all the notifications have been dismissed.;  Bump version.
-          (700170f) (tag: 0.3.1)
+          (700170f7) (tag: 0.3.1)
         * Comment the new functions in notification-menuitem.c;  Bump
-          version. (ed985a8)
+          version. (ed985a8f)
 
 2016-08-28 Jason Conti
 
         * Make sure the button event started and ended on the close image
-          before we   dismiss the notification (76d7872)
+          before we   dismiss the notification (76d78722)
         * Added back hide_on_activate = false on the notification menuitem
            - Enables using space when in keyboard navigation to
           avoid closing the menu;  Added custom close icons for
@@ -1178,14 +1213,14 @@
           notification     during keyboard navigation   - gtk-close
           is deprecated anyway, so might as well use our own   - Can
           be replaced by the icon theme to look more appropriate
-          (39810bb)
+          (39810bbf)
 
 2016-08-27 Jason Conti
 
         * Scan the notification body for links and mark them up, escape
-          everything else (83f8134)
+          everything else (83f81347)
         * Import urlregex files to handle matching and expanding urls
-          (9b0c58a)
+          (9b0c58a0)
 
 2016-08-25 Jason Conti
 
@@ -1194,137 +1229,138 @@
           link parsing)   - Changes how notifications are
           highlighted and closed     + Removed prelight on the
           menuitem so that the links render correctly     + Must
-          click the X to close a notification now (9cb6e6e)
+          click the X to close a notification now (9cb6e6e7)
 
 2015-10-23 Jason Conti
 
         * Fix a serious memory leak in notification_new_from_dbus_message.
-          * Bump version. (b67ee91)
+          * Bump version. (b67ee91b)
 
 2014-05-31 Jason Conti
 
         * Add button argument to notification menuitem clicked signa.
-          Replace deprecated stock icon api (c136c4f)
+          Replace deprecated stock icon api (c136c4f9)
 
 2014-01-15 Jason Conti
 
-        * Add AM_PROG_AR to silence autotools warning (8be9606) (tag: 0.2.6)
-        * Bump version to 0.2.6 (9a1bcbd)
+        * Add AM_PROG_AR to silence autotools warning (8be96065) (tag: 0.2.6)
+        * Bump version to 0.2.6 (9a1bcbd7)
         * Use icon-name instead of pixbufs to set the indicator icon;  Move
-          the default icons to datadir/pixmaps/ (5be88b3)
+          the default icons to datadir/pixmaps/ (5be88b3e)
         * New GSetting:   - "blacklist" - discard notifications matching
-          appname (5ef0c20)
+          appname (5ef0c201)
 
 2013-02-17 Jason Conti
 
-        * Bump version to 0.2.5 (d16be93) (tag: 0.2.5)
+        * Bump version to 0.2.5 (d16be93d) (tag: 0.2.5)
         * Import patch for eavesdrop support required by recent dbus
           versions.   - Drop this patch if using an older version
-          that doesn't require eavesdropping. (69d098d)
+          that doesn't require eavesdropping. (69d098dc)
         * Add GSettings support.   - hide-indicator key to show/hide the
           indicator   - max-items key to change the maximum number
-          of displayed notifications (075774f)
+          of displayed notifications (075774fe)
 
 2012-04-04 Jason Conti
 
-        * Bump for version 0.2.4 (233e68f) (tag: 0.2.4)
+        * Bump for version 0.2.4 (233e68ff) (tag: 0.2.4)
         * Use style-updated intead of style-set to track style changes on
           GtkImage,   since style-set is deprecated and seems to be
-          broken for GtkImage. (8e252e0)
-        * Bump to version 0.2.3 (8d92259) (tag: 0.2.3)
+          broken for GtkImage. (8e252e02)
+        * Bump to version 0.2.3 (8d922591) (tag: 0.2.3)
 
 2012-02-29 Jason Conti
 
         * Implement secondary-activate to dismiss or reactivate the unread
-          icon   on middle click. (ddc4a14)
+          icon   on middle click. (ddc4a145)
 
 2012-02-26 Jason Conti
 
-        * Update potfiles.;  Bump version to 0.2.2. (1ac07fe) (tag: 0.2.2)
+        * Update potfiles.;  Bump version to 0.2.2. (1ac07feb) (tag: 0.2.2)
         * Emit the clicked signal when the keyboard activates a menuitem.
           - If using the spacebar, the menu won't hide   - If using
-          enter, the menu hides (9203963)
+          enter, the menu hides (92039638)
         * Move the button events to notification menuitem.;  Add a clicked
           event to the notification menuitem.;  Drop the old
-          new_notification_menuitem code. (5d8d44a)
-        * Move the notification menuitem to a separate class. (1bcf41c)
+          new_notification_menuitem code. (5d8d44a3)
+        * Move the notification menuitem to a separate class. (1bcf41c7)
         * Rename notification_is_volume to notification_is_private.;  Add
           filters for indicator-sound and brightness notifications.
           * Strip whitespace leading and trailing whitespace from
-          the summary   and body. (df8ae86)
+          the summary   and body. (df8ae866)
 
 2012-02-25 Jason Conti
 
-        * Update potfiles;  Bump version to 0.2.1 (bafd836) (tag: 0.2.1)
-        * Bump version to 0.2.0 (7dedb95) (tag: 0.2.0)
-        * Don't hide the menu when removing a notification. (49b8359)
+        * Update potfiles;  Bump version to 0.2.1 (bafd8363) (tag: 0.2.1)
+        * Bump version to 0.2.0 (7dedb95d) (tag: 0.2.0)
+        * Don't hide the menu when removing a notification. (49b8359c)
         * Remove a notification when clicked. Unfortunately this hides the
           menu   unless the item is activated with the spacebar, so
-          needs fixing. (a232d4c)
+          needs fixing. (a232d4c2)
         * Implement the clear item;  Add safety checks to most of the
-          functions (a286008)
-        * Reorganize and comment indicator-notifications.c (2a370d1)
+          functions (a286008d)
+        * Reorganize and comment indicator-notifications.c (2a370d10)
         * Add a clear item that also keeps a notification count.   - Still
-          need to implement the clear action (5e46847)
+          need to implement the clear action (5e468473)
         * Reintroduce the visible item limit, currently hard-coded to 5
-          (2a29da2)
+          (2a29da21)
         * Add notification_is_empty to catch useless notifications such as
            brightness and volume, which are not always properly
-          marked. (a46ca96)
-        * Forgot AC_OUTPUT in configure.ac (6712160)
+          marked. (a46ca96f)
+        * Forgot AC_OUTPUT in configure.ac (67121606)
         * Move dev tools to the tools/ directory;  Missed some extra [] in
-          configure.ac (d7fc1f1)
+          configure.ac (d7fc1f1c)
         * Drop old dbus service file.;  Clean up configure.ac;  Drop gtk2
-          build (19e6cdf)
+          build (19e6cdf1)
 
 2011-09-08 Jason Conti
 
-        * Disable the resize_menu code. (dad2586)
+        * Disable the resize_menu code. (dad2586e)
 
 2011-08-29 Jason Conti
 
         * Make sure to unref the dbus-spy when the indicator is disposed.
-          (52cd1d8)
+          (52cd1d85)
         * Switch to gtk_menu_shell_prepend so new messages appear on top.
-          (e6a38a2)
+          (e6a38a23)
         * Simplified the indicator by removing the dbus service. Still
           needs:   - Clear button   - Message limit;  GTK3 is having
           issues with the multi-line menu items. Adding a bit of   a
           hack to calculate the size of the menu and resize it when
           an item is added.   Still has some problems, but better
           than before. Will probably cause other   issues that will
-          need to be addressed later. (cb1da85)
+          need to be addressed later. (cb1da855)
 
 2011-08-21 Jason Conti
 
-        * Revert previous commit, the reposition fix isn't working. (467b817)
+        * Revert previous commit, the reposition fix isn't working.
+          (467b817e)
 
 2011-08-20 Jason Conti
 
         * Reposition the menu when it becomes visible, otherwise parts will
           be   cut off when popped up near the edge of the screen
-          (fd33d25)
+          (fd33d25a)
 
 2011-08-19 Jason Conti
 
-        * Bump for oneiric ppa release (091af8d) (tag: 0.1.4)
+        * Bump for oneiric ppa release (091af8d9) (tag: 0.1.4)
         * Fix XML service substitution so it works from a separate build
-          directory (a134d99)
+          directory (a134d994)
         * Add a WITH_GTK (2, 3) definition to handle some of the minor
           differences   between gtk2 and 3;  Replace gtk_hbox_new
           with gtk_box_new in the gtk3 version;  GtkLabel has a new
           (and much nicer) wrapping mechanism   - use
-          gtk_label_set_max_width_chars in gtk3 version (5989649)
+          gtk_label_set_max_width_chars in gtk3 version (59896497)
           (tag: 0.1.3)
-        * Update libindicator pkg-config names. (c5ac5ce)
+        * Update libindicator pkg-config names. (c5ac5ce8)
 
 2011-07-02 Jason Conti
 
-        * Updated testing scripts for new gtk3 indicator. (6d46725)
+        * Updated testing scripts for new gtk3 indicator. (6d46725c)
 
 2011-06-29 Jason Conti
 
-        * Building --with-gtk=3 for oneiric (e50789b)
+        * Building --with-gtk=3 for oneiric (e50789bf)
 
 2011-05-27 Jason Conti
 
@@ -1332,105 +1368,106 @@
           indicator-applet was inconsistant. Sometimes messages
           would be logged, sometimes they wouldn't. This time took
           one from lightdm that just uses stdio, and it seems to
-          work much more consistantly. (5c375d5)
+          work much more consistantly. (5c375d57)
 
 2011-05-19 Jason Conti
 
         * Bumping version and removing some unnecessary dependencies.
-          (a25826c)
+          (a25826c9)
 
 2011-05-18 Jason Conti
 
         * Have to add the test directory back to Makefile.am or the tarball
           from make dist fails to configure. (could also have
           removed the test makefile from configure.ac, but this
-          seemed better) (88c859a) (tag: 0.1.0)
+          seemed better) (88c859ae) (tag: 0.1.0)
         * Had to prefix the status icons with indicator- because otherwise
           they can conflict with the obsolete icons in the
           recent-notifications package, which I should probably
-          remove. (847eb7d)
-        * Updated the pot file. Not many strings so far. (56ddef2)
+          remove. (847eb7d2)
+        * Updated the pot file. Not many strings so far. (56ddef21)
         * Updating icon path to correct location in preparation for proper
-          install. (c563991)
+          install. (c5639915)
 
 2011-05-17 Jason Conti
 
         * Checking for, and discarding volume notifications, since they
           contain no useful information (which is stupid, why can't
           they provide a summary (Volume Up/Down) and body (Current
-          volume level X%). (344eaf6)
+          volume level X%). (344eaf62)
         * Adding a timestamp to the messages. Currently sends a timestamp
           string across dbus, but ideally it will send an integer,
           and the indicator can decide how to display it (time ago
-          in words, custom time format, etc). (425bde7)
+          in words, custom time format, etc). (425bde70)
         * Removed the placeholder filter item for now. It serves no purpose
           with a limit of 5 items. Added a empty item to signify
           when the menu has 0 notification, instead of just leaving
-          a blank space. (c802236)
+          a blank space. (c802236c)
 
 2011-05-16 Jason Conti
 
         * Proof of concept complete, should probably add timestamps next.
-          (4952566)
-        * A bit of renaming with the dbusmenu properties. (465d4f1)
+          (49525668)
+        * A bit of renaming with the dbusmenu properties. (465d4f15)
         * Building the menuitem, now works the same as before. Next comes
           markup. Should I markup the text server side or add a
           property to the dbusmenu item for each field, and build
-          the menuitem client side from the properties? (0d7a9f1)
+          the menuitem client side from the properties? (0d7a9f18)
         * Should have checked my syntax errors before that last commit. Fixed
-          now. (232a243)
+          now. (232a2433)
         * Adding a new notification menuitem type. It isn't currently a
-          custom menuitem, but may need to be eventually. (2fe93bc)
+          custom menuitem, but may need to be eventually. (2fe93bc6)
 
 2011-05-15 Jason Conti
 
         * Update indicator icon to unread when a message is received, and to
-          read when the menu is hidden. (f055a17)
+          read when the menu is hidden. (f055a17d)
         * Couldn't seem to get a signal when a menu item is added to the
           dbusmenu, so adding the interface back from
           indicator-datetime with a MessageAdded signal to notify
           the indicator when a notification is added to the menu.
-          (239dec6)
+          (239dec68)
         * Loading the read and unread icons when the image is first
           requested. TODO: Need to reload them when the icon theme
-          changes. (fc92dc2)
+          changes. (fc92dc2b)
 
 2011-05-14 Jason Conti
 
         * Removed the label from the indicator. May add it back later for a
-          message count. (d23cd18)
+          message count. (d23cd18b)
         * Added the icon to the indicator. Currently using a hardcoded path,
           will grab from the icon theme later, but need to add the
-          local path to the icon theme for testing. (11998bf)
+          local path to the icon theme for testing. (11998bfc)
         * Adding gdk pixbuf to the deps for gtk2. Don't know what to use with
-          gtk3 yet. (d98fb2f)
-        * Forgot to add data/icons/Makefile to configure.ac. (d49b557)
+          gtk3 yet. (d98fb2f1)
+        * Forgot to add data/icons/Makefile to configure.ac. (d49b5573)
         * Attempting to add icons to the install target. Will put them in
-          correct locations later. (dd5d2de)
-        * Adding back the functionality to clear the notifications. (706a318)
+          correct locations later. (dd5d2de5)
+        * Adding back the functionality to clear the notifications.
+          (706a3188)
         * Updating in the idle loop seems to have fixed the updating, so
           added the gqueue back, as well as a fixed limit of 5 items
-          for now (until preferences are added later). (0b8c3b2)
+          for now (until preferences are added later). (0b8c3b28)
 
 2011-05-13 Jason Conti
 
         * Added add_message_item to the idle loop and it seems to be working
-          much better now. (bdf9d90)
+          much better now. (bdf9d902)
         * Checking the number of children. They are correct, so they just
-          aren't being sent over dbus. (51bea07)
+          aren't being sent over dbus. (51bea07a)
         * Removing the queue for the moment, adding menu items when messages
           arrive seems to only be partially working for some reason.
-          (64930be)
+          (64930bed)
         * Logging the service to a file
           (~/.cache/indicator-notifications-service.log). The
           indicator messages appear to go to
           indicator-applet-complete.log, so shouldn't need to set up
-          separate logging there. (fe71ed3)
+          separate logging there. (fe71ed35)
         * Integrated the dbus-spy. Menu items for notification summaries are
-          appended as they arrive. (9c9ceb6)
+          appended as they arrive. (9c9ceb68)
         * Importing dbus-spy and notification dbus objects to watch dbus for
           org.freedesktop.Notification.Notify messages (from test
-          project). (c64309f)
+          project). (c64309f5)
 
 2011-05-10 Jason Conti
 
@@ -1438,70 +1475,70 @@
           the bus names to RecentNotifications. My guess is
           libindicator, since dbus let me register
           com.launchpad.recent-notifications.indicator but the menu
-          path didn't show up. (2d97be1)
-        * Commenting out an unneeded variable to remove a warning. (229226f)
-        * Missed a rename. (244eb97)
-        * Completed the great renaming. Time for a test build. (4c73eea)
-        * Renamed the indicator (92548a1)
+          path didn't show up. (2d97be12)
+        * Commenting out an unneeded variable to remove a warning. (229226f0)
+        * Missed a rename. (244eb974)
+        * Completed the great renaming. Time for a test build. (4c73eea2)
+        * Renamed the indicator (92548a10)
         * Renamed the rest of the files, and updated the file headers.
-          (875c0e1)
+          (875c0e1f)
         * Removed the interface from example, no longer needed, so removing
-          it here too. (8aadb63)
-        * Cleaned up po (37ab8b9)
-        * Renamed the service data (a9b5d33)
+          it here too. (8aadb632)
+        * Cleaned up po (37ab8b9b)
+        * Renamed the service data (a9b5d336)
         * Beginning the great renaming from example to notifications.
-          (8af1b04)
+          (8af1b04c)
 
 2011-05-09 Jason Conti
 
         * Shown/Hidden code works but causing the indicator to freak out, so
           disabled for now. It will work fine for changing the icon
-          status though. (b358f7c)
+          status though. (b358f7c0)
         * Adding some code to demonstrate when the menu is shown/hidden,
           which will be required for indicator-notifications.
-          (77b322f)
-        * Removing the unnecessary size group (f088511)
+          (77b322f4)
+        * Removing the unnecessary size group (f088511f)
         * Testing the item-activate signal by launching various programs.
-          (064c679)
-        * Adding script to restart the indicator (86b44a2)
+          (064c6794)
+        * Adding script to restart the indicator (86b44a28)
         * Moving the local install to
-          /home/jconti/Projects/indicators/example/build. (71145c5)
-        * Reenabling silent automake (0baaa62)
-        * Removed unnecessary deps. Let's see if I broke anything. (0f730f3)
+          /home/jconti/Projects/indicators/example/build. (71145c51)
+        * Reenabling silent automake (0baaa62c)
+        * Removed unnecessary deps. Let's see if I broke anything. (0f730f30)
 
 2011-05-08 Jason Conti
 
-        * Ignoring autogen files. (35817a5)
-        * Updated formatting for indicator (a6938d0)
-        * Updated the formatting for the interface (84aa05b)
+        * Ignoring autogen files. (35817a57)
+        * Updated formatting for indicator (a6938d00)
+        * Updated the formatting for the interface (84aa05b4)
         * Removed unnecessary function from interface, updated formatting in
-          service. (b4506b8)
-        * Adding helper scripts for testing. (39f5b5d)
+          service. (b4506b87)
+        * Adding helper scripts for testing. (39f5b5da)
         * Removing -Werror for the moment, since the warnings about unused
           variables and functions are fine. They may get used later,
-          don't want to remove them yet. (22f3a67)
-        * Stripped settings (21b63ad)
-        * Stripped much of the unneeded code from the indicator. (baebbeb)
+          don't want to remove them yet. (22f3a671)
+        * Stripped settings (21b63ad1)
+        * Stripped much of the unneeded code from the indicator. (baebbeb7)
         * Removed the unnecessary menu items from dbus-shared.h and the
           unnecessary signal in the service xml. Probably broke the
-          compile. (0d54212)
-        * Missed a rename in autogen.sh (65fe548)
-        * Removed most of the cruft from the service source. (6c1a1fa)
+          compile. (0d54212a)
+        * Missed a rename in autogen.sh (65fe5485)
+        * Removed most of the cruft from the service source. (6c1a1fa1)
         * Fixed compiling errors from rename and removing utils. Time to rip
-          out the unnecessary bits. (5157981)
+          out the unnecessary bits. (51579817)
         * The great rename is complete. Time to test compile and fix errors.
-          (fb50bee)
+          (fb50beea)
         * Minor rename in settings-shared.h before removing most of the
-          settings (or the entire file). (cd1212d)
-        * Removed utils (ca037f1)
-        * Renamed service files (0e7cf7e)
-        * Changed the dbus names (547376a)
-        * Renamed the interface. (6f81ccf)
-        * Renaming service file (2fd2d43)
+          settings (or the entire file). (cd1212db)
+        * Removed utils (ca037f1a)
+        * Renamed service files (0e7cf7ee)
+        * Changed the dbus names (547376a8)
+        * Renamed the interface. (6f81ccff)
+        * Renaming service file (2fd2d439)
 
 2011-05-07 Jason Conti
 
         * Removed the calendar item, didn't seem to be used, although I think
-          it was moved to libido, so maybe that is why. (84b6003)
-        * Ripped out datetime-prefs and the translations. (1c11361)
-        * Import from lp:indicator-datetime (ea9ddba)
+          it was moved to libido, so maybe that is why. (84b6003b)
+        * Ripped out datetime-prefs and the translations. (1c113615)
+        * Import from lp:indicator-datetime (ea9ddbaa)
