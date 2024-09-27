@@ -8,49 +8,52 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-14 08:49+0200\n"
-"PO-Revision-Date: 2020-03-29 14:40+0000\n"
-"Last-Translator: Alexie Brindusescu <alexiedb@yahoo.com>\n"
-"Language-Team: Romanian <https://hosted.weblate.org/projects/ayatana-"
-"indicators/notifications-applet/ro/>\n"
+"PO-Revision-Date: 2024-09-29 00:16+0000\n"
+"Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
+"Language-Team: Romanian <https://hosted.weblate.org/projects/"
+"ayatana-indicators/notifications-applet/ro/>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.0-dev\n"
+"X-Generator: Weblate 5.8-dev\n"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:1
 msgid "Discard notifications by application name"
-msgstr "Renunțare la notificările prin numele aplicației"
+msgstr "Elimină notificările după numele aplicației"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:2
-#, fuzzy
 msgid ""
 "If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
 msgstr ""
-"Dacă un nume de aplicație se află în lista neagră, toate notificările care "
-"se potrivesc cu numele aplicației vor fi ignorate."
+"Dacă un nume de aplicație se află în lista de filtrare, toate notificările "
+"care corespund numelui de aplicație vor fi eliminate."
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:3
 msgid "Recent application names to suggest for the filter list"
-msgstr ""
+msgstr "Nume de aplicații recente de sugerat pentru lista de filtrare"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:4
 msgid ""
 "Keeps track of recent application names so we can suggest them in the "
 "settings."
 msgstr ""
+"Ține evidența numelor de aplicații recente, astfel încât să le putem sugera "
+"în configurare."
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:5
 msgid "Enable do-not-disturb mode"
-msgstr ""
+msgstr "Activează modul „nu deranjați”"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:6
 msgid ""
 "On supported desktops enables do-not-disturb mode on the notification daemon."
 msgstr ""
+"Pe birourile acceptate, activează modul „nu deranjați” pentru demonul de "
+"notificare."
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:7
 msgid "Maximum number of visible items"
@@ -61,7 +64,7 @@ msgid ""
 "The indicator will only display at most the number of notifications "
 "indicated by this value."
 msgstr ""
-"Indicatorul va afișa cel mult numărul de notificări indicate de această "
+"Indicatorul va afișa cel mult numărul de notificări indicat de această "
 "valoare."
 
 #: src/service.c:221
@@ -75,14 +78,15 @@ msgstr "Notificări"
 #: src/service.c:271
 msgid "List of past system notifications, do-not-disturb switch"
 msgstr ""
+"Lista notificărilor de sistem din trecut, puneți-le în modul „nu deranjați”"
 
 #: src/service.c:328
 msgid "Clear"
-msgstr ""
+msgstr "Șterge"
 
 #: src/service.c:339
 msgid "Do not disturb"
-msgstr ""
+msgstr "Activează modul „nu deranjați”"
 
 #~ msgid "Clear notifications on middle click"
 #~ msgstr "Ștergeți notificările la clic pe mijloc"
