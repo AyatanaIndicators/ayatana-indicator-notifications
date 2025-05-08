@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-14 08:49+0200\n"
-"PO-Revision-Date: 2024-09-29 00:16+0000\n"
+"PO-Revision-Date: 2025-05-08 11:03+0000\n"
 "Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/"
 "ayatana-indicators/notifications-applet/ro/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 5.8-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:1
 msgid "Discard notifications by application name"
@@ -86,7 +86,7 @@ msgstr "Șterge"
 
 #: src/service.c:339
 msgid "Do not disturb"
-msgstr "Activează modul „nu deranjați”"
+msgstr "Modul „nu deranjați”"
 
 #~ msgid "Clear notifications on middle click"
 #~ msgstr "Ștergeți notificările la clic pe mijloc"
