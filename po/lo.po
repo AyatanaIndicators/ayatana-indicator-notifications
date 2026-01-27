@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-14 08:49+0200\n"
-"PO-Revision-Date: 2025-11-15 03:51+0000\n"
+"PO-Revision-Date: 2026-01-28 00:35+0000\n"
 "Last-Translator: BoneNI <bounkirdni@gmail.com>\n"
 "Language-Team: Lao <https://hosted.weblate.org/projects/ayatana-indicators/"
 "notifications-applet/lo/>\n"
@@ -17,58 +17,61 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.15-dev\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:1
 msgid "Discard notifications by application name"
-msgstr ""
+msgstr "ຍົກເລີກການແຈ້ງເຕືອນຕາມຊື່ແອັບພລິເຄຊັນ"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:2
 msgid ""
 "If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
 msgstr ""
+"ຖ້າຫາກຊື່ແອັບພລິເຄຊັນຢູ່ໃນລາຍການຕົວກອງ, ທຸກໆການແຈ້ງເຕືອນທີ່ກົງກັບຊື່ແອັບພລິເຄຊັນນັ້ນຈະຖືກຍົກເລີກ."
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:3
 msgid "Recent application names to suggest for the filter list"
-msgstr ""
+msgstr "ຊື່ແອັບພລິເຄຊັນຫຼ້າສຸດທີ່ຈະແນະນຳສຳລັບລາຍການຕົວກອງ"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:4
 msgid ""
 "Keeps track of recent application names so we can suggest them in the "
 "settings."
 msgstr ""
+"ຕິດຕາມຊື່ແອັບພລິເຄຊັນຫຼ້າສຸດ ເພື່ອໃຫ້ພວກເຮົາສາມາດແນະນຳພວກມັນໃນການຕັ້ງຄ່າ."
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:5
 msgid "Enable do-not-disturb mode"
-msgstr ""
+msgstr "ເປີດໃຊ້ໂໝດຫ້າມລົບກວນ"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:6
 msgid ""
 "On supported desktops enables do-not-disturb mode on the notification daemon."
 msgstr ""
+"ສຳລັບເດັສທັອບທີ່ຮອງຮັບ ແມ່ນໃຫ້ເປີດໃຊ້ໂໝດຫ້າມລົບກວນໃນລະບົບຈັດການການແຈ້ງເຕືອນ."
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:7
 msgid "Maximum number of visible items"
-msgstr ""
+msgstr "ຈຳນວນລາຍການສູງສຸດທີ່ຈະສະແດງ"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:8
 msgid ""
 "The indicator will only display at most the number of notifications "
 "indicated by this value."
-msgstr ""
+msgstr "ຕົວຊີ້ບອກຈະສະແດງການແຈ້ງເຕືອນສູງສຸດບໍ່ເກີນຈຳນວນທີ່ກຳນົດໄວ້ໃນຄ່ານີ້."
 
 #: src/service.c:221
 msgid "from"
-msgstr ""
+msgstr "ຈາກ"
 
 #: src/service.c:270 src/service.c:300
 msgid "Notifications"
-msgstr ""
+msgstr "ການແຈ້ງເຕືອນ"
 
 #: src/service.c:271
 msgid "List of past system notifications, do-not-disturb switch"
-msgstr ""
+msgstr "ລາຍການການແຈ້ງເຕືອນລະບົບທີ່ຜ່ານມາ, ປຸ່ມສະຫຼັບຫ້າມລົບກວນ"
 
 #: src/service.c:328
 msgid "Clear"
@@ -76,4 +79,4 @@ msgstr "ລ້າງອອກ"
 
 #: src/service.c:339
 msgid "Do not disturb"
-msgstr ""
+msgstr "ຫ້າມລົບກວນ"
