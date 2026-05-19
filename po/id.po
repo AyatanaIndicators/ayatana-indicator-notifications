@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-14 08:49+0200\n"
-"PO-Revision-Date: 2026-02-17 12:09+0000\n"
+"PO-Revision-Date: 2026-05-20 02:11+0000\n"
 "Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/ayatana-"
 "indicators/notifications-applet/id/>\n"
@@ -17,36 +17,40 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.16\n"
+"X-Generator: Weblate 2026.6.dev0\n"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:1
 msgid "Discard notifications by application name"
-msgstr "Buang pemberitahuan berdasarkan nama aplikasi"
+msgstr "Abaikan notifikasi berdasarkan nama aplikasi"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:2
 msgid ""
 "If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
 msgstr ""
+"Jika nama aplikasi ada dalam daftar filter, semua notifikasi yang cocok "
+"dengan nama aplikasi tersebut akan diabaikan."
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:3
 msgid "Recent application names to suggest for the filter list"
-msgstr ""
+msgstr "Nama aplikasi terbaru untuk disarankan ke daftar filter"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:4
 msgid ""
 "Keeps track of recent application names so we can suggest them in the "
 "settings."
-msgstr ""
+msgstr "Menyimpan nama aplikasi terbaru agar dapat disarankan di pengaturan."
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:5
 msgid "Enable do-not-disturb mode"
-msgstr ""
+msgstr "Aktifkan mode jangan ganggu"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:6
 msgid ""
 "On supported desktops enables do-not-disturb mode on the notification daemon."
 msgstr ""
+"Pada desktop yang didukung, mengaktifkan mode jangan ganggu pada daemon "
+"notifikasi."
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:7
 msgid "Maximum number of visible items"
@@ -57,23 +61,25 @@ msgid ""
 "The indicator will only display at most the number of notifications "
 "indicated by this value."
 msgstr ""
+"Indikator hanya akan menampilkan paling banyak jumlah notifikasi yang "
+"ditentukan oleh nilai ini."
 
 #: src/service.c:221
 msgid "from"
-msgstr ""
+msgstr "dari"
 
 #: src/service.c:270 src/service.c:300
 msgid "Notifications"
-msgstr "Pemberitahuan"
+msgstr "Notifikasi"
 
 #: src/service.c:271
 msgid "List of past system notifications, do-not-disturb switch"
-msgstr ""
+msgstr "Daftar notifikasi sistem sebelumnya, sakelar jangan ganggu"
 
 #: src/service.c:328
 msgid "Clear"
-msgstr "Hapus"
+msgstr "Bersihkan"
 
 #: src/service.c:339
 msgid "Do not disturb"
-msgstr ""
+msgstr "Jangan ganggu"
