@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-14 08:49+0200\n"
-"PO-Revision-Date: 2026-08-08 22:51+0000\n"
+"PO-Revision-Date: 2026-08-21 11:52+0000\n"
 "Last-Translator: Alagirisamy Rengaraj <radhaalagirisamy@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/ayatana-indicators/"
 "notifications-applet/ta/>\n"
@@ -21,51 +21,54 @@ msgstr ""
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:1
 msgid "Discard notifications by application name"
-msgstr "செயலியின்  பெயரால் அறிவிப்புகளை நிராகரிக்கவும்"
+msgstr "செயலி பெயரின் அறிவிப்புகளை கழிக்கவும்"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:2
 msgid ""
 "If an application name is in the filter list, all notifications matching the "
 "application name will be discarded."
 msgstr ""
-"பயன்பாட்டு பெயர் வடிகட்டி பட்டியலில் இருந்தால், பயன்பாட்டு பெயருடன் பொருந்தக்கூடிய அனைத்து அறிவிப்புகளும் "
-"நிராகரிக்கப்படும்."
+"ஒரு செயலியின் பெயர் வடிகட்டி அட்டவணையில் இருந்தால்,செயலியின் பெயருடன் பொருந்தக்கூடிய "
+"அனைத்து அறிவிப்புகளும் நிராகரிக்கப்படும்."
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:3
 msgid "Recent application names to suggest for the filter list"
-msgstr "வடிகட்டி பட்டியலுக்கு பரிந்துரைக்க அண்மைக் கால பயன்பாட்டு பெயர்கள்"
+msgstr "வடிகட்டி அட்டவணைக்கு பரிந்துரைக்க அண்மை செயலிகளின் பெயர்கள்"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:4
 msgid ""
 "Keeps track of recent application names so we can suggest them in the "
 "settings."
 msgstr ""
-"அண்மைக் கால பயன்பாட்டு பெயர்களைக் கண்காணிக்கிறது, எனவே அவற்றை அமைப்புகளில் பரிந்துரைக்கலாம்."
+"அண்மை செயலிகளின் பெயர்கள் தொடர் கண்காணிப்பில் வைத்துள்ளது எனவே அவற்றை அமைப்புகளில் "
+"பரிந்துரைக்கலாம்."
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:5
 msgid "Enable do-not-disturb mode"
-msgstr "செய்யாத-தூரம் பயன்முறையை இயக்கவும்"
+msgstr "தொந்தரவு-செய்யாதே-முறை செயல்படுத்தவும்"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:6
 msgid ""
 "On supported desktops enables do-not-disturb mode on the notification daemon."
 msgstr ""
-"ஆதரிக்கப்பட்ட டெச்க்டாப்புகளில் அறிவிப்பு டீமான் செய்யாத-தூரம் பயன்முறையை செயல்படுத்துகிறது."
+"ஆதரிக்கப்பட்ட மேசைக்கணிணிகளில் தொந்தரவு-செய்யாதே முறை அறிவிப்பு பின்புலத்தில் "
+"செயல்படுத்துகிறது."
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:7
 msgid "Maximum number of visible items"
-msgstr "புலப்படும் உருப்படிகளின் அதிகபட்ச எண்ணிக்கை"
+msgstr "புலப்படும் பொருள்களின் நிறைவு எண்ணிக்கை"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:8
 msgid ""
 "The indicator will only display at most the number of notifications "
 "indicated by this value."
 msgstr ""
-"காட்டி இந்த மதிப்பால் சுட்டிக்காட்டப்பட்ட அறிவிப்புகளின் எண்ணிக்கையை மட்டுமே காண்பிக்கும்."
+"இந்த மதிப்பால் குறிப்பிடப்பட்ட அறிவிப்புகளின் நிறைந்த எண்ணிக்கையை மட்டுமே குறியீடு "
+"காட்சிப்படுத்தும்."
 
 #: src/service.c:221
 msgid "from"
-msgstr "இருந்து"
+msgstr "மூலம்"
 
 #: src/service.c:270 src/service.c:300
 msgid "Notifications"
@@ -73,12 +76,12 @@ msgstr "அறிவிப்புகள்"
 
 #: src/service.c:271
 msgid "List of past system notifications, do-not-disturb switch"
-msgstr "கடந்தகால கணினி அறிவிப்புகளின் பட்டியல், செய்யாத-தூரம் சுவிட்ச்"
+msgstr "பழைய கணினி அறிவிப்புகளின் அட்டவணை,தொந்தரவு-செய்யாதே மாற்றி"
 
 #: src/service.c:328
 msgid "Clear"
-msgstr "தெளிவான"
+msgstr "அழி"
 
 #: src/service.c:339
 msgid "Do not disturb"
-msgstr "தொந்தரவு செய்ய வேண்டாம்"
+msgstr "தொந்தரவு செய்யாதே"
