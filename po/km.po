@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-14 08:49+0200\n"
-"PO-Revision-Date: 2026-08-06 04:01+0000\n"
+"PO-Revision-Date: 2026-09-14 09:51+0000\n"
 "Last-Translator: SeyhaLite <sok123230@gmail.com>\n"
 "Language-Team: Khmer (Central) <https://hosted.weblate.org/projects/ayatana-"
 "indicators/notifications-applet/km/>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2026.8.1.dev0\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:1
 msgid "Discard notifications by application name"
-msgstr ""
+msgstr "បោះបង់ការជូនដំណឹងតាមឈ្មោះកម្មវិធី"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:2
 msgid ""
@@ -50,7 +50,7 @@ msgstr ""
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:7
 msgid "Maximum number of visible items"
-msgstr ""
+msgstr "ចំនួនអតិបរមានៃធាតុដែលមើលឃើញ"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:8
 msgid ""
@@ -64,7 +64,7 @@ msgstr ""
 
 #: src/service.c:270 src/service.c:300
 msgid "Notifications"
-msgstr ""
+msgstr "ការជូនដំណឹង"
 
 #: src/service.c:271
 msgid "List of past system notifications, do-not-disturb switch"
