@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-14 08:49+0200\n"
-"PO-Revision-Date: 2026-10-02 20:51+0000\n"
+"PO-Revision-Date: 2026-10-04 08:51+0000\n"
 "Last-Translator: Alagirisamy Rengaraj <radhaalagirisamy@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/ayatana-indicators/"
 "notifications-applet/ta/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.10\n"
+"X-Generator: Weblate 2026.10.1.dev0\n"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:1
 msgid "Discard notifications by application name"
@@ -40,19 +40,19 @@ msgid ""
 "Keeps track of recent application names so we can suggest them in the "
 "settings."
 msgstr ""
-"அண்மை செயலிகளின் பெயர்கள் கண்காணிப்பில் வைத்துள்ளது எனவே நாம் அவற்றை அமைப்புகளில் "
+"அண்மை செயலிகளின் பெயர்களைக் கண்காணிப்பில் வைக்கிறது, அதனால் நாம் அவற்றை அமைப்புகளில் "
 "பரிந்துரைக்கலாம்."
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:5
 msgid "Enable do-not-disturb mode"
-msgstr "தொந்தரவு-செய்யவேண்டாம்-முறை இயக்கவும்"
+msgstr "\"தொந்தரவு-செய்யவேண்டாம்\"-முறை இயலச்செய்"
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:6
 msgid ""
 "On supported desktops enables do-not-disturb mode on the notification daemon."
 msgstr ""
-"ஆதரிக்கப்பட்ட மேசைக்கணினிகளில் தொந்தரவு-செய்யவேண்டாம்- முறை அறிவிப்பு ஏவல் நிரல் "
-"இயக்குகிறது."
+"ஆதரிக்கப்பட்ட மேசைக்கணினிகளில் \"தொந்தரவு-செய்யவேண்டாம்\"- முறையை அறிவிப்பு பின்னனி "
+"நிரலில் இயலச்செய்கிறது."
 
 #: data/org.ayatana.indicator.notifications.gschema.xml:7
 msgid "Maximum number of visible items"
@@ -76,7 +76,7 @@ msgstr "அறிவிப்புகள்"
 
 #: src/service.c:271
 msgid "List of past system notifications, do-not-disturb switch"
-msgstr "பழைய கணினி அறிவிப்புகளின் அட்டவணை,தொந்தரவு-செய்யவேண்டாம் மாற்றி"
+msgstr "பழைய கணினி அறிவிப்புகளின் அட்டவணை,தொந்தரவு-செய்யவேண்டாம் நிலைமாற்றி"
 
 #: src/service.c:328
 msgid "Clear"
